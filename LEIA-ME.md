@@ -205,3 +205,11 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - **"Usar sem senha por enquanto"** saiu da primeira tela e fica na tela de criar acesso.
 - **Senhas:** "Senha" e "Repita a senha" (e, na recuperação, "Nova senha" e "Repita a nova senha") têm **cada uma o seu olho**, independentes, com nomes diferentes para leitores de tela.
 - **Não mudou:** cálculos, relatórios, backups, armazenamento financeiro, criptografia, chaves `wallstreet.*`.
+
+## Mini tutorial de backups (versão 7.4)
+- **Aparece sozinho uma única vez por conta**, na primeira vez que a pessoa abre **Configurações**. São 5 etapas ilustradas (Seus dados merecem proteção → Crie sua cópia de segurança → Guarde em um lugar seguro → Recupere seus dados quando precisar → Backup feito, tranquilidade maior), com indicador "Etapa N de 5", Voltar/Próximo, Pular/fechar e botão **ENTENDI** no fim.
+- **Pular ou fechar** mostra um aviso discreto lembrando da importância do backup. Concluir, pular ou fechar registra o tutorial como visto; ele não volta ao recarregar, sair ou entrar. O registro fica dentro da própria conta (junto das outras marcações da conta, e portanto também dentro dos backups).
+- **Rever:** botão discreto **"Como fazer backup?"** dentro do cartão Backup de Configurações, sempre disponível.
+- **Os textos descrevem só o que o app faz de verdade:** o app baixa um arquivo; **quem escolhe onde guardar é você** (nada é enviado sozinho para Drive ou outro serviço); importar **substitui** os dados atuais (não mescla); backup com senha exige guardar a senha; nunca compartilhe o arquivo nem a senha.
+- **Não mudou:** exportação, criptografia, importação, restauração, dados financeiros, senhas, chaves `wallstreet.*`.
+- Teste: `python3 tests/run_all.py --suite tutorial_backup` (78 verificações).

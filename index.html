@@ -203,6 +203,45 @@
 #intsnd[hidden]{display:none}#intsnd svg{width:24px;height:24px}#intsnd .son{display:none}#intsnd.on .son{display:inline}#intsnd.on .soff{display:none}
 #intsnd:focus-visible{outline:3px solid #fff;outline-offset:2px}
 </style>
+<style id="bkt-css">
+/* mini tutorial de backups */
+#bkt{--i-navy:#0B1730;--i-royal:#2563EB;--i-elec:#38BDF8;--i-soft:#DBEAFE;--i-white:#fff;--i-pl:#EAF1FF;--i-ln:#0B1730;--i-sc:#fff;--i-sl:#C7D7F5;--i-card:#fff;position:fixed;inset:0;z-index:17;display:grid;place-items:center;padding:10px}
+[data-theme=dark] #bkt{--i-navy:#16213F;--i-royal:#3B82F6;--i-elec:#38BDF8;--i-soft:#1E2F57;--i-white:#E6EEFF;--i-pl:#111C38;--i-ln:#6F8FD8;--i-sc:#0E1731;--i-sl:#2B4175;--i-card:#16213F}
+.bkbg{position:absolute;inset:0;background:rgba(7,14,35,.7);animation:bkfade .25s ease both}
+.bkc{position:relative;display:flex;flex-direction:column;width:min(460px,100%);max-height:calc(100dvh - 20px);min-height:min(560px,calc(100dvh - 20px));border-radius:26px;background:var(--solid);border:1px solid var(--edge);box-shadow:0 24px 70px rgba(2,8,28,.5);color:var(--navy);overflow:hidden;animation:bkup .35s cubic-bezier(.22,.8,.3,1) both}
+.bkh{display:flex;align-items:center;gap:10px;padding:12px 14px 6px}
+.bkn2{font-size:12px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--gray);white-space:nowrap}
+.bkd{display:flex;gap:5px;flex:1;justify-content:center}.bkd i{width:18px;height:6px;border-radius:99px;background:var(--line);transition:background-color .25s,width .25s}.bkd i.on{width:30px;background:var(--blue)}.bkd i.dn{background:var(--blue2)}
+.bkx{min-height:44px;min-width:56px;padding:0 10px;background:none;border:0;color:var(--navy);font-weight:800;font-size:14px;border-radius:12px;text-decoration:underline;text-underline-offset:3px}
+.bkx[hidden]{display:block;visibility:hidden}
+.bkb{flex:1;overflow:auto;padding:4px 18px 10px;-webkit-overflow-scrolling:touch}
+.bkb h3{margin:10px 0 8px;font-size:21px;line-height:1.2;outline:0}
+.bkb p{margin:0 0 8px;font-size:15px;line-height:1.5}.bkb .bkn{font-size:14px;color:var(--gray)}
+.bkb .bkn b{color:var(--navy)}
+.bki{border-radius:20px;overflow:hidden;margin-top:2px}.bi{display:block;width:100%;height:auto;max-height:36vh}
+.bkol,.bkul{margin:0 0 8px;padding-left:22px;font-size:15px;line-height:1.5}.bkol li,.bkul li{margin:0 0 5px}
+.bkq{font-size:17px!important;font-weight:700;line-height:1.45!important}
+.bkw{display:flex;gap:10px;align-items:flex-start;margin:8px 0;padding:11px 12px;border-radius:14px;background:rgba(217,119,6,.14);border:1px solid rgba(217,119,6,.55);font-size:14.5px;font-weight:700;line-height:1.4;color:var(--navy)}
+.bkw svg{flex:none;width:22px;height:22px;color:var(--amber)}
+.bkf{display:flex;gap:10px;padding:10px 14px calc(14px + env(safe-area-inset-bottom))}.bkf button{flex:1;min-height:48px}
+.bkth{margin-top:8px;font-size:13px;min-height:44px}
+.bkin{animation:bkr .32s cubic-bezier(.22,.8,.3,1) both}.bkinb{animation:bkl .32s cubic-bezier(.22,.8,.3,1) both}
+@keyframes bkr{from{opacity:0;transform:translateX(22px)}to{opacity:1;transform:none}}@keyframes bkl{from{opacity:0;transform:translateX(-22px)}to{opacity:1;transform:none}}
+@keyframes bkfade{from{opacity:0}to{opacity:1}}@keyframes bkup{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+#bkt .bi-pl{fill:var(--i-pl)}#bkt .bi-ph{fill:var(--i-navy);stroke:var(--i-ln);stroke-width:2}#bkt .bi-sc{fill:var(--i-sc)}#bkt .bi-nt{fill:var(--i-navy)}
+#bkt .bi-r{fill:var(--i-royal)}#bkt .bi-e{fill:var(--i-elec)}#bkt .bi-l{fill:var(--i-white)}#bkt .bi-n2{fill:var(--i-navy)}[data-theme=dark] #bkt .bi-n2{fill:var(--i-white)}
+#bkt .bi-sl{fill:var(--i-sl)}#bkt .bi-sl2{fill:var(--i-sl)}#bkt .bi-card{fill:var(--i-card);stroke:var(--i-sl);stroke-width:1.5}
+#bkt .bi-fl{fill:var(--i-soft);stroke:var(--i-royal);stroke-width:3;stroke-linejoin:round}#bkt .bi-fd{fill:var(--i-royal)}
+#bkt .bi-ar{fill:none;stroke:var(--i-elec);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+#bkt .bi-ck{fill:none;stroke:var(--i-white);stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+#bkt .bi-sp{fill:none;stroke:var(--i-elec);stroke-width:3;stroke-linecap:round}
+#bkt .bi-tx{fill:var(--i-white);font:800 8.5px system-ui,sans-serif;letter-spacing:.4px}
+#bkt .bi-pulse{transform-box:fill-box;transform-origin:center;animation:bkp 2.6s ease-in-out infinite}#bkt .bi-pulse2{transform-box:fill-box;transform-origin:center;animation:bkp 2s ease-in-out infinite}
+#bkt .bi-flow{stroke-dasharray:6 9;animation:bkdash 1.2s linear infinite}
+@keyframes bkp{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}@keyframes bkdash{to{stroke-dashoffset:-30}}
+@media(prefers-reduced-motion:reduce){.bkbg,.bkc,.bkin,.bkinb,#bkt .bi-pulse,#bkt .bi-pulse2,#bkt .bi-flow{animation:none!important}.bkd i{transition:none}}
+@media(max-height:560px){.bi{max-height:30vh}.bkb h3{font-size:18px;margin:6px 0}.bkb p,.bkol,.bkul{font-size:14px}}
+</style>
 </head>
 <body>
 <div id="intro" aria-hidden="true"><video id="introv" playsinline preload="auto" disablepictureinpicture tabindex="-1"></video><div class="il"><div class="ib"><img src="icon-512.png" alt="" width="512" height="512" decoding="async" onerror="this.style.visibility='hidden'"><i class="ie l"></i><i class="ie r"></i><div class="sw"><i class="sh"></i></div></div><b class="in">WOLFIN</b><span class="is">Domine seu dinheiro.</span></div></div>
@@ -247,7 +286,7 @@ const MCIDS=['wolfin','leonidas','vito','oraculo','brutus','mako','bento','penny
 /* migração: avatar antigo (10 modelos) e roupa antiga do lobo → mascote novo; sem correspondência = Wolfin */
 const MCOLD_AV=['wolfin',null,'nyx','leonidas','vito','wolfin',null,null,'oraculo','elliot'],MCOLD_MS={terno:'wolfin',rei:'leonidas',detetive:'elliot',hacker:'nyx',ostentacao:'vito'};
 function mcMigrate(p){const a=p&&p.av&&typeof p.av==='object'&&p.av.v===2?p.av:null,ia=a?MCOLD_AV[Math.floor(+a.m)]||null:null;return (a&&a.set===1&&ia)||(MCOLD_MS[p&&p.ms]&&MCOLD_MS[p.ms]!=='wolfin'?MCOLD_MS[p.ms]:null)||ia||'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.3 · nova entrada, ENTRAR e senhas com olho · 14/11/2026';
+const KEY='wallstreet.v1',BUILD='7.4 · mini tutorial de backups · 14/11/2026';
 const CATS={exp:['Alimentação','Transporte','Compras','Roupas','Lazer','Trabalho','Casa','Saúde','Educação','Financeiro','Tecnologia','Cuidados pessoais','Presentes','Outros'],inc:['Salário','Comissão','Freelancer','Outro']};
 const PALS=[['blue','Azul','#2563EB'],['perola','Pérola','#E8EDF5'],['violet','Violeta','#7C3AED'],['teal','Turquesa','#0D9488'],['pink','Rosa','#DB2777'],['orange','Laranja','#EA580C'],['ouro','Ouro','#B88614'],['esmeralda','Esmeralda','#15803D'],['grafite','Grafite','#4B5563']];
 const PAYS=['Pix','Cartão de débito','Cartão de crédito','Dinheiro/Espécie','Outro'];
@@ -613,7 +652,7 @@ function vCfg(){const p=S.pref;return `<h2>Configurações</h2><div class="card"
  <div class="card"><h3>Aparência</h3><div class="acts" style="margin:0 0 12px"><button class="${p.theme!=='dark'?'b1':'b2'}" style="flex:1" data-act="theme" data-id="light" aria-pressed="${p.theme!=='dark'}">☀ Claro</button><button class="${p.theme==='dark'?'b1':'b2'}" style="flex:1" data-act="theme" data-id="dark" aria-pressed="${p.theme==='dark'}">☾ Escuro</button></div><div class="lbl" style="margin-bottom:6px">Paleta de cores</div><div class="pals">${PALS.map(([k,n,c])=>`<button class="pal${p.pal===k?' on':''}" data-act="pal" data-id="${k}" aria-pressed="${p.pal===k}"><i style="background:${c}"></i>${n}</button>`).join('')}</div><label style="margin:12px 0 0">Efeito de vidro<select id="glSel"><option value="1"${p.gl!==0?' selected':''}>Completo</option><option value="0"${p.gl===0?' selected':''}>Leve (mais rápido)</option></select></label><label>Animações dos ícones<select id="anSel"><option value="1"${p.av&&p.av.an!==0?' selected':''}>Ligadas</option><option value="0"${p.av&&p.av.an===0?' selected':''}>Desligadas</option></select></label></div>
  ${secCard()}
  ${meuMascoteCard()}
- <div class="card"><h3>Backup</h3><div class="acts"><button class="b1" data-act="exp" style="flex:1">Exportar backup</button><button class="b2" data-act="imp" style="flex:1">Importar backup</button></div>${hasCrypto?'<button class="b2 full" style="margin-top:8px" data-act="expenc">Exportar backup criptografado</button>':''}<p class="lbl" style="margin-top:8px">Os dados ficam só neste navegador. Exporte um backup de vez em quando. O backup comum é um arquivo aberto; o <b>criptografado</b> só abre com a senha que você escolher (não é a senha de login — guarde-a: sem ela ninguém recupera o arquivo).</p>${bkpLine()}</div>
+ <div class="card"><h3>Backup</h3><div class="acts"><button class="b1" data-act="exp" style="flex:1">Exportar backup</button><button class="b2" data-act="imp" style="flex:1">Importar backup</button></div>${hasCrypto?'<button class="b2 full" style="margin-top:8px" data-act="expenc">Exportar backup criptografado</button>':''}<p class="lbl" style="margin-top:8px">Os dados ficam só neste navegador. Exporte um backup de vez em quando. O backup comum é um arquivo aberto; o <b>criptografado</b> só abre com a senha que você escolher (não é a senha de login — guarde-a: sem ela ninguém recupera o arquivo).</p>${bkpLine()}<button type="button" class="b2 bkth" data-act="bkt">Como fazer backup?</button></div>
  <div class="card"><h3>Zerar todos os dados</h3><p class="lbl" style="margin-bottom:8px">Apaga tudo o que você registrou e deixa o app em branco. Seu nome, tema, avatar, senha e suas anotações, lembretes e tarefas continuam. Exporte um backup antes.</p><button class="b2 full neg" data-act="reset">Zerar todos os dados</button></div>
  <div class="card abt"><h3>Sobre</h3>
  <div class="ab1"><div class="ico"><img src="icon-192.png" alt="" width="64" height="64"></div><div><b>Wolfin</b><span>Domine seu dinheiro.</span><div class="ver">Versão ${esc(String(BUILD).split(' · ')[0])}</div><button class="b2" data-act="updchk" style="margin-top:8px">Verificar atualização</button> <button class="b2" data-act="tourgo" style="margin-top:8px">Ver o tutorial</button></div></div>
@@ -868,7 +907,7 @@ let PERSISTED=false;function persistReq(){if(PERSISTED||window.__WS_NOTOUR||!S||
 function render(){
  applyPref();
  for(const k in VIEWS){$('#'+VIEWS[k][3]).hidden=k!==view}
- const fk=a11yFocusKey();try{$('#'+VIEWS[view][3]).innerHTML=(MEMO=new Map(),(()=>{try{return VIEWS[view][2]()}finally{MEMO=null}})());if(['rec','des','div','cx','rel','cc'].includes(view))$('#'+VIEWS[view][3]).insertAdjacentHTML('afterbegin',eyeBtn('eyefl'))}catch(e){$('#'+VIEWS[view][3]).innerHTML='<div class="card">Erro ao exibir esta tela. Seus dados continuam salvos.</div>';console.error(e)}a11yFocusBack(fk);pqvCheck();persistReq();{const sc=$('#'+VIEWS[view][3]);if(view!==LASTV&&!RM.matches){sc.classList.remove('vin');void sc.offsetWidth;sc.classList.add('vin');setTimeout(()=>sc.classList.remove('vin'),800)}}
+ const fk=a11yFocusKey();try{$('#'+VIEWS[view][3]).innerHTML=(MEMO=new Map(),(()=>{try{return VIEWS[view][2]()}finally{MEMO=null}})());if(['rec','des','div','cx','rel','cc'].includes(view))$('#'+VIEWS[view][3]).insertAdjacentHTML('afterbegin',eyeBtn('eyefl'))}catch(e){$('#'+VIEWS[view][3]).innerHTML='<div class="card">Erro ao exibir esta tela. Seus dados continuam salvos.</div>';console.error(e)}a11yFocusBack(fk);pqvCheck();persistReq();bktCheck();{const sc=$('#'+VIEWS[view][3]);if(view!==LASTV&&!RM.matches){sc.classList.remove('vin');void sc.offsetWidth;sc.classList.add('vin');setTimeout(()=>sc.classList.remove('vin'),800)}}
  {const nv=$('#nav'),ents=Object.entries(VIEWS).filter(([k,v])=>!v[4]),key=ents.map(([k,v])=>k+v[0]).join('|');
  if(nv.dataset.k!==key){nv.innerHTML=ents.map(([k,v])=>`<button data-act="nav" data-id="${k}" class="${k===view?'on':''}">${IC[k]||'<span>'+v[1]+'</span>'}${v[0]}</button>`).join('');nv.dataset.k=key}
  else nv.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===view));nv.querySelectorAll('button').forEach(b=>{if(b.dataset.id===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
@@ -1183,6 +1222,55 @@ document.addEventListener('keydown',e=>{if(TOUR&&e.key==='Escape')tourEnd()});
 addEventListener('resize',()=>{if(TOUR)setTimeout(tourShow,120)});
 Object.assign(ACT,{tourgo:()=>{tourStart(true)}});
 
+/* ===== Mini tutorial de backups (só educativo: não mexe em exportar/importar/criptografia) =====
+   Abre sozinho na 1ª visita às Configurações de cada conta (S.flags.bkt, guardado na própria conta) e fica sempre disponível em Ajustes → Backup → "Como fazer backup?". */
+const BKI=(()=>{
+ const sh=(x,y,k)=>`<g transform="translate(${x} ${y}) scale(${k})"><path class="bi-r bi-pulse" d="M30 0L58 10V34C58 52 46 64 30 70C14 64 2 52 2 34V10Z"/><path class="bi-l" d="M30 8L51 15.6V34C51 47 42 57 30 62C18 57 9 47 9 34V15.6Z"/><path class="bi-ck" d="M18 35L27 44L43 25"/></g>`;
+ const fin=()=>`<rect class="bi-r" x="11" y="19" width="34" height="6" rx="3"/><rect class="bi-n2" x="11" y="31" width="48" height="9" rx="3"/><rect class="bi-e" x="12" y="62" width="9" height="20" rx="2.5"/><rect class="bi-r" x="26" y="52" width="9" height="30" rx="2.5"/><rect class="bi-e" x="40" y="44" width="9" height="38" rx="2.5"/><rect class="bi-r" x="54" y="56" width="5" height="26" rx="2.5"/><rect class="bi-sl" x="11" y="92" width="48" height="6" rx="3"/><rect class="bi-sl" x="11" y="103" width="36" height="6" rx="3"/>`;
+ const ph=(x,y,inner)=>`<g transform="translate(${x} ${y})"><rect class="bi-ph" width="70" height="124" rx="14"/><rect class="bi-sc" x="5" y="5" width="60" height="114" rx="10"/><rect class="bi-nt" x="26" y="9" width="18" height="4" rx="2"/>${inner}</g>`;
+ const file=(x,y,k=1)=>`<g transform="translate(${x} ${y}) scale(${k})"><path class="bi-fl" d="M0 4Q0 0 4 0H34L50 16V60Q50 64 46 64H4Q0 64 0 60Z"/><path class="bi-fd" d="M34 0V12Q34 16 38 16H50Z"/><rect class="bi-sl" x="9" y="26" width="32" height="5" rx="2.5"/><rect class="bi-sl" x="9" y="36" width="24" height="5" rx="2.5"/><rect class="bi-r" x="9" y="47" width="26" height="11" rx="4"/><text class="bi-tx" x="22" y="55.6" text-anchor="middle">JSON</text></g>`;
+ const arrow=(x,y,rot=0,len=46)=>`<g transform="translate(${x} ${y}) rotate(${rot})"><path class="bi-ar bi-flow" d="M0 0H${len}"/><path class="bi-ar" d="M${len-9} -9L${len+1} 0L${len-9} 9"/></g>`;
+ const cloud=(x,y)=>`<g transform="translate(${x} ${y})"><path class="bi-fl" d="M16 46C5 46 0 36 6 29C4 17 19 11 28 17C32 4 55 4 59 19C72 17 78 31 70 39C68 44 63 46 59 46Z"/><path class="bi-ar" d="M38 38V24M31 31L38 24L45 31"/></g>`;
+ const folder=(x,y)=>`<g transform="translate(${x} ${y})"><path class="bi-fl" d="M0 9Q0 0 9 0H24L32 8H62Q70 8 70 17V50Q70 58 62 58H8Q0 58 0 50Z"/><path class="bi-r" d="M0 22Q0 16 7 16H63Q70 16 70 22V50Q70 58 62 58H8Q0 58 0 50Z"/><rect class="bi-l" x="26" y="30" width="18" height="5" rx="2.5"/></g>`;
+ const lock=(x,y)=>`<g transform="translate(${x} ${y})"><path class="bi-ar" d="M14 22V15A11 11 0 0 1 36 15V22"/><rect class="bi-r" x="4" y="20" width="42" height="32" rx="9"/><circle class="bi-l" cx="25" cy="34" r="4.5"/><rect class="bi-l" x="23" y="36" width="4" height="9" rx="2"/></g>`;
+ const plate=(c)=>`<rect class="bi-pl" width="320" height="170" rx="22"/>${c}`;
+ const dots=`<circle class="bi-e" cx="22" cy="24" r="3"/><circle class="bi-r" cx="298" cy="30" r="2.5"/><path class="bi-sp" d="M286 130v10M281 135h10"/><path class="bi-sp" d="M34 140v8M30 144h8"/>`;
+ return[
+  plate(dots+ph(52,22,fin())+sh(150,38,1.7)+`<rect class="bi-sl2" x="240" y="48" width="56" height="8" rx="4"/><rect class="bi-sl2" x="240" y="66" width="44" height="8" rx="4"/><rect class="bi-sl2" x="240" y="84" width="52" height="8" rx="4"/>`),
+  plate(dots+ph(46,22,`<rect class="bi-r" x="11" y="19" width="34" height="6" rx="3"/><rect class="bi-card" x="9" y="33" width="52" height="66" rx="8"/><rect class="bi-n2" x="15" y="40" width="22" height="5" rx="2.5"/><rect class="bi-r bi-pulse2" x="15" y="54" width="40" height="16" rx="6"/><rect class="bi-l" x="21" y="60.5" width="28" height="3.5" rx="1.75"/><rect class="bi-sl" x="15" y="76" width="40" height="13" rx="6"/>`)+arrow(130,84)+file(196,52,1.25)),
+  plate(`<g>`+[[24,'cl'],[120,'fo'],[216,'lo']].map(([x,k])=>`<rect class="bi-card" x="${x}" y="34" width="80" height="102" rx="16"/>`).join('')+cloud(29,60)+folder(125,64)+lock(231,50)+`<rect class="bi-sl" x="36" y="114" width="56" height="6" rx="3"/><rect class="bi-sl" x="132" y="114" width="56" height="6" rx="3"/><rect class="bi-sl" x="228" y="114" width="56" height="6" rx="3"/></g>`+`<path class="bi-sp" d="M300 20v10M295 25h10"/><circle class="bi-e" cx="20" cy="22" r="3"/>`),
+  plate(dots+file(40,50,1.25)+arrow(112,86)+ph(196,22,fin())+`<g transform="translate(244 98)"><circle class="bi-r" r="17"/><circle class="bi-l" r="12" opacity=".18"/><path class="bi-ck" d="M-8 0L-2 6L9 -7"/></g>`),
+  plate(dots+sh(114,28,1.95)+`<g transform="translate(36 70)"><rect class="bi-card" width="54" height="52" rx="10"/><rect class="bi-r" width="54" height="15" rx="8"/><rect class="bi-r" y="8" width="54" height="7"/><g class="bi-e"><circle cx="14" cy="30" r="3"/><circle cx="27" cy="30" r="3"/><circle cx="40" cy="30" r="3"/><circle cx="14" cy="42" r="3"/><circle cx="27" cy="42" r="3"/></g></g>`+file(238,62,.95))
+ ].map(c=>`<svg viewBox="0 0 320 170" class="bi" role="img" focusable="false" aria-hidden="true">${c}</svg>`)})();
+const BKS=()=>[
+ {t:'Seus dados merecem proteção.',b:'<p>O Wolfin guarda receitas, despesas, contas, dívidas e planejamentos. Esses dados ficam <b>só neste aparelho</b>, no navegador.</p><p>Se você trocar de celular, limpar os dados do navegador ou desinstalar o app, esse histórico pode ser perdido — e o controle financeiro que você montou junto com ele.</p>'},
+ {t:'Crie sua cópia de segurança.',b:'<ol class="bkol"><li>Abra <b>Ajustes</b> (Configurações) e vá até o cartão <b>Backup</b>.</li><li>Toque em <b>Exportar backup</b>.</li><li>O navegador salva o arquivo <b>wolfin-backup-AAAA-MM-DD.json</b> no aparelho (em geral na pasta Downloads).</li><li>Depois, escolha onde guardar: copie ou envie esse arquivo para o lugar que preferir.</li></ol><p class="bkn">O Wolfin <b>não envia</b> o backup para nenhum serviço. Quem escolhe o destino e conclui o salvamento é você.</p>'+(hasCrypto?'<p class="bkn">Se preferir, use <b>Exportar backup criptografado</b>: ele pede uma senha só do backup.</p>':'')},
+ {t:'Guarde em um lugar seguro.',b:'<ul class="bkul"><li>No <b>Google Drive</b>.</li><li>Na <b>pasta de arquivos do celular</b>.</li><li>Em <b>outro local seguro</b> de sua preferência.</li></ul><p>Mantenha uma cópia <b>fora do armazenamento do app</b>.</p><div class="bkw" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L2.5 20h19Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 17.6v.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Não deixe sua única cópia de segurança no mesmo dispositivo onde utiliza o aplicativo.</span></div>'+(hasCrypto?'<p class="bkn">No backup <b>criptografado</b>, guarde também a senha que você escolheu ao exportar (não é a senha de login): sem ela, ninguém consegue recuperar o arquivo. O backup comum é um arquivo aberto, sem senha.</p>':'<p class="bkn">O backup é um arquivo aberto, sem senha: guarde-o em um lugar privado.</p>')+'<p class="bkn">Nunca compartilhe o arquivo de backup nem a senha com outras pessoas.</p>'},
+ {t:'Recupere seus dados quando precisar.',b:'<ol class="bkol"><li>Abra <b>Ajustes</b> e vá até o cartão <b>Backup</b>.</li><li>Toque em <b>Importar backup</b>.</li><li>Localize o arquivo salvo no aparelho ou no Drive e selecione o correto.</li><li>Confira as informações que o Wolfin mostrar sobre o backup.</li><li>Se estiver seguro, confirme a restauração.'+(hasCrypto?' No backup criptografado, o Wolfin pede a senha do backup.':'')+'</li></ol><div class="bkw" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L2.5 20h19Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 17.6v.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Importar <b>substitui</b> os dados atuais e não pode ser desfeito. Os dados não são mesclados.</span></div><p class="bkn">Em um aparelho novo, toque em <b>ENTRAR</b> na tela inicial para importar o backup.</p>'},
+ {t:'Backup feito, tranquilidade maior.',b:'<p class="bkq">Seus dados financeiros fazem parte da sua história. Proteja essa informação. Crie backups regularmente e mantenha uma cópia segura.</p><p class="bkn">Para rever este tutorial: Ajustes → Backup → <b>Como fazer backup?</b></p>'}];
+let BKT=null;
+function bktCheck(){try{if(BKT||view!=='cfg'||(window.__WS_NOTOUR&&!window.__WS_BKT)||!S||typeof S!=='object'||!LK.hidden||(SECMODE&&!DEK)||TOUR)return;if(!S.flags||typeof S.flags!=='object')S.flags={};if(S.flags.bkt)return;
+ if(!$('#ov').hidden){clearTimeout(bktCheck.t);bktCheck.t=setTimeout(bktCheck,700);return}bktOpen(true)}catch(e){console.error(e)}}
+function bktOpen(auto){if(BKT)return;BKT={i:0,auto:!!auto,from:document.activeElement};if(!$('#ov').hidden&&!auto)closeOv();
+ const d=document.createElement('div');d.id='bkt';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');d.setAttribute('aria-labelledby','bkt-t');
+ d.innerHTML='<div class="bkbg" data-bk="skip"></div><div class="bkc"><div class="bkh"><span class="bkn2" aria-live="polite"></span><div class="bkd" aria-hidden="true"></div><button type="button" class="bkx" data-bk="skip" aria-label="Fechar tutorial">Pular</button></div><div class="bkb"><div class="bki" aria-hidden="true"></div><h3 id="bkt-t" tabindex="-1"></h3><div class="bkx2"></div></div><div class="bkf"><button type="button" class="b2" data-bk="prev">Voltar</button><button type="button" class="b1" data-bk="next">Próximo</button></div></div>';
+ document.body.appendChild(d);bktShow(0)}
+function bktShow(dir){const d=$('#bkt');if(!d||!BKT)return;const st=BKS(),n=st.length,x=st[BKT.i],last=BKT.i===n-1,bd=d.querySelector('.bkb');
+ d.querySelector('.bkn2').textContent='Etapa '+(BKT.i+1)+' de '+n;d.querySelector('.bkd').innerHTML=st.map((_,k)=>'<i class="'+(k===BKT.i?'on':k<BKT.i?'dn':'')+'"></i>').join('');
+ d.querySelector('.bki').innerHTML=BKI[BKT.i];d.querySelector('h3').textContent=x.t;d.querySelector('.bkx2').innerHTML=x.b;
+ const pv=d.querySelector('[data-bk=prev]'),nx=d.querySelector('[data-bk=next]');pv.style.visibility=BKT.i?'visible':'hidden';pv.disabled=!BKT.i;nx.textContent=last?'ENTENDI':'Próximo';d.querySelector('.bkx').hidden=last;
+ bd.scrollTop=0;bd.classList.remove('bkin','bkinb');if(dir&&!RM.matches){void bd.offsetWidth;bd.classList.add(dir>0?'bkin':'bkinb')}
+ nx.focus({preventScroll:true})}
+function bktEnd(done){const d=$('#bkt');if(!d||!BKT)return;const a=BKT.auto,fr=BKT.from;d.remove();BKT=null;
+ try{S.flags=S.flags||{};S.flags.bkt=1;save()}catch(e){}
+ if(a&&!done)toast('Faça backups de vez em quando: Ajustes → Backup. Para rever o passo a passo, toque em "Como fazer backup?".',5200);
+ try{const b=$('[data-act=bkt]');if(fr&&document.contains(fr)&&fr!==document.body)fr.focus({preventScroll:true});else if(b&&view==='cfg')b.focus({preventScroll:true});else a11yView()}catch(e){}}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-bk]');if(!b||!BKT)return;const a=b.dataset.bk;
+ if(a==='skip')bktEnd(false);else if(a==='next'){if(BKT.i>=BKS().length-1)bktEnd(true);else{BKT.i++;bktShow(1)}}else if(a==='prev'&&BKT.i>0){BKT.i--;bktShow(-1)}});
+document.addEventListener('keydown',e=>{if(!BKT)return;if(e.key==='Escape'){e.preventDefault();bktEnd(false)}
+ else if(e.key==='Tab'){const f=[...$('#bkt').querySelectorAll('button:not([hidden]):not([disabled])')].filter(x=>x.offsetParent!==null&&x.style.visibility!=='hidden');if(!f.length)return;const i=f.indexOf(document.activeElement);if(e.shiftKey&&i<=0){e.preventDefault();f[f.length-1].focus()}else if(!e.shiftKey&&(i===f.length-1||i<0)){e.preventDefault();f[0].focus()}}});
+Object.assign(ACT,{bkt:()=>bktOpen(false)});
+
 
 /* ----- etapa "Escolha a cor do seu tema" do cadastro: o app muda na hora; a escolha vai para a conta (S.pref) ----- */
 function viewColor(){const p=S.pref,dk=document.documentElement.dataset.theme==='dark';
@@ -1256,7 +1344,7 @@ let OVF=null,OVOP=false;
 function a11yHeading(){const h=document.querySelector('#'+VIEWS[view][3]+' h1,#'+VIEWS[view][3]+' h2');if(h){h.tabIndex=-1;h.focus({preventScroll:true});return true}return false}
 function a11yFocusKey(){const a=document.activeElement,sec=$('#'+VIEWS[view][3]);if(!a||a===document.body||!sec||!sec.contains(a)||a.matches('input:not([type=checkbox]):not([type=radio]),textarea'))return null;return{id:a.id||'',act:(a.dataset&&a.dataset.act)||'',did:(a.dataset&&a.dataset.id)||''}}
 function a11yFocusBack(k){if(!k)return;const sec=$('#'+VIEWS[view][3]);let t=k.id?document.getElementById(k.id):null;if(!t&&k.act)t=[...sec.querySelectorAll('[data-act="'+k.act+'"]')].find(x=>(x.dataset.id||'')===k.did);if(t&&!t.closest('[hidden]'))t.focus({preventScroll:true})}
-function a11yView(){try{document.title=(A11Y_VT[view]||'')+' · Wolfin';if($('#lock').hidden&&$('#ov').hidden&&!document.getElementById('tour'))a11yHeading()}catch(e){}}
+function a11yView(){try{document.title=(A11Y_VT[view]||'')+' · Wolfin';if($('#lock').hidden&&$('#ov').hidden&&!document.getElementById('tour')&&!document.getElementById('bkt'))a11yHeading()}catch(e){}}
 function ovOpen(){const o=$('#ov'),sh=o.querySelector('.sheet')||o;
  if(!OVOP){OVOP=true;const a=document.activeElement;OVF=a&&a!==document.body&&!o.contains(a)?a:null;A11Y_BG.forEach(s=>{const e=$(s);if(e){e.inert=true;e.setAttribute('aria-hidden','true')}})}   // o fundo fica inerte: nem teclado nem leitor de tela chegam nele
  o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');const h=sh.querySelector('h3,h2');
