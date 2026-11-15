@@ -221,3 +221,12 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - **Continuar** maior, azul, fixo na parte de baixo da tela enquanto se rola (cinza-azulado até escolher um mascote).
 - **Gradiente preto inferior removido.**
 - Teste: `python3 tests/run_all.py --suite mascotes_grade`.
+
+## Ferramentas rápidas (versão 7.6)
+- **Botão flutuante novo** (ícone de 3 blocos: calculadora, nota e tarefa), sempre **encaixado na borda esquerda ou direita**. Arraste: ele segue o dedo/mouse e, ao soltar, volta suavemente para a borda mais próxima (é assim que você escolhe o lado; pelo teclado, setas ←/→/↑/↓). Só se move na vertical dentro da área segura e **nunca cobre o menu inferior** (celular) ou o lateral (computador). A posição é lembrada (`wolfin.dock`, só posição).
+- **Toque** → painel **FERRAMENTAS RÁPIDAS** com exatamente 3 opções: **Calculadora, Notas, Lista de tarefas**. Abre ao lado do botão, fecha pelo X, tocando fora, com Esc ou tocando no botão de novo.
+- **Janelas independentes** (arrastáveis, minimizar e fechar, sempre dentro da tela, ficam abertas ao navegar entre páginas, trancam/fecham ao sair da conta): a **calculadora é a mesma de antes** (só ganhou o botão minimizar).
+- **Notas:** usam **as mesmas notas das Anotações da Home** (`S.org.notes`), então não há duplicidade. Criar, editar, excluir (com confirmação), salvamento automático.
+- **Tarefas:** checklist simples (adicionar, marcar/desmarcar, excluir; concluídas ficam riscadas e vão para o fim). Ficam numa lista chamada **"Tarefas rápidas"** dentro das listas de Anotações → Tarefas (`S.org.lists`, id `qk`). Ela só é criada quando você adiciona a primeira tarefa; nada é criado sozinho.
+- **Armazenamento:** notas e tarefas ficam nos dados da conta (criptografados quando a conta tem senha, isolados por conta e incluídos nos backups como as demais anotações). Nenhum serviço externo. Lógica de backup, autenticação e dados financeiros não mudaram.
+- Teste: `python3 tests/run_all.py --suite ferramentas_rapidas` (60 verificações).
