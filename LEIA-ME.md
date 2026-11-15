@@ -239,3 +239,10 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - **Não mudou:** chaves de armazenamento, backups, senhas, criptografia.
 - Teste: `python3 tests/run_all.py --suite novidades_77` (62 verificações).
 - **Correção (Sobre):** a logo no quadrado ao lado de "Verificar atualização" não aparecia (uma regra antiga escondia a imagem e o arquivo `icon-192.png` podia faltar no repositório). Agora a logo vai embutida no próprio `index.html`.
+
+## Versão 7.8 — site mais leve
+- **Vídeo da intro** recomprimido: MP4 737 KB → 372 KB; WebM 808 KB → 342 KB (mesma aparência).
+- **Mascotes** em 400 px (antes 544 px): 416 KB → 345 KB. O `index.html` caiu de ~963 KB para ~868 KB.
+- Ícones de 512 px **não** foram alterados (a compressão testada deixava faixas visíveis no fundo).
+- Código não foi minificado nem separado em arquivos, de propósito: manter tudo em um `index.html` evita arquivo esquecido ao publicar pelo celular.
+- Teste `mascotes` ajustado para o novo tamanho. Regressão: 31 suítes, todas passando.
