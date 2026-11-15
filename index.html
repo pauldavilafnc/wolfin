@@ -319,6 +319,38 @@
 .qkc{font-size:12.5px;color:var(--gray);margin:0 2px}
 @media(prefers-reduced-motion:reduce){#cfab,.qw,#tpan,#tpan.out{animation:none;transition:none}}
 </style>
+<style id="v77-css">
+/* v7.7: aviso de backup, notas fixadas, busca, resumo do mês */
+.bkb{margin:0 0 12px;padding:12px 14px;border-radius:18px;background:var(--gbg);border:1px solid var(--edge);border-left:4px solid var(--amber);box-shadow:var(--shadow)}
+.bkb p{margin:0 0 10px;font-size:14px;color:var(--navy)}
+.bkr{display:flex;gap:8px}.bkr .b1,.bkr .b2{min-height:44px;flex:1}
+.sqb{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;margin:0 0 12px;padding:0 16px;text-align:left;border-radius:16px;background:var(--gbg);border:1px solid var(--edge);color:var(--gray);font-weight:500;box-shadow:none}
+.sqb svg{flex:none;color:var(--blue);width:20px;height:20px}
+.ntw{position:relative}.ntw .ntc{padding-right:56px}
+.ntp{display:inline-grid;place-items:center;min-width:44px;min-height:44px;padding:0;background:none;border:0;box-shadow:none;color:var(--gray);border-radius:14px}
+.ntw .ntp{position:absolute;top:2px;right:2px}
+.ntp[aria-pressed=true]{color:var(--blue)}
+[data-theme=dark] .ntp[aria-pressed=true]{color:#9CC4FF}
+.ntp[aria-pressed=true] svg path:first-child{fill:currentColor;fill-opacity:.25}
+.ntp svg{width:20px;height:20px}
+.ntpb{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 0 10px}
+.ntpb svg{width:18px;height:18px}
+.qrw{position:relative}.qrw .qrow{padding-right:52px}.qrw .ntp{position:absolute;top:4px;right:2px}
+.qpin{margin-left:auto}.qbar .qpin{min-height:44px;min-width:44px}
+.sqs input[type=search]{width:100%;font-size:16px;padding:12px 14px;border-radius:14px;border:1px solid var(--edge);background:var(--tile);color:var(--navy);margin:6px 0 8px}
+#sqr{max-height:46vh;max-height:46dvh;overflow:auto;overscroll-behavior:contain;margin:0 -4px;padding:0 4px}
+.sqh{margin:10px 2px 4px;font-size:12px;font-weight:800;letter-spacing:.8px;color:var(--blue);text-transform:uppercase}
+[data-theme=dark] .sqh{color:#9CC4FF}
+.sqg{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:52px;margin:0 0 6px;padding:8px 12px;text-align:left;border-radius:14px;background:var(--tile);border:1px solid var(--edge);color:var(--navy);box-shadow:none}
+.sqg span:first-child{min-width:0;display:flex;flex-direction:column}.sqg b{font-size:14.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sqg small{font-size:12.5px;color:var(--gray);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sqg .sqv{flex:none;font-weight:700;font-size:14px}
+.sqe{padding:16px 6px;text-align:center;color:var(--gray);font-size:14px}
+.rss .rsw{display:grid;place-items:center;margin:6px 0 10px}
+#rscv{display:block;width:auto;max-width:100%;max-height:48vh;max-height:48dvh;border-radius:18px;box-shadow:var(--shadow)}
+.rsl{display:flex;align-items:center;gap:10px;min-height:44px;font-size:14px;margin:0 0 4px}.rsl input{width:22px;height:22px;flex:none}
+.rsn{font-size:12.5px;color:var(--gray);margin:0 0 10px}
+.rss .btns{flex-wrap:wrap}
+</style>
 </head>
 <body>
 <div id="intro" aria-hidden="true"><video id="introv" playsinline preload="auto" disablepictureinpicture tabindex="-1"></video><div class="il"><div class="ib"><img src="icon-512.png" alt="" width="512" height="512" decoding="async" onerror="this.style.visibility='hidden'"><i class="ie l"></i><i class="ie r"></i><div class="sw"><i class="sh"></i></div></div><b class="in">WOLFIN</b><span class="is">Domine seu dinheiro.</span></div></div>
@@ -370,7 +402,7 @@ const MCIDS=['wolfin','leonidas','vito','oraculo','brutus','mako','bento','penny
 /* migração: avatar antigo (10 modelos) e roupa antiga do lobo → mascote novo; sem correspondência = Wolfin */
 const MCOLD_AV=['wolfin',null,'nyx','leonidas','vito','wolfin',null,null,'oraculo','elliot'],MCOLD_MS={terno:'wolfin',rei:'leonidas',detetive:'elliot',hacker:'nyx',ostentacao:'vito'};
 function mcMigrate(p){const a=p&&p.av&&typeof p.av==='object'&&p.av.v===2?p.av:null,ia=a?MCOLD_AV[Math.floor(+a.m)]||null:null;return (a&&a.set===1&&ia)||(MCOLD_MS[p&&p.ms]&&MCOLD_MS[p.ms]!=='wolfin'?MCOLD_MS[p.ms]:null)||ia||'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.6 · ferramentas rápidas · 15/11/2026';
+const KEY='wallstreet.v1',BUILD='7.7 · backup, notas fixadas, busca, resumo · 15/11/2026';
 const CATS={exp:['Alimentação','Transporte','Compras','Roupas','Lazer','Trabalho','Casa','Saúde','Educação','Financeiro','Tecnologia','Cuidados pessoais','Presentes','Outros'],inc:['Salário','Comissão','Freelancer','Outro']};
 const PALS=[['blue','Azul','#2563EB'],['perola','Pérola','#E8EDF5'],['violet','Violeta','#7C3AED'],['teal','Turquesa','#0D9488'],['pink','Rosa','#DB2777'],['orange','Laranja','#EA580C'],['ouro','Ouro','#B88614'],['esmeralda','Esmeralda','#15803D'],['grafite','Grafite','#4B5563']];
 const PAYS=['Pix','Cartão de débito','Cartão de crédito','Dinheiro/Espécie','Outro'];
@@ -597,7 +629,7 @@ function vHome(){const d=new Date(),cm=ymOf(d),hr=d.getHours(),gr=hr<12?'Bom dia
  const row=i=>{const s=stat(i,cm);return `<div class="row"><div class="dchip ${s}">${pad(i.day)}</div><div class="t"><b>${esc(i.d)}</b><span class="tag ${s}">${slabel(i,s)}</span></div><div class="a ${i.t==='inc'?'pos':'neg'}">${i.t==='inc'?'+':'−'}${brl(i.c)}</div></div>`};
  const gt=greet(),un=unread();
  return `<div class="top"><button class="av" id="avh" data-act="avs" aria-label="Meu mascote: ${esc(mcDef(mcCur()).n)}. Toque para trocar">${mcAv(mcCur(),44)}</button><div class="tx"><h1 class="hello" style="font-size:${gt.length>34?16:gt.length>24?18:20}px">${esc(gt)}</h1><small>${d.toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long'})}</small></div><div class="tb"><button class="ib bellw${un?' ring':''}" data-act="ntf" aria-label="Notificações${un?', '+un+' não lidas':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a6 6 0 0112 0c0 6 2 7 2 7H4s2-1 2-7"/><path d="M10 20a2 2 0 004 0"/></svg>${un?`<span class="bdg">${un>9?'9+':un}</span>`:''}</button><button class="ib" data-act="nav" data-id="news" aria-label="Notícias financeiras"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="14" height="16" rx="2"/><path d="M17 8h3v10a2 2 0 01-2 2M7 8h6M7 12h6M7 16h4"/></svg></button>${eyeBtn()}</div></div>
- <div class="card hero"><div class="lbl" style="letter-spacing:2px;font-weight:700;display:flex;align-items:center;gap:8px"><span>WOLFIN · Domine seu dinheiro.</span></div><div class="lbl" style="margin-top:12px">Saldo disponível</div><div class="big" style="font-size:34px;margin-bottom:12px">${brl(bal)}</div>
+ ${bkpBanner()}${sqBar()}<div class="card hero"><div class="lbl" style="letter-spacing:2px;font-weight:700;display:flex;align-items:center;gap:8px"><span>WOLFIN · Domine seu dinheiro.</span></div><div class="lbl" style="margin-top:12px">Saldo disponível</div><div class="big" style="font-size:34px;margin-bottom:12px">${brl(bal)}</div>
   <div class="pills"><span class="pill">↓ Recebido ${brl(fl.inc)}</span><span class="pill">↑ Pago ${brl(fl.exp)}</span></div><div class="lbl" style="margin-top:8px">Só considera o que já aconteceu em ${MN[d.getMonth()]}${S.opening?` · inclui saldo inicial de ${brl(S.opening.c)}`:''}</div></div>
  ${mqHome()}${ntHomeCard()}${ccHomeCard()}
  <div class="qa"><button data-act="qinc"><i>+</i>Receita</button><button data-act="qexp"><i>−</i>Despesa</button><button data-act="nav" data-id="cx"><i>▣</i>Guardar</button></div>
@@ -724,7 +756,7 @@ function vRel(){const f=flows(),ms=Array.from({length:12},(_,i)=>ry+'-'+pad(i+1)
  return `<h2>Relatórios</h2>${sitCard()}${relNew()}<div class="card"><div class="sw"><button class="ib" data-act="yp" aria-label="Ano anterior">‹</button><b>${ry}</b><button class="ib" data-act="yn" aria-label="Próximo ano">›</button></div>
  <label>Mês<select id="rmSel"><option value="">Ano inteiro</option>${MN.map((n,i)=>`<option value="${pad(i+1)}"${rm===pad(i+1)?' selected':''}>${n}</option>`).join('')}</select></label>
  ${sel?`<div class="grid"><div><div class="lbl">Recebido</div><div class="v pos">${brl(sel.inc)}</div></div><div><div class="lbl">Pago</div><div class="v neg">${brl(sel.exp)}</div></div><div><div class="lbl">Dívidas pagas</div><div class="v">${brl(sel.dp)}</div></div><div><div class="lbl">Guardado (líquido)</div><div class="v">${brl(sel.bx)}</div></div></div>`:''}</div>
- ${catCard()}
+ ${rsCard()}${catCard()}
  <div class="card"><h3>Receitas recebidas por mês</h3>${has?chart(L,[inc],['#16A34A'],{t:'Receitas recebidas por mês',ls:ms.map(m=>MN[+m.slice(5)-1])}):noData()}</div>
  <div class="card"><h3>Despesas pagas por mês</h3>${has?chart(L,[exp],['#DC2626'],{t:'Despesas pagas por mês',ls:ms.map(m=>MN[+m.slice(5)-1])}):noData()}</div>
  <div class="card"><h3>Receitas × despesas</h3>${has?chart(L,[inc,exp],['#16A34A','#DC2626'],{t:'Receitas e despesas por mês',ls:ms.map(m=>MN[+m.slice(5)-1])}):noData()}</div>
@@ -762,7 +794,7 @@ const ICACT={icp:(id,b)=>{const w=b.closest('.icg');w.querySelectorAll('button')
 /* ===== ANOTAÇÕES: notas, lembretes e listas de tarefas. Tudo fica salvo só neste aparelho (dentro dos seus dados). ===== */
 function ensureOrg(o){ /* usada por migrate(): só literais */
  if(!o.org||typeof o.org!=='object'||Array.isArray(o.org))o.org={};const g=o.org,str=(v,n)=>typeof v==='string'?v.slice(0,n):'',idf=v=>typeof v==='string'&&/^[\w-]{1,24}$/.test(v)?v:'x'+Math.random().toString(36).slice(2,9),arr=(v,n)=>(Array.isArray(v)?v:[]).filter(x=>x&&typeof x==='object').slice(0,n);
- g.notes=arr(g.notes,500).map(x=>({id:idf(x.id),t:str(x.t,120),d:str(x.d,5000),u:Number.isFinite(+x.u)?+x.u:0}));
+ g.notes=arr(g.notes,500).map(x=>({id:idf(x.id),t:str(x.t,120),d:str(x.d,5000),u:Number.isFinite(+x.u)?+x.u:0,p:x.p?1:0}));
  g.rems=arr(g.rems,500).map(x=>({id:idf(x.id),t:str(x.t,120),d:str(x.d,500),at:/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(x.at)?x.at:'',done:x.done?1:0,fired:x.fired?1:0})).filter(x=>x.at);
  g.lists=arr(g.lists,100).map(l=>({id:idf(l.id),n:str(l.n,80),items:arr(l.items,300).map(i=>({id:idf(i.id),t:str(i.t,200),ok:i.ok?1:0}))}));
  g.asked=g.asked?1:0;return o}
@@ -774,9 +806,9 @@ const ntBox=(c,id,t,i)=>`<button class="ck${c?' on':''}" data-act="${t}" data-id
 function vNt(){const o=S.org,pr=o.rems.filter(r=>!r.done).length,pt=sum(o.lists,l=>l.items.filter(i=>!i.ok).length);
  return `<div class="sw"><button class="ib" data-act="nav" data-id="home" aria-label="Voltar">‹</button><h2 style="margin:0">Anotações</h2><span style="width:44px"></span></div>
  <div class="ntseg" role="tablist">${[['notes','Notas',o.notes.length],['rems','Lembretes',pr],['lists','Tarefas',pt]].map(([k,n,c])=>`<button role="tab" aria-selected="${NTV===k}" class="${NTV===k?'on':''}" data-act="ntab" data-id="${k}">${n}${c?` <i>${c}</i>`:''}</button>`).join('')}</div>${NTV==='notes'?ntNotes():NTV==='rems'?ntRems():ntLists()}`}
-function ntNotes(){const L=[...S.org.notes].sort((a,b)=>b.u-a.u);return `<button class="b1 full" data-act="nnew" style="margin-bottom:10px">+ Nova nota</button>${L.length?L.map(n=>`<button class="card ntc" data-act="nedit" data-id="${n.id}"><b>${esc(n.t||'Sem título')}</b>${n.d?`<p>${esc(n.d.slice(0,140))}</p>`:''}<span class="lbl">${nWhen(n.u)}</span></button>`).join(''):'<div class="card empty">Nenhuma nota ainda. Toque em “Nova nota” para começar. Elas são salvas sozinhas.</div>'}`}
+function ntNotes(){const L=[...S.org.notes].sort(nsort);return `<button class="b1 full" data-act="nnew" style="margin-bottom:10px">+ Nova nota</button>${L.length?L.map(n=>`<div class="ntw${n.p?' pin':''}"><button class="card ntc" data-act="nedit" data-id="${n.id}"><b>${esc(n.t||'Sem título')}</b>${n.d?`<p>${esc(n.d.slice(0,140))}</p>`:''}<span class="lbl">${n.p?'Fixada · ':''}${nWhen(n.u)}</span></button><button type="button" class="ntp" data-act="npin" data-id="${n.id}" aria-pressed="${n.p?'true':'false'}" aria-label="${n.p?'Desafixar':'Fixar no topo'}: ${esc(n.t||'Sem título')}">${PINI}</button></div>`).join(''):'<div class="card empty">Nenhuma nota ainda. Toque em “Nova nota” para começar. Elas são salvas sozinhas.</div>'}`}
 function nEdit(id){const n=find(S.org.notes,id);if(!n)return;NED=id;const o=$('#ov');
- o.innerHTML=`<div class="sheet"><h3>Nota</h3><label>Título<input id="ntT" maxlength="120" value="${esc(n.t)}" autocomplete="off" placeholder="Título"></label><label>Descrição<textarea id="ntD" rows="9" maxlength="5000" placeholder="Escreva aqui...">${esc(n.d)}</textarea></label><p class="lbl" id="ntS">Salva automaticamente enquanto você escreve.</p><div class="btns"><button class="b2 neg" data-act="ndel" data-id="${id}">Excluir</button><button class="b1" data-act="nclose">Concluir</button></div></div>`;o.hidden=false;setTimeout(()=>{const e=$('#ntT');if(e&&!n.t&&!n.d)e.focus()},60)}
+ o.innerHTML=`<div class="sheet"><h3>Nota</h3><label>Título<input id="ntT" maxlength="120" value="${esc(n.t)}" autocomplete="off" placeholder="Título"></label><label>Descrição<textarea id="ntD" rows="9" maxlength="5000" placeholder="Escreva aqui...">${esc(n.d)}</textarea></label><p class="lbl" id="ntS">Salva automaticamente enquanto você escreve.</p><button type="button" class="b2 full ntpb" id="ntPin" data-act="npin" data-id="${id}" aria-pressed="${n.p?'true':'false'}">${PINI}<span>${n.p?'Fixada no topo (desafixar)':'Fixar no topo'}</span></button><div class="btns"><button class="b2 neg" data-act="ndel" data-id="${id}">Excluir</button><button class="b1" data-act="nclose">Concluir</button></div></div>`;o.hidden=false;setTimeout(()=>{const e=$('#ntT');if(e&&!n.t&&!n.d)e.focus()},60)}
 function flushNt(){clearTimeout(NSV);if(NPEND){NPEND=0;save()}}
 function ntClose(){const id=NED;NED=null;flushNt();const n=id&&find(S.org.notes,id);if(n&&!n.t.trim()&&!n.d.trim())S.org.notes=S.org.notes.filter(x=>x!==n);save();render()}
 function permCard(){const p=permState();return `<div class="card ntp"><b>Avisos no horário</b><p class="lbl">${p==='granted'?'Ativados: o navegador avisa no horário do lembrete.':p==='denied'?'Bloqueados neste navegador. Para receber avisos, libere nas configurações do site.':p==='na'?'Este navegador não oferece avisos. Os lembretes aparecem aqui e no sino de notificações.':'Permita os avisos do navegador para ser lembrado no horário.'} Com o app fechado o aviso não é garantido (depende do navegador e do sistema). Ao abrir, os lembretes vencidos aparecem no sino.</p>${p==='default'?'<button class="b2" data-act="rperm" style="margin-top:8px">Ativar avisos</button>':''}</div>`}
@@ -1237,8 +1269,8 @@ window.addEventListener('storage',async e=>{if(e.storageArea!==localStorage||STA
  const orgOk=()=>!!(typeof S==='object'&&S&&S.org&&Array.isArray(S.org.notes)&&Array.isArray(S.org.lists)&&(!SECMODE||DEK));
  const ttl=n=>(n.t||'').trim()||((n.d||'').trim().split('\n')[0].slice(0,60))||'Sem título';
  function nRender(){const o=$('#nbd');if(!orgOk()){o.innerHTML='<div class="qemp">Entre na sua conta para usar as notas.</div>';return}
-  if(QED){const n=find(S.org.notes,QED);if(!n){QED=null}else{o.innerHTML=`<div class="qbar"><button type="button" data-nq="back">‹ Notas</button>${QCF?'<span><button type="button" data-nq="no">Cancelar</button><button type="button" class="qdel" data-nq="yes">Confirmar exclusão</button></span>':'<button type="button" class="qdel" data-nq="del">Excluir</button>'}</div><div class="qnt"><input id="nqT" maxlength="120" value="${esc(n.t)}" placeholder="Título" autocomplete="off" aria-label="Título da nota"><textarea id="nqD" maxlength="5000" placeholder="Escreva aqui..." aria-label="Texto da nota">${esc(n.d)}</textarea><p class="qs" id="nqS" role="status">Salva automaticamente enquanto você escreve.</p></div>`;return}}
-  const L=[...S.org.notes].sort((a,b)=>b.u-a.u);o.innerHTML=`<button type="button" class="b1 qnew" data-nq="new">+ Nova nota</button>${L.length?`<div class="qlist">${L.map(n=>`<button type="button" class="qrow" data-nq="open" data-id="${n.id}"><b>${esc(ttl(n))}</b><span>${esc(((n.t||'').trim()?(n.d||''):(n.d||'').split('\n').slice(1).join(' ')).trim().slice(0,70)||nWhen(n.u))}</span></button>`).join('')}</div>`:'<div class="qemp">Nenhuma nota ainda. Toque em “+ Nova nota”.</div>'}`}
+  if(QED){const n=find(S.org.notes,QED);if(!n){QED=null}else{o.innerHTML=`<div class="qbar"><button type="button" data-nq="back">‹ Notas</button><button type="button" class="ntp qpin" data-act="npin" data-id="${n.id}" aria-pressed="${n.p?'true':'false'}" aria-label="${n.p?'Desafixar':'Fixar no topo'}">${PINI}</button>${QCF?'<span><button type="button" data-nq="no">Cancelar</button><button type="button" class="qdel" data-nq="yes">Confirmar exclusão</button></span>':'<button type="button" class="qdel" data-nq="del">Excluir</button>'}</div><div class="qnt"><input id="nqT" maxlength="120" value="${esc(n.t)}" placeholder="Título" autocomplete="off" aria-label="Título da nota"><textarea id="nqD" maxlength="5000" placeholder="Escreva aqui..." aria-label="Texto da nota">${esc(n.d)}</textarea><p class="qs" id="nqS" role="status">Salva automaticamente enquanto você escreve.</p></div>`;return}}
+  const L=[...S.org.notes].sort(nsort);o.innerHTML=`<button type="button" class="b1 qnew" data-nq="new">+ Nova nota</button>${L.length?`<div class="qlist">${L.map(n=>`<div class="qrw"><button type="button" class="qrow" data-nq="open" data-id="${n.id}"><b>${esc(ttl(n))}</b><span>${n.p?'Fixada · ':''}${esc(((n.t||'').trim()?(n.d||''):(n.d||'').split('\n').slice(1).join(' ')).trim().slice(0,70)||nWhen(n.u))}</span></button><button type="button" class="ntp" data-act="npin" data-id="${n.id}" aria-pressed="${n.p?'true':'false'}" aria-label="${n.p?'Desafixar':'Fixar no topo'}: ${esc(ttl(n))}">${PINI}</button></div>`).join('')}</div>`:'<div class="qemp">Nenhuma nota ainda. Toque em “+ Nova nota”.</div>'}`}
  function nLeave(){const id=QED;QED=null;QCF=false;clearTimeout(QT);if(typeof flushNt==='function')flushNt();if(orgOk()&&id){const n=find(S.org.notes,id);if(n&&!n.t.trim()&&!n.d.trim()){S.org.notes=S.org.notes.filter(x=>x!==n);save()}}}
  $('#npan').addEventListener('click',e=>{const b=e.target.closest('[data-nq]');if(!b||!orgOk())return;const a=b.dataset.nq;
   if(a==='new'){const n={id:nid(),t:'',d:'',u:Date.now()};S.org.notes.unshift(n);save();QED=n.id;QCF=false;nRender();const t=$('#nqT');if(t)t.focus({preventScroll:true})}
@@ -1262,8 +1294,89 @@ window.addEventListener('storage',async e=>{if(e.storageArea!==localStorage||STA
  /* trancar/sair: fecha tudo e limpa o conteúdo da tela (nada de outra conta fica visível) */
  const lk=$('#lock');new MutationObserver(()=>{if(!lk.hidden){closeMenu(true);if(!WIN.notes.hidden||QED){QED=null;QCF=false;clearTimeout(QT)}['notes','tasks'].forEach(n=>{WIN[n].hidden=true;WIN[n].classList.remove('min')});$('#nbd').innerHTML='';$('#kbd').innerHTML='';if(!WIN.calc.hidden)window.__calcToggle(false)}else place()}).observe(lk,{attributes:true,attributeFilter:['hidden']});
  place();
+ window.__qtNR=()=>{if(!WIN.notes.hidden)nRender()};
  window.__qt={open:openW,close:closeW,menu:()=>menuOpen,dock:()=>({...dk})};
 })();
+/* ===== v7.7: aviso de backup (30 dias), notas fixadas, busca única e resumo do mês ===== */
+const PINI='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6l-1 6 3 3v2H7v-2l3-3-1-6z"/><path d="M12 14v7"/></svg>';
+const nsort=(a,b)=>(b.p?1:0)-(a.p?1:0)||b.u-a.u;
+/* 1) aviso discreto na Home: 30+ dias sem backup (respeita o lembrete desligado; "Depois" adia por 7 dias) */
+function bkpBanner(){try{if(!S||!S.pref||!(S.pref.br>0))return'';const td=todayStr(),f=S.flags||{},at=f.bkpAt;let txt;
+ if(at){const d=dd(td,at);if(d<30)return'';txt=`Faz ${d} dias desde o último backup (${dmy(at)}).`}
+ else if(f.bkp){txt='Faz tempo desde o último backup.'}
+ else{const d=dd(td,(S.ntf&&S.ntf.since)||td);if(d<30)return'';txt=`Você ainda não exportou nenhum backup (o app tem ${d} dias de uso).`}
+ if(f.bkpSnz&&dd(td,f.bkpSnz)<7)return'';
+ return `<div class="bkb" role="region" aria-label="Lembrete de backup"><p><b>Proteja seus dados.</b> ${txt}</p><div class="bkr"><button type="button" class="b1" data-act="bkpnow">Exportar agora</button><button type="button" class="b2" data-act="bkpsnz">Depois</button></div></div>`}catch(e){return''}}
+/* 2) notas fixadas */
+function npinFix(id){const n=find(S.org.notes,id);if(!n)return;n.p=n.p?0:1;save();const b=$('#ntPin');if(b){b.setAttribute('aria-pressed',n.p?'true':'false');const sp=b.querySelector('span');if(sp)sp.textContent=n.p?'Fixada no topo (desafixar)':'Fixar no topo'}
+ render();if(window.__qtNR){const had=document.activeElement&&document.activeElement.dataset&&document.activeElement.dataset.act==='npin'&&document.activeElement.closest('#npan');window.__qtNR();if(had){const q=document.querySelector('#npan [data-act=npin][data-id="'+id+'"]');if(q)q.focus({preventScroll:true})}}
+ toast(n.p?'Nota fixada no topo':'Nota desafixada')}
+/* 3) busca única: lançamentos, notas e tarefas */
+const sqN=v=>String(v==null?'':v).normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+function sqBar(){return `<button type="button" class="sqb" data-act="sqopen" aria-label="Buscar lançamentos, notas e tarefas"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span>Buscar lançamentos, notas e tarefas</span></button>`}
+function sqFind(q){const T=sqN(q).trim().split(/\s+/).filter(Boolean),hit=h=>{h=sqN(h);return T.every(t=>h.includes(t))};
+ const it=S.items.filter(i=>hit([i.d,i.cat,i.t==='inc'?'receita recebido':'despesa pago',String(i.c).replace('.',','),Number(i.c).toFixed(2).replace('.',',')].join(' '))).sort((a,b)=>String(a.d).localeCompare(String(b.d),'pt-BR')).slice(0,30);
+ const nt=S.org.notes.filter(n=>hit((n.t||'')+' '+(n.d||''))).sort(nsort).slice(0,30);
+ const tk=[];S.org.lists.forEach(l=>l.items.forEach(x=>{if(hit(x.t+' '+l.n))tk.push({x,l})}));
+ return{it,nt,tk:tk.slice(0,30)}}
+function sqRender(){const q=($('#sqi')||{}).value||'',o=$('#sqr');if(!o)return;if(sqN(q).trim().length<2){o.innerHTML='<div class="sqe">Digite pelo menos 2 letras. A busca procura nos seus lançamentos, notas e tarefas.</div>';return}
+ const r=sqFind(q),tot=r.it.length+r.nt.length+r.tk.length;if(!tot){o.innerHTML=`<div class="sqe">Nada encontrado para “${esc(q.trim())}”.</div>`;return}
+ const tr=i=>i.fixed?`todo mês · dia ${i.day}`:(i.ym?MN[+i.ym.slice(5)-1]+' de '+i.ym.slice(0,4):'');
+ o.innerHTML=(r.it.length?`<div class="sqh">Lançamentos (${r.it.length})</div>`+r.it.map(i=>`<button type="button" class="sqg" data-act="sqgo" data-k="item" data-id="${i.id}"><span><b>${esc(i.d)}</b><small>${i.t==='inc'?'Receita':'Despesa'}${i.cat?' · '+esc(i.cat):''} · ${esc(tr(i))}</small></span><span class="sqv ${i.t==='inc'?'pos':'neg'}">${i.t==='inc'?'+':'−'}${brl(i.c)}</span></button>`).join(''):'')
+ +(r.nt.length?`<div class="sqh">Notas (${r.nt.length})</div>`+r.nt.map(n=>`<button type="button" class="sqg" data-act="sqgo" data-k="note" data-id="${n.id}"><span><b>${esc((n.t||'').trim()||(n.d||'').trim().split('\n')[0].slice(0,60)||'Sem título')}</b><small>${n.p?'Fixada · ':''}${esc((n.d||'').replace(/\s+/g,' ').trim().slice(0,70)||nWhen(n.u))}</small></span></button>`).join(''):'')
+ +(r.tk.length?`<div class="sqh">Tarefas (${r.tk.length})</div>`+r.tk.map(({x,l})=>`<button type="button" class="sqg" data-act="sqgo" data-k="task" data-id="${x.id}" data-l="${l.id}"><span><b>${x.ok?'✓ ':''}${esc(x.t)}</b><small>${esc(l.n)} · ${x.ok?'concluída':'pendente'}</small></span></button>`).join(''):'')}
+function sqOpen(){const o=$('#ov');o.innerHTML=`<div class="sheet sqs" role="dialog" aria-modal="true" aria-label="Buscar"><h3>Buscar</h3><input id="sqi" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="60" placeholder="Lançamentos, notas e tarefas" aria-label="Buscar em lançamentos, notas e tarefas"><div id="sqr" role="status" aria-live="polite"></div><div class="btns"><button type="button" class="b2" data-act="sqx">Fechar</button></div></div>`;o.hidden=false;sqRender();setTimeout(()=>{const e=$('#sqi');if(e)e.focus()},60)}
+document.addEventListener('input',e=>{if(e.target.id==='sqi')sqRender()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#sqi')){closeOv()}});
+function sqGo(id,b){const k=b.dataset.k;closeOv();
+ if(k==='item'){const i=find(S.items,id);if(!i)return;vm=i.fixed?ymOf(new Date()):(i.ym||ymOf(new Date()));go(i.t==='inc'?'rec':'des')}
+ else if(k==='note'){go('nt');NTV='notes';render();nEdit(id)}
+ else{NTV='lists';NTO=b.dataset.l;go('nt')}}
+/* 4) resumo do mês em imagem (só totais e categorias; sem descrições, contas, dívidas ou caixinhas por nome) */
+const RSMN=m=>MN[+m.slice(5)-1].replace(/^./,c=>c.toUpperCase())+' de '+m.slice(0,4);
+function rsCard(){const now=ymOf(new Date()),def=rm?ry+'-'+rm:(String(ry)===now.slice(0,4)?now:ry+'-12');
+ return `<div class="card"><h3>Resumo para compartilhar</h3><p class="lbl">Cria uma imagem com os totais do mês e as categorias onde você mais gastou. Não aparecem descrições, nomes, contas nem lançamentos.</p><label>Mês do resumo<select id="rsSel">${MN.map((n,i)=>{const v=ry+'-'+pad(i+1);return `<option value="${v}"${v===def?' selected':''}>${n}</option>`}).join('')}</select></label><button type="button" class="b1 full" data-act="rsopen">Criar imagem do mês</button></div>`}
+function rsData(m){const f=flows()[m]||{inc:0,exp:0,dp:0,bx:0},cs=catSpend(m),cats=Object.entries(cs).map(([k,v])=>[k,v.paid]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]),tot=sum(cats,x=>x[1]);
+ return{f,res:net(f),cats,tot}}
+function rsDraw(m,hide,img){const W=1080,H=1350,cv=document.createElement('canvas');cv.width=W;cv.height=H;const x=cv.getContext('2d'),d=rsData(m),f=d.f,F='system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+ const g=x.createLinearGradient(0,0,W*.55,H);g.addColorStop(0,'#0A1A44');g.addColorStop(.6,'#143C9E');g.addColorStop(1,'#1D4ED8');x.fillStyle=g;x.fillRect(0,0,W,H);
+ const rg=x.createRadialGradient(W*.9,H*.05,10,W*.9,H*.05,520);rg.addColorStop(0,'rgba(96,165,250,.45)');rg.addColorStop(1,'rgba(96,165,250,0)');x.fillStyle=rg;x.fillRect(0,0,W,H);
+ const rr=(a,b,w,h,r)=>{x.beginPath();x.moveTo(a+r,b);x.arcTo(a+w,b,a+w,b+h,r);x.arcTo(a+w,b+h,a,b+h,r);x.arcTo(a,b+h,a,b,r);x.arcTo(a,b,a+w,b,r);x.closePath()};
+ const T=(t,a,b,sz,w,c,al)=>{x.font=`${w} ${sz}px ${F}`;x.fillStyle=c;x.textAlign=al||'left';x.textBaseline='alphabetic';x.fillText(t,a,b)};
+ T('WOLFIN',72,128,46,800,'#fff');T('Domine seu dinheiro.',72,172,26,500,'#BFD6FF');
+ if(img){x.save();x.beginPath();x.arc(930,118,66,0,7);x.closePath();x.fillStyle='rgba(255,255,255,.14)';x.fill();x.clip();const r=img.naturalWidth/img.naturalHeight,h=150,w=h*r;x.drawImage(img,930-w/2,118-66,w,h);x.restore();x.beginPath();x.arc(930,118,66,0,7);x.lineWidth=4;x.strokeStyle='rgba(255,255,255,.55)';x.stroke()}
+ T('RESUMO DO MÊS',72,300,28,700,'#93C5FD');T(RSMN(m),72,382,78,800,'#fff');
+ const base=f.inc>0?f.inc:0,pc=v=>base?Math.round(v/base*100)+'% da receita':'—',val=v=>hide?pc(v):brl(v);
+ rr(60,430,960,360,36);x.fillStyle='rgba(255,255,255,.10)';x.fill();x.lineWidth=2;x.strokeStyle='rgba(255,255,255,.22)';x.stroke();
+ const rows=[['Receitas',f.inc,'#86EFAC'],['Despesas',f.exp,'#FCA5A5'],['Dívidas pagas',f.dp,'#fff'],['Guardado nas caixinhas',f.bx,'#fff']];
+ rows.forEach((r,i)=>{const y=506+i*86;T(r[0],100,y,34,500,'#DBEAFE');T(hide&&r[0]==='Receitas'?(f.inc>0?'100%':'—'):val(r[1]),980,y,40,800,r[2],'right');if(i<3){x.fillStyle='rgba(255,255,255,.14)';x.fillRect(100,y+30,880,2)}});
+ const res=d.res,pos=res>=0;rr(60,820,960,150,36);x.fillStyle=pos?'rgba(34,197,94,.20)':'rgba(239,68,68,.22)';x.fill();x.lineWidth=2;x.strokeStyle=pos?'rgba(134,239,172,.55)':'rgba(252,165,165,.55)';x.stroke();
+ T('Resultado do mês',100,890,32,600,'#fff');T(hide?(base?(pos?'Sobrou ':'Faltou ')+Math.abs(Math.round(res/base*100))+'%':'—'):(pos?'+':'−')+brl(Math.abs(res)).replace('R$ ','R$ '),980,892,52,800,pos?'#86EFAC':'#FCA5A5','right');T(pos?'Receitas maiores que as saídas do mês':'Saídas maiores que as receitas do mês',100,940,24,500,'#DBEAFE');
+ T('ONDE VOCÊ MAIS GASTOU',72,1038,26,700,'#93C5FD');
+ let cs=d.cats.slice(0,3);if(d.cats.length>3)cs=cs.concat([['Outras',sum(d.cats.slice(3),z=>z[1])]]);
+ if(!cs.length)T('Sem despesas pagas neste mês.',72,1100,32,500,'#DBEAFE');
+ else cs.forEach((c,i)=>{const y=1090+i*52,p=d.tot?c[1]/d.tot:0;T(c[0],72,y+20,30,600,'#fff');rr(360,y,520,22,11);x.fillStyle='rgba(255,255,255,.16)';x.fill();if(p>0){rr(360,y,Math.max(22,520*p),22,11);x.fillStyle='#60A5FA';x.fill()}T(Math.round(p*100)+'%',1008,y+20,30,700,'#fff','right')});
+ let host='';try{if(location.protocol==='https:')host=location.host+location.pathname.replace(/index\.html$/,'').replace(/\/$/,'')}catch(e){}
+ T('Feito com WOLFIN',72,1306,26,700,'#fff');if(host)T(host,1008,1306,24,500,'#BFD6FF','right');
+ return cv}
+const RS={m:null,cv:null,img:null};
+function rsImg(){return new Promise(ok=>{try{const im=new Image();im.onload=()=>ok(im);im.onerror=()=>ok(null);im.src=mcUrl(mcCur());setTimeout(()=>ok(null),2500)}catch(e){ok(null)}})}
+async function rsOpen(){const sel=$('#rsSel'),m=sel?sel.value:ymOf(new Date());if(!/^\d{4}-\d{2}$/.test(m))return;const f=flows()[m]||{inc:0,exp:0,dp:0,bx:0};
+ if(!(f.inc||f.exp||f.dp||f.bx)&&!rsData(m).cats.length)return toast('Este mês ainda não tem receitas ou despesas pagas.');
+ RS.m=m;RS.img=await rsImg();const o=$('#ov');o.innerHTML=`<div class="sheet rss" role="dialog" aria-modal="true" aria-label="Resumo do mês"><h3>Resumo de ${esc(RSMN(m))}</h3><div class="rsw" id="rsw"></div><label class="rsl"><input type="checkbox" id="rshide"> Ocultar valores em R$ (mostrar só porcentagens)</label><p class="rsn">A imagem tem só totais do mês e categorias. Não inclui descrições, nomes, contas, dívidas, caixinhas nem lançamentos. Nada é enviado: você escolhe onde compartilhar.</p><div class="btns">${navigator.share&&navigator.canShare?'<button type="button" class="b1" data-act="rsshare">Compartilhar</button>':''}<button type="button" class="${navigator.share&&navigator.canShare?'b2':'b1'}" data-act="rssave">Salvar imagem</button><button type="button" class="b2" data-act="rsx">Fechar</button></div></div>`;o.hidden=false;rsPaint()}
+function rsPaint(){const h=$('#rshide');RS.cv=rsDraw(RS.m,!!(h&&h.checked),RS.img);RS.cv.id='rscv';RS.cv.setAttribute('role','img');RS.cv.setAttribute('aria-label','Prévia da imagem do resumo de '+RSMN(RS.m));const w=$('#rsw');if(w){w.innerHTML='';w.appendChild(RS.cv)}}
+document.addEventListener('change',e=>{if(e.target.id==='rshide')rsPaint()});
+const rsBlob=()=>new Promise(r=>RS.cv.toBlob(r,'image/png')),rsName=()=>'wolfin-resumo-'+RS.m+'.png';
+Object.assign(ACT,{
+ bkpnow:async()=>{await ACT.exp();render()},
+ bkpsnz:()=>{S.flags=S.flags||{};S.flags.bkpSnz=todayStr();save();render()},
+ npin:id=>npinFix(id),
+ sqopen:()=>sqOpen(),sqx:()=>closeOv(),sqgo:(id,b)=>sqGo(id,b),
+ rsopen:()=>{rsOpen()},rsx:()=>closeOv(),
+ rssave:async()=>{try{const bl=await rsBlob(),u=URL.createObjectURL(bl),a=document.createElement('a');a.href=u;a.download=rsName();document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),2000);toast('Imagem salva')}catch(e){toast('Não foi possível salvar a imagem')}},
+ rsshare:async()=>{try{const bl=await rsBlob(),file=new File([bl],rsName(),{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[file]}))await navigator.share({files:[file],title:'Meu resumo do mês no WOLFIN'});else ACT.rssave()}catch(e){if(!(e&&e.name==='AbortError'))toast('Não foi possível compartilhar')}}
+});
+
 
 /* ===== SEGURANÇA: usuário + senha, dados criptografados (AES-256-GCM, chave derivada por PBKDF2) =====
    • Os dados ficam cifrados no aparelho com uma chave aleatória (DEK). A DEK fica guardada "embrulhada" duas vezes:

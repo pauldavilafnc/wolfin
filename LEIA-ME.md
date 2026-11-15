@@ -230,3 +230,11 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - **Tarefas:** checklist simples (adicionar, marcar/desmarcar, excluir; concluídas ficam riscadas e vão para o fim). Ficam numa lista chamada **"Tarefas rápidas"** dentro das listas de Anotações → Tarefas (`S.org.lists`, id `qk`). Ela só é criada quando você adiciona a primeira tarefa; nada é criado sozinho.
 - **Armazenamento:** notas e tarefas ficam nos dados da conta (criptografados quando a conta tem senha, isolados por conta e incluídos nos backups como as demais anotações). Nenhum serviço externo. Lógica de backup, autenticação e dados financeiros não mudaram.
 - Teste: `python3 tests/run_all.py --suite ferramentas_rapidas` (60 verificações).
+
+## Novidades da versão 7.7
+- **Aviso de backup (Home):** aparece um aviso discreto quando passam **30 dias ou mais** sem exportar um backup (ou 30 dias de uso sem nenhum backup), com **"Exportar agora"** (mesma exportação de sempre) e **"Depois"** (adia por 7 dias). Respeita o lembrete de backup de Configurações (desligado = nunca aparece). O adiamento fica em `S.flags.bkpSnz`.
+- **Fixar notas:** pino em cada nota (lista da Home/Anotações, janela Notas das ferramentas rápidas e tela de edição). Fixadas ficam no topo; dentro de cada grupo, a mais recente primeiro. Guardado no campo `p` da nota (`S.org.notes`), incluído nos backups.
+- **Busca única:** campo na Home que procura (sem diferenciar maiúsculas/acentos, mínimo 2 letras, todas as palavras) em lançamentos, notas e tarefas; resultados agrupados, tocar leva ao item. Não guarda nada e não usa internet.
+- **Resumo do mês em imagem:** em Relatórios, escolha o mês e gere uma imagem 1080×1350 (PNG) com receitas, despesas, dívidas pagas, guardado, resultado e principais categorias (%). **Nunca inclui** descrições de lançamentos, nomes, notas ou tarefas. Opção "Ocultar valores em R$" (só porcentagens). Botões Salvar imagem e, quando o navegador permite, Compartilhar. Gerada no próprio aparelho; nada é enviado.
+- **Não mudou:** chaves de armazenamento, backups, senhas, criptografia.
+- Teste: `python3 tests/run_all.py --suite novidades_77` (62 verificações).
