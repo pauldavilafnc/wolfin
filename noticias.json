@@ -1,6 +1,87 @@
 {
- "at": "2026-11-15T06:57-03:00",
+ "at": "2026-11-15T10:06-03:00",
  "items": [
+  {
+   "c": "mu",
+   "t": "Megaspeed afirma que Alice Huang deixou a empresa em agosto de 2025",
+   "f": "G1 Mundo",
+   "d": "2026-11-15",
+   "h": "09:45",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/15/nvidia-megaspeed-alice-huang-espionagem-china-estados-unidos.ghtml",
+   "s": "Alice Huang participando de um jantar organizado pelo CEO e cofundador da Nvidia. AFP A empresa de centros de dados Megaspeed International, investigada pelo suposto desvio de chips da Nvidia para a China, afirmou neste domingo…"
+  },
+  {
+   "c": "mu",
+   "t": "Coreia do Sul investiga 1º colocado em prova após confissão de fraude com IA",
+   "f": "G1 Mundo",
+   "d": "2026-11-15",
+   "h": "09:06",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/15/coreia-do-sul-investiga-1o-colocado-em-prova-apos-confissao-de-fraude-com-ia.ghtml",
+   "s": "Prova; concurso público; questões objetivas; aluno fazendo prova; cartão resposta Reprodução A polícia da Coreia do Sul anunciou neste domingo (15) que abriu uma investigação depois que o candidato com a melhor pontuação em um…"
+  },
+  {
+   "c": "br",
+   "t": "Aeroporto Santos Dumont faz 90 anos: conheça histórias do terminal",
+   "f": "InfoMoney",
+   "d": "2026-11-15",
+   "h": "08:51",
+   "u": "https://www.infomoney.com.br/brasil/aeroporto-santos-dumont-faz-90-anos-conheca-historias-do-terminal/",
+   "s": "Inaugurado em 1936, aeroporto enfrentou incêndio, passou por ampliações e virou cartão-postal do Rio The post Aeroporto Santos Dumont faz 90 anos: conheça histórias do terminal appeared first on InfoMoney ."
+  },
+  {
+   "c": "mu",
+   "t": "As pessoas que só precisam dormir 4 horas por dia — e como a genética explica isso",
+   "f": "BBC News Brasil",
+   "d": "2026-11-15",
+   "h": "08:12",
+   "u": "https://www.bbc.com/portuguese/articles/cw99e005k17lo?at_medium=RSS&at_campaign=rss",
+   "s": "A ciência tem comprovado que mutações podem levar algumas pessoas a precisarem de muito menos sono. Mas pode ser bem difícil saber se você é uma delas."
+  },
+  {
+   "c": "br",
+   "t": "Mercado de CRI perdeu fôlego? Para gestor, alguns setores sustentam o crédito",
+   "f": "InfoMoney",
+   "d": "2026-11-15",
+   "h": "08:00",
+   "u": "https://www.infomoney.com.br/onde-investir/mercado-de-cri-perdeu-folego-para-gestor-alguns-setores-sustentam-o-credito/",
+   "s": "Para Lucas Araújo, da AF Invest, alguns segmentos conseguem absorver melhor o custo do financiamento The post Mercado de CRI perdeu fôlego? Para gestor, alguns setores sustentam o crédito appeared first on InfoMoney ."
+  },
+  {
+   "c": "mu",
+   "t": "Por que Trump está sob pressão por escândalo sexual na Nvidia",
+   "f": "BBC News Brasil",
+   "d": "2026-11-15",
+   "h": "07:50",
+   "u": "https://www.bbc.com/portuguese/articles/cm4gn9ly3qq6o?at_medium=RSS&at_campaign=rss",
+   "s": "A vida amorosa do ex-diretor da Nvidia, Jensen Huang, desencadeou a crise. Mas muitas das questões que surgiram precisam ser respondidas pela Casa Branca."
+  },
+  {
+   "c": "mu",
+   "t": "China Shock 2.0: por que a China produz tanto e como isso ameaça o Brasil?",
+   "f": "InfoMoney",
+   "d": "2026-11-15",
+   "h": "07:30",
+   "u": "https://www.infomoney.com.br/economia/china-shock-2-0-producao-china-industria-brasil/",
+   "s": "Com produção industrial acima da demanda interna em diferentes setores, China amplia exportações e pressiona fabricantes de outros países; entenda o novo choque e seus efeitos sobre a economia brasileira The post China Shock 2.0…"
+  },
+  {
+   "c": "mu",
+   "t": "Hackers invadem subsidiária dos Correios da França e expõem dados de 22 milhões",
+   "f": "G1 Economia",
+   "d": "2026-11-15",
+   "h": "07:21",
+   "u": "https://g1.globo.com/tecnologia/ciberseguranca/noticia/2026/11/15/hackers-invadem-subsidiaria-dos-correios-da-franca-e-expoem-dados-de-22-milhoes.ghtml",
+   "s": "A cibersegurança continua sendo uma preocupação crescente. Freepik A La Poste, equivalente aos Correios no Brasil e um dos maiores grupos de serviços da França, confirmou no sábado (14) que sua subsidiária Maileva foi vítima de…"
+  },
+  {
+   "c": "br",
+   "t": "Juros altos devem manter FIDCs atrativos e adiar busca por mais risco, diz Solis",
+   "f": "InfoMoney",
+   "d": "2026-11-15",
+   "h": "07:10",
+   "u": "https://www.infomoney.com.br/onde-investir/juros-altos-devem-manter-fidcs-atrativos-e-adiar-busca-por-mais-risco-diz-solis/",
+   "s": "Gestora prioriza recebíveis comerciais curtos, consignado e crédito imobiliário com garantias para proteger a carteira do risco de calote The post Juros altos devem manter FIDCs atrativos e adiar busca por mais risco, diz Solis…"
+  },
   {
    "c": "mu",
    "t": "Recuo de forças do Iêmen amplia poder dos houthis sobre rota do comércio global",
@@ -20,15 +101,6 @@
    "s": "O g1 passou um dia com a vaca mais cara do mundo; veja como foi A vaca mais cara do mundo é brasileira, tem cinco donos e três clones para chamar de seus. Avaliada em R$ 54 milhões, Donna FIV CIAV nasceu no Paraná e hoje vive na…"
   },
   {
-   "c": "br",
-   "t": "O emprego que os millennials evitam por ser “chato” pode pagar até US$ 200 mil",
-   "f": "InfoMoney",
-   "d": "2026-11-15",
-   "h": "05:00",
-   "u": "https://www.infomoney.com.br/business/global/o-emprego-que-os-millennials-evitam-por-ser-chato-pode-pagar-ate-us-200-mil/",
-   "s": "Segundo o Índice de Contratações Sazonais 2026 da Monster, contadores e especialistas tributários estavam entre os 13 cargos com maior atividade sazonal na plataforma The post O emprego que os millennials evitam por ser “chato”…"
-  },
-  {
    "c": "mu",
    "t": "XP: Restrições a data centers nos EUA podem atrasar, mas não travar boom da IA",
    "f": "InfoMoney",
@@ -36,15 +108,6 @@
    "h": "05:00",
    "u": "https://www.infomoney.com.br/mercados/xp-restricoes-a-data-centers-nos-eua-podem-atrasar-mas-nao-travar-boom-da-ia/",
    "s": "Expectativa é de que interrupção pós-eleições de meio mandato reduzam investimentos a até 5% The post XP: Restrições a data centers nos EUA podem atrasar, mas não travar boom da IA appeared first on InfoMoney ."
-  },
-  {
-   "c": "br",
-   "t": "Executivos encaram difícil escolha sobre gastos com IA à medida que os custos crescem",
-   "f": "InfoMoney",
-   "d": "2026-11-15",
-   "h": "05:00",
-   "u": "https://www.infomoney.com.br/business/global/executivos-encaram-dificil-escolha-sobre-gastos-com-ia-a-medida-que-os-custos-crescem/",
-   "s": "Para Mark Williams, professor da Universidade de Boston, ambiente de financiamento mais difícil levará a um escrutínio maior das decisões de investimento The post Executivos encaram difícil escolha sobre gastos com IA à medida…"
   },
   {
    "c": "br",
@@ -65,24 +128,6 @@
    "s": "Labubu: o que é boneco que virou febre mundial Durante anos, os bonecos Labubu pareceram imparáveis. Colecionadores de todas as idades compravam avidamente as \"caixas surpresa\" — embalagens lacradas que continham esses…"
   },
   {
-   "c": "mu",
-   "t": "Tendas alagadas e falta de agasalhos: chuvas e chegada do inverno agravam crise humanitária na Faixa de Gaza",
-   "f": "G1 Mundo",
-   "d": "2026-11-15",
-   "h": "02:00",
-   "u": "https://g1.globo.com/mundo/noticia/2026/11/15/tendas-alagadas-e-falta-de-agasalhos-chuvas-e-chegada-do-inverno-agravam-crise-humanitaria-na-faixa-de-gaza.ghtml",
-   "s": "As fortes chuvas e a queda das temperaturas neste outono no hemisfério norte estão agravando a situação humanitária dos civis na Faixa de Gaza. As chuvas torrenciais do último fim de semana mataram pelo menos seis pessoas…"
-  },
-  {
-   "c": "br",
-   "t": "Emprego dos sonhos? Vaga paga até US$ 120 mil para jogar GTA 6",
-   "f": "InfoMoney",
-   "d": "2026-11-14",
-   "h": "18:45",
-   "u": "https://www.infomoney.com.br/carreira/emprego-dos-sonhos-vaga-paga-ate-us-120-mil-para-jogar-gta-6/",
-   "s": "Profissional terá de fazer transmissões ao vivo e analisar a economia virtual do game The post Emprego dos sonhos? Vaga paga até US$ 120 mil para jogar GTA 6 appeared first on InfoMoney ."
-  },
-  {
    "c": "br",
    "t": "Lula cita herói anticolonial das Filipinas ao comentar sua reeleição",
    "f": "Agência Brasil",
@@ -90,51 +135,6 @@
    "h": "16:48",
    "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/lula-cita-heroi-anticolonial-das-filipinas-ao-comentar-sua-reeleicao",
    "s": "Em visita oficial às Filipinas, o presidente Luiz Inácio Lula da Silva citou o herói da independência do país, José Rizal, um símbolo da luta contra o colonialismo, ao se referir a sua reeleição, em outubro. “No último dia 25…"
-  },
-  {
-   "c": "mu",
-   "t": "Como troca de cabos levou ao maior caos aéreo nos EUA desde o 11 de Setembro, segundo o governo Trump",
-   "f": "BBC News Brasil",
-   "d": "2026-11-14",
-   "h": "15:06",
-   "u": "https://www.bbc.com/portuguese/articles/ckd71ne91y79o?at_medium=RSS&at_campaign=rss",
-   "s": "O governo dos Estados Unidos não acredita que a interrupção tenha sido resultado de um ataque cibernético, embora as investigações ainda estejam em andamento."
-  },
-  {
-   "c": "mu",
-   "t": "De onde surgiu a teoria de que haverá um 'apagão mundial' no dia 17 de novembro — e por que ele é improvável",
-   "f": "BBC News Brasil",
-   "d": "2026-11-14",
-   "h": "15:01",
-   "u": "https://www.bbc.com/portuguese/articles/c57429m97421o?at_medium=RSS&at_campaign=rss",
-   "s": "Publicações nas redes associam teste de alertas nos EUA, cena de 'Os Simpsons' e recomendações de emergência a uma suposta interrupção mundial de energia. Não há evidências que sustentem a previsão."
-  },
-  {
-   "c": "mu",
-   "t": "Apagão aéreo nos EUA: especialista aponta vulnerabilidade no sistema",
-   "f": "G1 Mundo",
-   "d": "2026-11-14",
-   "h": "14:57",
-   "u": "https://g1.globo.com/mundo/noticia/2026/11/14/apagao-aereo-nos-eua-especialista-aponta-vulnerabilidade-no-sistema.ghtml",
-   "s": "Moacyr Duarte aponta vulnerabilidade do sistema aéreo dos EUA Ao comentar as declarações do secretário de Transportes dos Estados Unidos, Sean Duffy, sobre o apagão aéreo no país, o especialista em gerenciamento de risco Moacyr…"
-  },
-  {
-   "c": "mu",
-   "t": "Controle de tráfego aéreo dos EUA ainda opera com disquetes; veja como eles funcionam",
-   "f": "G1 Economia",
-   "d": "2026-11-14",
-   "h": "14:23",
-   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/14/controle-de-trafego-aereo-dos-eua-ainda-opera-com-disquetes-veja-como-eles-funcionam.ghtml",
-   "s": "Armazenamento de disquetes, em foto de julho de 2022 Iswoar/Wikimedia Commons O apagão aéreo da última sexta-feira (13) nos Estados Unidos chamou atenção para as ferramentas usadas no país para controlar o tráfego de aviões. O…"
-  },
-  {
-   "c": "mu",
-   "t": "Microsoft afirma que serviços foram totalmente restabelecidos após falha global",
-   "f": "G1 Economia",
-   "d": "2026-11-14",
-   "h": "08:13",
-   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/14/microsoft-afirma-que-servicos-foram-totalmente-restabelecidos-apos-falha-global.ghtml",
-   "s": "Como a falha da Microsoft afetou serviços e eventos em diversas partes do mundo A Microsoft informou neste sábado (14) que seus serviços foram totalmente restabelecidos após uma falha global que durou várias horas. \"Concluímos os…"
   },
   {
    "c": "br",
