@@ -238,3 +238,4 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - **Resumo do mês em imagem:** em Relatórios, escolha o mês e gere uma imagem 1080×1350 (PNG) com receitas, despesas, dívidas pagas, guardado, resultado e principais categorias (%). **Nunca inclui** descrições de lançamentos, nomes, notas ou tarefas. Opção "Ocultar valores em R$" (só porcentagens). Botões Salvar imagem e, quando o navegador permite, Compartilhar. Gerada no próprio aparelho; nada é enviado.
 - **Não mudou:** chaves de armazenamento, backups, senhas, criptografia.
 - Teste: `python3 tests/run_all.py --suite novidades_77` (62 verificações).
+- **Correção (Sobre):** a logo no quadrado ao lado de "Verificar atualização" não aparecia (uma regra antiga escondia a imagem e o arquivo `icon-192.png` podia faltar no repositório). Agora a logo vai embutida no próprio `index.html`.
