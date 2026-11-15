@@ -213,3 +213,11 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - **Os textos descrevem só o que o app faz de verdade:** o app baixa um arquivo; **quem escolhe onde guardar é você** (nada é enviado sozinho para Drive ou outro serviço); importar **substitui** os dados atuais (não mescla); backup com senha exige guardar a senha; nunca compartilhe o arquivo nem a senha.
 - **Não mudou:** exportação, criptografia, importação, restauração, dados financeiros, senhas, chaves `wallstreet.*`.
 - Teste: `python3 tests/run_all.py --suite tutorial_backup` (78 verificações).
+
+## Tela de escolha de mascotes (versão 7.5)
+- **Grade de 3 colunas** (cartões compactos: imagem, nome e cargo; selecionado com borda azul e ✓). Em telas muito estreitas os textos diminuem um pouco para não cortar.
+- **Só nome e cargo**: sem nome do animal nem descrição (Wolfin – CEO, Leônidas – Rei, Don Vito – Magnata, Oráculo – Analista, Brutus – Investidor, Mako – Negociador, Bento – Planejador, Penny – Poupadora, Nyx – Hacker, Elliot – Detetive). Em Ajustes → Meu mascote a lista completa continua igual.
+- **"Já tem conta? Entrar"**: o botão grande ENTRAR fixo embaixo saiu; agora é um link de texto pequeno, com "Entrar" sublinhado, abaixo do Continuar (nas 3 etapas). Leva à tela de entrar na conta (importar backup).
+- **Continuar** maior, azul, fixo na parte de baixo da tela enquanto se rola (cinza-azulado até escolher um mascote).
+- **Gradiente preto inferior removido.**
+- Teste: `python3 tests/run_all.py --suite mascotes_grade`.
