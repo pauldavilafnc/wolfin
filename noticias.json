@@ -1,32 +1,103 @@
 {
- "at": "2026-11-16T05:58-03:00",
+ "at": "2026-11-16T07:46-03:00",
  "items": [
   {
+   "c": "br",
+   "t": "Pix celebra 6 anos como motor de inclusão e eficiência financeira em todo o Brasil",
+   "f": "Banco Central do Brasil",
+   "d": "2026-11-16",
+   "h": "07:46",
+   "u": "https://www.bcb.gov.br/detalhenoticia/21320/noticia"
+  },
+  {
    "c": "mu",
-   "t": "Dow Jones Futuro cai em semana decisiva para Nvidia e mercado de IA",
+   "t": "Economia da China vacila com produção industrial e venda no varejo abaixo do esperado",
    "f": "InfoMoney",
    "d": "2026-11-16",
-   "h": "05:45",
-   "u": "https://www.infomoney.com.br/mercados/dow-jones-futuro-cai-em-semana-decisiva-para-nvidia-e-mercado-de-ia/",
-   "s": "Investidores acompanham os resultados da Nvidia e a possível abertura de capital da Anthropic em meio à crescente fragilidade do mercado de inteligência artificial The post Dow Jones Futuro cai em semana decisiva para Nvidia e…"
+   "h": "07:42",
+   "u": "https://www.infomoney.com.br/economia/economia-da-china-vacila-com-producao-industrial-e-venda-no-varejo-abaixo-do-esperado/",
+   "s": "Os dados de outubro mais fracos do que o esperado são “um começo preocupante” para o quarto trimestre, disse Lynn Song, economista-chefe ⁠do ‌ING para a Grande China The post Economia da China vacila com produção industrial e…"
+  },
+  {
+   "c": "mu",
+   "t": "Ações chinesas fecham perto da mínima de 16 meses",
+   "f": "InfoMoney",
+   "d": "2026-11-16",
+   "h": "07:40",
+   "u": "https://www.infomoney.com.br/mercados/acoes-chinesas-fecham-perto-da-minima-de-16-meses/",
+   "s": "No fechamento, o índice de Xangai e o índice CSI300, que reúne as maiores companhias listadas em Xangai e Shenzhen, caíram 0,9%. O índice Hang Seng, de Hong Kong, subiu 0,5% The post Ações chinesas fecham perto da mínima de 16…"
+  },
+  {
+   "c": "mu",
+   "t": "França vai pedir sanções contra o Irã em resposta ao ataque cibernético contra supermercados",
+   "f": "G1 Mundo",
+   "d": "2026-11-16",
+   "h": "07:31",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/16/franca-vai-pedir-sancoes-contra-o-ira-em-resposta-ao-ataque-cibernetico-contra-supermercados.ghtml",
+   "s": "Imagem do corredor de congelados fechado em um supermercado próximo a Nantes, após um ataque cibernético que teve como alvo os sistemas de refrigeração de redes de supermercados francesas, causando perdas de alimentos e incêndios…"
   },
   {
    "c": "br",
-   "t": "Construção civil cresce, mas lida com juro restritivo e apagão de mão de obra",
-   "f": "InfoMoney",
+   "t": "Caixa começa a pagar parcela do Bolsa Família de novembro",
+   "f": "Agência Brasil",
    "d": "2026-11-16",
-   "h": "05:00",
-   "u": "https://www.infomoney.com.br/economia/construcao-civil-crescimento-desafios-juros-mao-de-obra/",
-   "s": "Estudo revela que a Selic em patamar alto e a escassez de profissionais qualificados ameaçam os investimentos futuros na infraestrutura e no mercado imobiliário The post Construção civil cresce, mas lida com juro restritivo e…"
+   "h": "07:28",
+   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/caixa-comeca-pagar-parcela-do-bolsa-familia-de-novembro",
+   "s": "A Caixa Econômica Federal começa a pagar a parcela de outubro do Bolsa Família. Recebem nesta segunda-feira (16) os beneficiários com Número de Inscrição Social (NIS) de final 1. Neste mês, 19,1 milhões de famílias serão…"
   },
   {
    "c": "br",
-   "t": "InfoMoney é o veículo de imprensa mais influente do mercado financeiro, diz Anbima",
+   "t": "Caminhos da Reportagem mostra negócios de impacto social",
+   "f": "Agência Brasil",
+   "d": "2026-11-16",
+   "h": "07:27",
+   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/caminhos-da-reportagem-mostra-negocios-de-impacto-social",
+   "s": "O que são negócios de impacto social e como essas iniciativas podem transformar realidades? Diferentemente de uma organização sem fins lucrativos e das ações de responsabilidade social de empresas, esse modelo de empreendedorismo…"
+  },
+  {
+   "c": "br",
+   "t": "Minidólar (WDOZ26) mantém viés de alta; veja suportes e resistências",
    "f": "InfoMoney",
    "d": "2026-11-16",
-   "h": "05:00",
-   "u": "https://www.infomoney.com.br/onde-investir/infomoney-lidera-ranking-de-influenciadores-entre-os-veiculos-de-imprensa-diz-anbima/",
-   "s": "Em nova categoria criada pela Anbima para veículos de imprensa, o InfoMoney ficou em 1º lugar; pesquisa aponta aumento do interesse dos brasileiros por finanças em meio a guerras, incertezas eleitorais e juros elevados The post…"
+   "h": "07:11",
+   "u": "https://www.infomoney.com.br/mercados/minidolar-hoje-futuro-do-dolar-wdoz26-16112026/",
+   "s": "Saiba o que esperar para o minidólar nesta segunda (16) The post Minidólar (WDOZ26) mantém viés de alta; veja suportes e resistências appeared first on InfoMoney ."
+  },
+  {
+   "c": "mu",
+   "t": "EUA e Rússia se opõem a negociações sobre limitação de armas autônomas",
+   "f": "G1 Mundo",
+   "d": "2026-11-16",
+   "h": "07:04",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/16/eua-e-russia-se-opoem-a-negociacoes-sobre-a-limitacao-de-armas-autonomas.ghtml",
+   "s": "Na abertura das negociações em Genebra, o secretário-geral das Nações Unidas, Antônio Guterres, se pronunciou através de uma mensagem em vídeo e pediu que os países ajam contra essas \"armas impiedosas\". \"A natureza da guerra está…"
+  },
+  {
+   "c": "br",
+   "t": "Mini-índice (WINZ26): IBC-Br e fiscal testam recuperação nesta segunda",
+   "f": "InfoMoney",
+   "d": "2026-11-16",
+   "h": "07:04",
+   "u": "https://www.infomoney.com.br/mercados/mini-indice-hoje-futuro-ibovespa-winz26-16112026/",
+   "s": "Confira o que a análise técnica aponta para o mini-índice hoje (16 de novembro) The post Mini-índice (WINZ26): IBC-Br e fiscal testam recuperação nesta segunda appeared first on InfoMoney ."
+  },
+  {
+   "c": "br",
+   "t": "Day Trade hoje (16): Ibovespa retoma alta; recuperação vai ganhar força?",
+   "f": "InfoMoney",
+   "d": "2026-11-16",
+   "h": "07:03",
+   "u": "https://www.infomoney.com.br/mercados/mercados-day-trade-hoje-analistas-16112026/",
+   "s": "Confira os pontos de suporte e resistência do mini-índice e minidólar The post Day Trade hoje (16): Ibovespa retoma alta; recuperação vai ganhar força? appeared first on InfoMoney ."
+  },
+  {
+   "c": "mu",
+   "t": "PIB do Japão (preliminar) fica estagnado no 3º trimestre",
+   "f": "InfoMoney",
+   "d": "2026-11-16",
+   "h": "06:20",
+   "u": "https://www.infomoney.com.br/mundo/pib-do-japao-preliminar-fica-estagnado-no-3o-trimestre/",
+   "s": "O desempenho refletiu a perda de confiança dos consumidores em meio à inflação impulsionada pelos custos de energia The post PIB do Japão (preliminar) fica estagnado no 3º trimestre appeared first on InfoMoney ."
   },
   {
    "c": "br",
@@ -47,15 +118,6 @@
    "s": "Governo antecipa pagamento do Bolsa Família A Caixa Econômica Federal inicia os pagamentos de novembro do Bolsa Família 2026 nesta segunda-feira (16). Os primeiros a receber serão os beneficiários com Número de Identificação…"
   },
   {
-   "c": "br",
-   "t": "Anac registra 211 casos de indisciplina após regra que pune má conduta de passageiros",
-   "f": "G1 Economia",
-   "d": "2026-11-16",
-   "h": "00:00",
-   "u": "https://g1.globo.com/economia/noticia/2026/11/16/anac-registra-211-casos-de-indisciplina-apos-regra-que-pune-ma-conduta-de-passageiros.ghtml",
-   "s": "A Agência Nacional de Aviação Civil (Anac) registrou 211 ocorrências envolvendo passageiros indisciplinados desde setembro, quando entraram em vigor as novas regras para punir esse tipo de comportamento no transporte aéreo. Desse…"
-  },
-  {
    "c": "mu",
    "t": "O que encontro histórico de Trump, Putin e Xi marcado para esta semana pode significar para o mundo?",
    "f": "G1 Economia",
@@ -63,51 +125,6 @@
    "h": "00:00",
    "u": "https://g1.globo.com/mundo/noticia/2026/11/16/o-que-encontro-historico-de-trump-putin-e-xi-marcado-para-esta-semana-pode-significar-para-o-mundo.ghtml",
    "s": "via BBC Os preparativos para o primeiro encontro trilateral entre os líderes da China, da Rússia e dos Estados Unidos provocaram apreensão na Europa, onde alguns veem paralelos com a divisão do mundo em esferas de influência após…"
-  },
-  {
-   "c": "br",
-   "t": "Correios têm prejuízo de R$ 1,9 bilhão no terceiro trimestre, alta de 19% em um ano",
-   "f": "InfoMoney",
-   "d": "2026-11-15",
-   "h": "17:38",
-   "u": "https://www.infomoney.com.br/mercados/correios-tem-prejuizo-de-r-19-bilhao-no-terceiro-trimestre-alta-de-19-em-um-ano/",
-   "s": "Estatal tem queda nas receitas com encomendas e envios internacionais e gasta R$ 2,5 bilhões com juros; governo prevê aporte de R$ 6 bilhões em 2027 The post Correios têm prejuízo de R$ 1,9 bilhão no terceiro trimestre, alta de…"
-  },
-  {
-   "c": "mu",
-   "t": "Inflação nos EUA está ‘caminhando na direção errada’, alerta dirigente do Fed",
-   "f": "InfoMoney",
-   "d": "2026-11-15",
-   "h": "17:32",
-   "u": "https://www.infomoney.com.br/economia/inflacao-nos-eua-esta-caminhando-na-direcao-errada-alerta-dirigente-do-fed/",
-   "s": "Presidente do Fed de Kansas City, Jeff Schmid diz que o BC americano tem ferramentas para conter os preços; mercados já precificam alta de 0,25 ponto em dezembro The post Inflação nos EUA está ‘caminhando na direção errada’…"
-  },
-  {
-   "c": "mu",
-   "t": "Irã pressiona EUA em duas frentes: drones no Barein e avanço houthi no Iêmen",
-   "f": "InfoMoney",
-   "d": "2026-11-15",
-   "h": "17:24",
-   "u": "https://www.infomoney.com.br/mundo/ira-pressiona-eua-em-duas-frentes-drones-no-barein-e-avanco-houthi-no-iemen/",
-   "s": "Forças apoiadas pela Arábia Saudita recuam de Bab el-Mandeb, rota estratégica do petróleo, enquanto Teerã lança drones contra base americana; diplomacia segue travada The post Irã pressiona EUA em duas frentes: drones no Barein e…"
-  },
-  {
-   "c": "br",
-   "t": "Curso capacita servidores para inclusão de pessoas com deficiência",
-   "f": "Agência Brasil",
-   "d": "2026-11-15",
-   "h": "15:00",
-   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/curso-capacita-servidores-para-inclusao-de-pessoas-com-deficiencia",
-   "s": "O Programa Nacional de Inclusão Produtiva para Agentes Públicos vai oferecer formação gratuita e certificada a 3 mil profissionais. O objetivo é preparar órgãos públicos para identificar e eliminar barreiras enfrentadas por…"
-  },
-  {
-   "c": "br",
-   "t": "Lula busca investimentos da Ásia para exploração de minerais críticos",
-   "f": "Agência Brasil",
-   "d": "2026-11-15",
-   "h": "13:30",
-   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/lula-busca-investimentos-na-asia-para-explorar-minerais-criticos",
-   "s": "O presidente Luiz Inácio Lula da Silva afirmou neste domingo (15), nas Filipinas, que o Brasil pretende atrair investimentos para a exploração e a industrialização de minerais críticos e terras raras, em uma estratégia que…"
   },
   {
    "c": "mu",
@@ -126,24 +143,6 @@
    "h": "09:45",
    "u": "https://g1.globo.com/mundo/noticia/2026/11/15/nvidia-megaspeed-alice-huang-espionagem-china-estados-unidos.ghtml",
    "s": "Megaspeed afirma que suposta espiã deixou a empresa em agosto de 2025 A empresa de centros de dados Megaspeed International, investigada pelo suposto desvio de chips da Nvidia para a China, afirmou neste domingo (15) que Alice…"
-  },
-  {
-   "c": "mu",
-   "t": "Coreia do Sul investiga 1º colocado em prova após confissão de fraude com IA",
-   "f": "G1 Mundo",
-   "d": "2026-11-15",
-   "h": "09:06",
-   "u": "https://g1.globo.com/mundo/noticia/2026/11/15/coreia-do-sul-investiga-1o-colocado-em-prova-apos-confissao-de-fraude-com-ia.ghtml",
-   "s": "Prova; concurso público; questões objetivas; aluno fazendo prova; cartão resposta Reprodução A polícia da Coreia do Sul anunciou neste domingo (15) que abriu uma investigação depois que o candidato com a melhor pontuação em um…"
-  },
-  {
-   "c": "mu",
-   "t": "As pessoas que só precisam dormir 4 horas por dia — e como a genética explica isso",
-   "f": "BBC News Brasil",
-   "d": "2026-11-15",
-   "h": "08:12",
-   "u": "https://www.bbc.com/portuguese/articles/cw99e005k17lo?at_medium=RSS&at_campaign=rss",
-   "s": "A ciência tem comprovado que mutações podem levar algumas pessoas a precisarem de muito menos sono. Mas pode ser bem difícil saber se você é uma delas."
   }
  ]
 }
