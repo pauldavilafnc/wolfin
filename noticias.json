@@ -1,31 +1,95 @@
 {
- "at": "2026-11-16T07:46-03:00",
+ "at": "2026-11-16T12:19-03:00",
  "items": [
   {
+   "c": "mu",
+   "t": "Ibovespa Hoje Ao Vivo: Bolsa cai mais de 1% com exterior e dados econômicos",
+   "f": "InfoMoney",
+   "d": "2026-11-16",
+   "h": "12:18",
+   "u": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16112026/",
+   "s": "Bolsas dos EUA operam em queda com Nvidia em foco The post Ibovespa Hoje Ao Vivo: Bolsa cai mais de 1% com exterior e dados econômicos appeared first on InfoMoney ."
+  },
+  {
    "c": "br",
-   "t": "Pix celebra 6 anos como motor de inclusão e eficiência financeira em todo o Brasil",
-   "f": "Banco Central do Brasil",
+   "t": "Finfluencers ainda falam de ações, cripto e dólar, mas também de FIIs e commodities",
+   "f": "InfoMoney",
    "d": "2026-11-16",
-   "h": "07:46",
-   "u": "https://www.bcb.gov.br/detalhenoticia/21320/noticia"
+   "h": "12:16",
+   "u": "https://www.infomoney.com.br/onde-investir/finfluencers-ainda-falam-de-acoes-cripto-e-dolar-mas-tambem-de-fiis-e-commodities/",
+   "s": "Segundo a 11ª edição do relatório Finfluence, da Anbima, citações de commodities, Fundos Imobiliários (FIIs) e renda fixa começam a aparecer mais nas publicações no 1º semestre de 2026; menção a fundos e ouro recuou The post…"
+  },
+  {
+   "c": "br",
+   "t": "Atividade econômica tem queda de 0,9% no terceiro trimestre",
+   "f": "Agência Brasil",
+   "d": "2026-11-16",
+   "h": "12:02",
+   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/atividade-economica-tem-queda-de-09-no-terceiro-trimestre",
+   "s": "A atividade econômica no Brasil registrou queda no terceiro trimestre, de acordo com informações divulgadas nesta segunda-feira (16) pelo Banco Central (BC). O Índice de Atividade Econômica do BC (IBC-Br) teve redução de 0,9% de…"
+  },
+  {
+   "c": "br",
+   "t": "Lula encerra viagem à Ásia com encontro com Sánchez na Espanha e volta ao Brasil",
+   "f": "InfoMoney",
+   "d": "2026-11-16",
+   "h": "11:59",
+   "u": "https://www.infomoney.com.br/politica/lula-encerra-viagem-a-asia-com-encontro-com-sanchez-na-espanha-e-volta-ao-brasil/",
+   "s": "Presidente passou por Turquia e Filipinas, onde defendeu investimentos em minerais críticos, cooperação tecnológica e maior responsabilidade dos países ricos no financiamento climático The post Lula encerra viagem à Ásia com…"
+  },
+  {
+   "c": "br",
+   "t": "Queda do IBC-Br confirma freio na economia no 3º tri e piora cenário para 2027",
+   "f": "InfoMoney",
+   "d": "2026-11-16",
+   "h": "11:56",
+   "u": "https://www.infomoney.com.br/economia/ibc-br-setembro-2026-queda-economia-pib-2027/",
+   "s": "Recuo de 0,2% em setembro do índice considerado a prévia do PIB e tombo de 0,9% no trimestre consolidam desaceleração disseminada entre setores; mercado projeta retração ou estagnação do PIB e carrego negativo para 2027 The post…"
+  },
+  {
+   "c": "br",
+   "t": "Receita apreende R$ 581 milhões em operação de combate ao tráfico de drogas e ao contrabando",
+   "f": "G1 Economia",
+   "d": "2026-11-16",
+   "h": "11:24",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/16/receita-federal-apreende-r-581-milhoes-em-operacao-de-combate-ao-trafico-de-drogas-e-ao-contrabando.ghtml",
+   "s": "A Receita Federal informou nesta segunda-feira (16) que foram apreendidos R$ 581 milhões em mercadorias ilegais e drogas por meio de uma mega operação. Mais de 500 servidores do Fisco e centenas de integrantes de órgãos parceiros…"
+  },
+  {
+   "c": "br",
+   "t": "Feriado 20 de novembro: veja o que é comemorado na data e por que é feriado nacional",
+   "f": "G1 Economia",
+   "d": "2026-11-16",
+   "h": "10:22",
+   "u": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/11/16/feriado-20-de-novembro-veja-o-que-e-comemorado-na-data-e-por-que-e-feriado-nacional.ghtml",
+   "s": "Previsão do tempo orla maceió sol nuvens ensolarado praia Reprodução/TV Asa Branca Alagoas O próximo feriado nacional acontece em 20 de novembro, quando é celebrado o Dia Nacional de Zumbi e da Consciência Negra. A data cairá em…"
+  },
+  {
+   "c": "br",
+   "t": "Musk e nomes de peso da tecnologia defendem volta de Jensen Huang ao comando da Nvidia",
+   "f": "G1 Economia",
+   "d": "2026-11-16",
+   "h": "10:18",
+   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/16/musk-e-nomes-de-peso-da-tecnologia-defendem-volta-de-ex-ceo-da-nvidia.ghtml",
+   "s": "O escândalo na Nvidia, com traições e espionagem, parece filme mas é vida real Dias depois de Jensen Huang deixar o comando da Nvidia, empresários, investidores e funcionários da fabricante de chips começaram a se mobilizar para…"
+  },
+  {
+   "c": "br",
+   "t": "Mercado reduz projeções para inflação e crescimento econômico em 2026",
+   "f": "Agência Brasil",
+   "d": "2026-11-16",
+   "h": "09:12",
+   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/mercado-reduz-projecoes-para-inflacao-e-crescimento-da-economia-em-202",
+   "s": "O mercado financeiro reduziu as projeções para a inflação e o crescimento da economia brasileira em 2026. Ao mesmo tempo, elevou a estimativa para a cotação do dólar no fim do próximo ano. A previsão para a taxa básica de juros…"
   },
   {
    "c": "mu",
-   "t": "Economia da China vacila com produção industrial e venda no varejo abaixo do esperado",
-   "f": "InfoMoney",
+   "t": "Avião comercial 100% elétrico faz primeiro voo tripulado na China; VÍDEO",
+   "f": "G1 Economia",
    "d": "2026-11-16",
-   "h": "07:42",
-   "u": "https://www.infomoney.com.br/economia/economia-da-china-vacila-com-producao-industrial-e-venda-no-varejo-abaixo-do-esperado/",
-   "s": "Os dados de outubro mais fracos do que o esperado são “um começo preocupante” para o quarto trimestre, disse Lynn Song, economista-chefe ⁠do ‌ING para a Grande China The post Economia da China vacila com produção industrial e…"
-  },
-  {
-   "c": "mu",
-   "t": "Ações chinesas fecham perto da mínima de 16 meses",
-   "f": "InfoMoney",
-   "d": "2026-11-16",
-   "h": "07:40",
-   "u": "https://www.infomoney.com.br/mercados/acoes-chinesas-fecham-perto-da-minima-de-16-meses/",
-   "s": "No fechamento, o índice de Xangai e o índice CSI300, que reúne as maiores companhias listadas em Xangai e Shenzhen, caíram 0,9%. O índice Hang Seng, de Hong Kong, subiu 0,5% The post Ações chinesas fecham perto da mínima de 16…"
+   "h": "09:03",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/16/aviao-comercial-eletrico-china-primeiro-voo-tripulado.ghtml",
+   "s": "O voo tripulado marca uma nova etapa dos testes do CE-25A. Em fevereiro deste ano, a aeronave realizou seu primeiro voo autônomo, sem pessoas a bordo. Desde então, acumulou 19 voos de teste não tripulados, segundo informações…"
   },
   {
    "c": "mu",
@@ -37,33 +101,6 @@
    "s": "Imagem do corredor de congelados fechado em um supermercado próximo a Nantes, após um ataque cibernético que teve como alvo os sistemas de refrigeração de redes de supermercados francesas, causando perdas de alimentos e incêndios…"
   },
   {
-   "c": "br",
-   "t": "Caixa começa a pagar parcela do Bolsa Família de novembro",
-   "f": "Agência Brasil",
-   "d": "2026-11-16",
-   "h": "07:28",
-   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/caixa-comeca-pagar-parcela-do-bolsa-familia-de-novembro",
-   "s": "A Caixa Econômica Federal começa a pagar a parcela de outubro do Bolsa Família. Recebem nesta segunda-feira (16) os beneficiários com Número de Inscrição Social (NIS) de final 1. Neste mês, 19,1 milhões de famílias serão…"
-  },
-  {
-   "c": "br",
-   "t": "Caminhos da Reportagem mostra negócios de impacto social",
-   "f": "Agência Brasil",
-   "d": "2026-11-16",
-   "h": "07:27",
-   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/caminhos-da-reportagem-mostra-negocios-de-impacto-social",
-   "s": "O que são negócios de impacto social e como essas iniciativas podem transformar realidades? Diferentemente de uma organização sem fins lucrativos e das ações de responsabilidade social de empresas, esse modelo de empreendedorismo…"
-  },
-  {
-   "c": "br",
-   "t": "Minidólar (WDOZ26) mantém viés de alta; veja suportes e resistências",
-   "f": "InfoMoney",
-   "d": "2026-11-16",
-   "h": "07:11",
-   "u": "https://www.infomoney.com.br/mercados/minidolar-hoje-futuro-do-dolar-wdoz26-16112026/",
-   "s": "Saiba o que esperar para o minidólar nesta segunda (16) The post Minidólar (WDOZ26) mantém viés de alta; veja suportes e resistências appeared first on InfoMoney ."
-  },
-  {
    "c": "mu",
    "t": "EUA e Rússia se opõem a negociações sobre limitação de armas autônomas",
    "f": "G1 Mundo",
@@ -71,51 +108,6 @@
    "h": "07:04",
    "u": "https://g1.globo.com/mundo/noticia/2026/11/16/eua-e-russia-se-opoem-a-negociacoes-sobre-a-limitacao-de-armas-autonomas.ghtml",
    "s": "Na abertura das negociações em Genebra, o secretário-geral das Nações Unidas, Antônio Guterres, se pronunciou através de uma mensagem em vídeo e pediu que os países ajam contra essas \"armas impiedosas\". \"A natureza da guerra está…"
-  },
-  {
-   "c": "br",
-   "t": "Mini-índice (WINZ26): IBC-Br e fiscal testam recuperação nesta segunda",
-   "f": "InfoMoney",
-   "d": "2026-11-16",
-   "h": "07:04",
-   "u": "https://www.infomoney.com.br/mercados/mini-indice-hoje-futuro-ibovespa-winz26-16112026/",
-   "s": "Confira o que a análise técnica aponta para o mini-índice hoje (16 de novembro) The post Mini-índice (WINZ26): IBC-Br e fiscal testam recuperação nesta segunda appeared first on InfoMoney ."
-  },
-  {
-   "c": "br",
-   "t": "Day Trade hoje (16): Ibovespa retoma alta; recuperação vai ganhar força?",
-   "f": "InfoMoney",
-   "d": "2026-11-16",
-   "h": "07:03",
-   "u": "https://www.infomoney.com.br/mercados/mercados-day-trade-hoje-analistas-16112026/",
-   "s": "Confira os pontos de suporte e resistência do mini-índice e minidólar The post Day Trade hoje (16): Ibovespa retoma alta; recuperação vai ganhar força? appeared first on InfoMoney ."
-  },
-  {
-   "c": "mu",
-   "t": "PIB do Japão (preliminar) fica estagnado no 3º trimestre",
-   "f": "InfoMoney",
-   "d": "2026-11-16",
-   "h": "06:20",
-   "u": "https://www.infomoney.com.br/mundo/pib-do-japao-preliminar-fica-estagnado-no-3o-trimestre/",
-   "s": "O desempenho refletiu a perda de confiança dos consumidores em meio à inflação impulsionada pelos custos de energia The post PIB do Japão (preliminar) fica estagnado no 3º trimestre appeared first on InfoMoney ."
-  },
-  {
-   "c": "br",
-   "t": "Concurso da Câmara dos Deputados encerra inscrições nesta semana; salários chegam a R$ 32 mil",
-   "f": "G1 Economia",
-   "d": "2026-11-16",
-   "h": "03:00",
-   "u": "https://g1.globo.com/trabalho-e-carreira/concursos/noticia/2026/11/16/concurso-da-camara-dos-deputados-encerra-inscricoes-nesta-semana-salarios-chegam-a-r-32-mil.ghtml",
-   "s": "Câmara dos Deputados Divulgação / Câmara dos Deputados As inscrições para o novo concurso da Câmara dos Deputados terminam na próxima terça-feira (17). A seleção reúne 184 oportunidades entre vagas imediatas e cadastro de reserva…"
-  },
-  {
-   "c": "br",
-   "t": "Bolsa Família 2026: pagamentos de novembro começam nesta segunda; veja calendário",
-   "f": "G1 Economia",
-   "d": "2026-11-16",
-   "h": "00:00",
-   "u": "https://g1.globo.com/economia/noticia/2026/11/16/bolsa-familia-2026-pagamentos-de-novembro-comecam-nesta-segunda-veja-calendario.ghtml",
-   "s": "Governo antecipa pagamento do Bolsa Família A Caixa Econômica Federal inicia os pagamentos de novembro do Bolsa Família 2026 nesta segunda-feira (16). Os primeiros a receber serão os beneficiários com Número de Identificação…"
   },
   {
    "c": "mu",
@@ -143,6 +135,15 @@
    "h": "09:45",
    "u": "https://g1.globo.com/mundo/noticia/2026/11/15/nvidia-megaspeed-alice-huang-espionagem-china-estados-unidos.ghtml",
    "s": "Megaspeed afirma que suposta espiã deixou a empresa em agosto de 2025 A empresa de centros de dados Megaspeed International, investigada pelo suposto desvio de chips da Nvidia para a China, afirmou neste domingo (15) que Alice…"
+  },
+  {
+   "c": "mu",
+   "t": "As pessoas que só precisam dormir 4 horas por dia — e como a genética explica isso",
+   "f": "BBC News Brasil",
+   "d": "2026-11-15",
+   "h": "08:12",
+   "u": "https://www.bbc.com/portuguese/articles/cw99e005k17lo?at_medium=RSS&at_campaign=rss",
+   "s": "A ciência tem comprovado que mutações podem levar algumas pessoas a precisarem de muito menos sono. Mas pode ser bem difícil saber se você é uma delas."
   }
  ]
 }
