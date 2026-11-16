@@ -351,6 +351,28 @@
 .rsn{font-size:12.5px;color:var(--gray);margin:0 0 10px}
 .rss .btns{flex-wrap:wrap}
 </style>
+<style id="v79-css">
+.hmcard{padding-left:12px;padding-right:12px}.hmw .sw{margin-bottom:8px}
+.hmg{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.hmd{font-size:11px;font-weight:700;color:var(--gray);text-align:center;padding:2px 0}
+.hmx{display:block}
+.hmc{position:relative;min-height:44px;aspect-ratio:1/1.08;padding:4px 1px 3px;border:0;border-radius:11px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;font:inherit;cursor:pointer;transition:transform .15s,box-shadow .2s,background .25s;box-shadow:none;min-width:0}
+.hmc b{font-size:12px;line-height:1;font-weight:800}.hmc span{font-size:10px;line-height:1;font-weight:700;min-height:11px;max-width:100%;overflow:hidden}
+.hmc:active{transform:scale(.94)}
+.hm0{background:rgba(110,130,170,.14);color:#4B5B78}.hm1{background:#DCEBFF;color:#0B1B3F}.hm2{background:#9CC4FF;color:#0B1B3F}.hm3{background:#2757E0;color:#fff}.hm4{background:#1B2FA8;color:#fff;box-shadow:inset 0 0 0 2px rgba(156,196,255,.7)}
+[data-theme=dark] .hm0{background:rgba(255,255,255,.07);color:#C4D0E3}[data-theme=dark] .hm1{background:#1E3A66;color:#DCEBFF}[data-theme=dark] .hm2{background:#2A58AE;color:#fff}[data-theme=dark] .hm3{background:#5B93FF;color:#06122B}[data-theme=dark] .hm4{background:#B9D3FF;color:#06122B;box-shadow:inset 0 0 0 2px #fff}
+.hmc.tdy{box-shadow:inset 0 0 0 2px var(--blue)}.hmc.sel{outline:3px solid #FFB020;outline-offset:1px;z-index:1}
+.hmg.fade{animation:hmin .28s ease}@keyframes hmin{from{opacity:.25;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hmg.fade{animation:none}.hmc{transition:none}}
+.hml{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--gray);margin:10px 0 2px;flex-wrap:wrap}.hml i{width:18px;height:18px;border-radius:6px;display:inline-block;border:1px solid rgba(110,130,170,.25)}
+.hmk{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.hmk>div{background:var(--tile);border-radius:14px;padding:10px 12px;min-width:0}.hmv{font-size:15px;font-weight:800;margin-top:2px}.hmv small{display:block;font-size:11.5px;font-weight:600;color:var(--gray)}
+.hmi{margin-top:10px;padding:10px 12px;border-radius:14px;background:var(--light);font-size:13px;line-height:1.4}[data-theme=dark] .hmi{background:rgba(120,160,255,.14)}
+.hmdt{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}.hmdt h4{margin:0 0 2px;font-size:15px}
+.hmr{display:flex;align-items:center;gap:10px;width:100%;text-align:left;min-height:52px;padding:8px 4px;background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;font:inherit;color:inherit;box-shadow:none}
+.hmr .hn{flex:1;min-width:0}.hmr .hn b{display:block;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.hmr .hn span{font-size:12px;color:var(--gray)}.hmr .a{font-weight:800;white-space:nowrap}
+.hmfoot{font-size:11.5px;color:var(--gray);margin:10px 2px 0;line-height:1.35}
+#ov .sheet.hms{max-height:92vh;overflow:auto}
+</style>
 </head>
 <body>
 <div id="intro" aria-hidden="true"><video id="introv" playsinline preload="auto" disablepictureinpicture tabindex="-1"></video><div class="il"><div class="ib"><img src="icon-512.png" alt="" width="512" height="512" decoding="async" onerror="this.style.visibility='hidden'"><i class="ie l"></i><i class="ie r"></i><div class="sw"><i class="sh"></i></div></div><b class="in">WOLFIN</b><span class="is">Domine seu dinheiro.</span></div></div>
@@ -402,7 +424,7 @@ const MCIDS=['wolfin','leonidas','vito','oraculo','brutus','mako','bento','penny
 /* migração: avatar antigo (10 modelos) e roupa antiga do lobo → mascote novo; sem correspondência = Wolfin */
 const MCOLD_AV=['wolfin',null,'nyx','leonidas','vito','wolfin',null,null,'oraculo','elliot'],MCOLD_MS={terno:'wolfin',rei:'leonidas',detetive:'elliot',hacker:'nyx',ostentacao:'vito'};
 function mcMigrate(p){const a=p&&p.av&&typeof p.av==='object'&&p.av.v===2?p.av:null,ia=a?MCOLD_AV[Math.floor(+a.m)]||null:null;return (a&&a.set===1&&ia)||(MCOLD_MS[p&&p.ms]&&MCOLD_MS[p.ms]!=='wolfin'?MCOLD_MS[p.ms]:null)||ia||'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.8 · site mais leve, logo no Sobre, busca, resumo · 15/11/2026';
+const KEY='wallstreet.v1',BUILD='7.9 · mapa de calor de gastos, site mais leve · 15/11/2026';
 const CATS={exp:['Alimentação','Transporte','Compras','Roupas','Lazer','Trabalho','Casa','Saúde','Educação','Financeiro','Tecnologia','Cuidados pessoais','Presentes','Outros'],inc:['Salário','Comissão','Freelancer','Outro']};
 const PALS=[['blue','Azul','#2563EB'],['perola','Pérola','#E8EDF5'],['violet','Violeta','#7C3AED'],['teal','Turquesa','#0D9488'],['pink','Rosa','#DB2777'],['orange','Laranja','#EA580C'],['ouro','Ouro','#B88614'],['esmeralda','Esmeralda','#15803D'],['grafite','Grafite','#4B5563']];
 const PAYS=['Pix','Cartão de débito','Cartão de crédito','Dinheiro/Espécie','Outro'];
@@ -756,7 +778,7 @@ function vRel(){const f=flows(),ms=Array.from({length:12},(_,i)=>ry+'-'+pad(i+1)
  return `<h2>Relatórios</h2>${sitCard()}${relNew()}<div class="card"><div class="sw"><button class="ib" data-act="yp" aria-label="Ano anterior">‹</button><b>${ry}</b><button class="ib" data-act="yn" aria-label="Próximo ano">›</button></div>
  <label>Mês<select id="rmSel"><option value="">Ano inteiro</option>${MN.map((n,i)=>`<option value="${pad(i+1)}"${rm===pad(i+1)?' selected':''}>${n}</option>`).join('')}</select></label>
  ${sel?`<div class="grid"><div><div class="lbl">Recebido</div><div class="v pos">${brl(sel.inc)}</div></div><div><div class="lbl">Pago</div><div class="v neg">${brl(sel.exp)}</div></div><div><div class="lbl">Dívidas pagas</div><div class="v">${brl(sel.dp)}</div></div><div><div class="lbl">Guardado (líquido)</div><div class="v">${brl(sel.bx)}</div></div></div>`:''}</div>
- ${rsCard()}${catCard()}
+ ${rsCard()}${catCard()}${hmCard()}
  <div class="card"><h3>Receitas recebidas por mês</h3>${has?chart(L,[inc],['#16A34A'],{t:'Receitas recebidas por mês',ls:ms.map(m=>MN[+m.slice(5)-1])}):noData()}</div>
  <div class="card"><h3>Despesas pagas por mês</h3>${has?chart(L,[exp],['#DC2626'],{t:'Despesas pagas por mês',ls:ms.map(m=>MN[+m.slice(5)-1])}):noData()}</div>
  <div class="card"><h3>Receitas × despesas</h3>${has?chart(L,[inc,exp],['#16A34A','#DC2626'],{t:'Receitas e despesas por mês',ls:ms.map(m=>MN[+m.slice(5)-1])}):noData()}</div>
@@ -1115,7 +1137,7 @@ const ACT={
  mp:()=>{vm=shift(vm,-1);render()},mn:()=>{vm=shift(vm,1);render()},yp:()=>{ry--;render()},yn:()=>{ry++;render()},
  tog:(id,b)=>{const i=find(S.items,id),m=b.dataset.m||vm;if(!i)return;i.done=i.done||{};i.paidOn=i.paidOn||{};if(i.done[m]!=null){delete i.done[m];delete i.paidOn[m]}else{i.done[m]=i.c;i.paidOn[m]=todayStr()}commit()},
  avs:()=>{MCT=mcCur();mcSheet()},mcpick:id=>{if(MCIDS.includes(id)){MCT=id;mcSheet(true)}},mcok:()=>{if(!MCIDS.includes(MCT))return;S.pref.mc=MCT;S.pref.av.set=1;save();try{applyPref()}catch(e){}closeOv();render();mcRefresh();toast('Mascote: '+mcDef(MCT).n)},
- ntf:()=>go('ntf'),expenc:()=>expEncForm(),cgp:()=>{cgm=shift(cgm,-1);render()},cgn:()=>{cgm=shift(cgm,1);render()},catlim:id=>limForm(id),catadd:()=>limAddForm(),mqtap:()=>{const n=Date.now();MQH.taps=MQH.taps.filter(t=>n-t<3000);MQH.taps.push(n);MQH.i++;MQH.jump=1;if(MQH.taps.length>=5){MQH.giggle=n+1800;MQH.taps=[];setTimeout(()=>{if(view==='home')render()},1900)}render()},ntfr:id=>{S.ntf.read[id]=true;const ids=new Set(notifs().map(n=>n.id)),ks=Object.keys(S.ntf.read);if(ks.length>400)ks.forEach(k=>{if(!ids.has(k))delete S.ntf.read[k]});save();render()},
+ ntf:()=>go('ntf'),expenc:()=>expEncForm(),cgp:()=>{cgm=shift(cgm,-1);render()},cgn:()=>{cgm=shift(cgm,1);render()},catlim:id=>hmCatOpen(id),catadd:()=>limAddForm(),mqtap:()=>{const n=Date.now();MQH.taps=MQH.taps.filter(t=>n-t<3000);MQH.taps.push(n);MQH.i++;MQH.jump=1;if(MQH.taps.length>=5){MQH.giggle=n+1800;MQH.taps=[];setTimeout(()=>{if(view==='home')render()},1900)}render()},ntfr:id=>{S.ntf.read[id]=true;const ids=new Set(notifs().map(n=>n.id)),ks=Object.keys(S.ntf.read);if(ks.length>400)ks.forEach(k=>{if(!ids.has(k))delete S.ntf.read[k]});save();render()},
  ntfall:()=>{notifs().forEach(n=>{S.ntf.read[n.id]=true});save();render();toast('Tudo marcado como lido')},nw:id=>{nwTab=id;render()},
  secon:()=>viewSetup(true),secchg:()=>chgForm(),secnew:()=>newCodeForm(),seclock:()=>lockNow(),secoff:()=>offForm(),
  sini:()=>iniForm(),sinirm:()=>{closeOv();ask('Remover o saldo inicial? O saldo disponível diminuirá nesse valor.',()=>{S.opening=null;commit('Saldo inicial removido')})},
@@ -1376,6 +1398,47 @@ Object.assign(ACT,{
  rssave:async()=>{try{const bl=await rsBlob(),u=URL.createObjectURL(bl),a=document.createElement('a');a.href=u;a.download=rsName();document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),2000);toast('Imagem salva')}catch(e){toast('Não foi possível salvar a imagem')}},
  rsshare:async()=>{try{const bl=await rsBlob(),file=new File([bl],rsName(),{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[file]}))await navigator.share({files:[file],title:'Meu resumo do mês no WOLFIN'});else ACT.rssave()}catch(e){if(!(e&&e.name==='AbortError'))toast('Não foi possível compartilhar')}}
 });
+/* ===== MAPA DE CALOR DE GASTOS (v7.9) — usa só dados já existentes; não guarda nada novo ===== */
+const HMS={main:{m:ymOf(new Date()),sel:0,cat:null},cat:{m:ymOf(new Date()),sel:0,cat:null}},HMW=['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado'];
+function hmEntries(m,cat){const dim=dimOf(m),out=[],cl=n=>Math.max(1,Math.min(dim,(n|0)||1));
+ rowsOf('exp',m).forEach(i=>{const v=i.done&&i.done[m];if(v==null||!(v>0))return;const c=i.cat||'Sem categoria';if(cat&&c!==cat)return;out.push({day:cl(i.day),c:v,d:i.d||'Despesa',cat:c,k:'i',id:i.id})});
+ (S.cards||[]).forEach(k=>ccParts(k).forEach(p=>{if(p.cm!==m||!(p.c>0))return;const c=p.b.cat||'Sem categoria';if(cat&&c!==cat)return;out.push({day:cl(+String(p.b.dt).slice(8,10)),c:p.c,d:(p.b.d||'Compra no cartão')+(p.of>1?' ('+p.n+'/'+p.of+')':''),cat:c,k:'c',id:k.id})}));
+ if(!cat)(S.parc||[]).forEach(q=>{if(!q.paid||!(q.c>0)||parcCash(q)!==m)return;const dt=String(q.paidOn||q.due||''),ins=find(S.inst||[],q.iid);out.push({day:cl(+dt.slice(8,10)),c:q.c,d:(ins&&ins.n)||'Parcela',cat:'Parcelamentos',k:'p',id:q.iid})});
+ return out}
+/* intensidade: posição do dia entre os dias COM gasto do próprio mês (percentil → 4 faixas); 1 só dia com gasto = faixa 3 */
+function hmCalc(m,cat){const dim=dimOf(m),days=Array.from({length:dim},()=>({c:0,L:[]}));hmEntries(m,cat).forEach(e=>{const x=days[e.day-1];x.c+=e.c;x.L.push(e)});
+ const act=days.filter(x=>x.c>0).map(x=>x.c),n=act.length;
+ days.forEach(x=>{if(!x.c){x.lv=0;return}if(n===1){x.lv=3;return}const lo=act.filter(v=>v<x.c).length;x.lv=Math.min(4,1+Math.floor(lo/n*4))});
+ return{m,dim,days,n,tot:sum(days,x=>x.c)}}
+const hmShort=c=>{const r=c/100;return r<1?'<1':r>=1e6?(r/1e6).toFixed(1).replace('.',',')+'M':r>=1e4?Math.round(r/1e3)+'k':r>=1e3?(r/1e3).toFixed(1).replace('.',',')+'k':String(Math.round(r))};
+function hmStats(d,cat){const now=new Date(),cur=ymOf(now),td=now.getDate(),isCur=d.m===cur,cut=d.m>cur?0:isCur?td:d.dim,up=(x,n)=>sum(x.days.slice(0,n),y=>y.c),prev=hmCalc(shift(d.m,-1),cat);
+ let top=null;d.days.forEach((x,i)=>{if(x.c>0&&(!top||x.c>top.c))top={d:i+1,c:x.c}});
+ const a=up(d,cut),b=isCur?up(prev,Math.min(cut,prev.dim)):prev.tot,cmp=a>0&&b>0?{pct:Math.round((a-b)/b*100),lbl:isCur?'mesmo período de '+MN[+shift(d.m,-1).slice(5)-1].toLowerCase():MN[+shift(d.m,-1).slice(5)-1].toLowerCase()}:null;
+ const [y,mo]=d.m.split('-').map(Number);let we=0,wd=0,wen=0,wdn=0,act=0;
+ for(let i=1;i<=cut;i++){const g=new Date(y,mo-1,i).getDay(),v=d.days[i-1].c;if(v>0)act++;if(g===0||g===6){we+=v;wen++}else{wd+=v;wdn++}}
+ let ins='';if(act>=5&&wen>=3&&wdn>=5&&we>0&&wd>0){const p=Math.round((we/wen)/(wd/wdn)*100-100);if(Math.abs(p)>=10)ins='Seus gastos'+(cat?' em '+cat:'')+' nos finais de semana foram '+Math.abs(p)+'% '+(p>0?'maiores':'menores')+', por dia, que nos dias úteis.'}
+ return{top,avg:cut>0?Math.round(d.tot/cut):null,cmp,ins}}
+function hmDetail(key,dn){const st=HMS[key],d=hmCalc(st.m,st.cat),x=d.days[dn-1];if(!x)return'';const [y,mo]=st.m.split('-').map(Number),wd=HMW[new Date(y,mo-1,dn).getDay()],ttl=wd.charAt(0).toUpperCase()+wd.slice(1)+', '+dn+' de '+MN[mo-1].toLowerCase()+' de '+y;
+ if(!x.c)return `<div class="hmdt" id="hmdt-${key}"><h4>${ttl}</h4><p class="lbl" style="margin:6px 0 0">Nenhum gasto registrado neste dia.</p></div>`;
+ return `<div class="hmdt" id="hmdt-${key}"><h4>${ttl}</h4><p class="lbl" style="margin:2px 0 6px">Total: <b>${brl(x.c)}</b> · ${x.L.length} ${x.L.length>1?'movimentações':'movimentação'}</p>${x.L.map((e,i)=>`<button type="button" class="hmr" data-act="hmgo" data-id="${esc(e.id)}" data-kind="${e.k}"><div class="hn"><b>${esc(e.d)}</b><span>${esc(e.cat)}${e.k==='c'?' · cartão':''}</span></div><span class="a">${brl(e.c)}</span></button>`).join('')}</div>`}
+function hmHtml(key){const st=HMS[key],d=hmCalc(st.m,st.cat),[y,mo]=st.m.split('-').map(Number),off=new Date(y,mo-1,1).getDay(),td=todayStr(),S2=hmStats(d,st.cat),nm=MN[mo-1].toLowerCase();
+ if(st.sel>d.dim)st.sel=0;let cells='';for(let i=0;i<off;i++)cells+='<span class="hmx" aria-hidden="true"></span>';
+ d.days.forEach((x,i)=>{const n=i+1,isT=st.m+'-'+pad(n)===td;cells+=`<button type="button" class="hmc hm${x.lv}${st.sel===n?' sel':''}${isT?' tdy':''}" data-act="hmsel" data-id="${key}" data-d="${n}" aria-pressed="${st.sel===n}" aria-label="${n} de ${nm}${isT?', hoje':''}: ${x.c?brl(x.c)+', '+x.L.length+(x.L.length>1?' movimentações':' movimentação'):'sem gastos'}"><b>${n}</b><span>${x.c?hmShort(x.c):''}</span></button>`});
+ const k=(l,v,sub)=>`<div><div class="lbl">${l}</div><div class="hmv">${v}${sub?`<small>${sub}</small>`:''}</div></div>`;
+ return `<div class="hmw" data-hm="${key}"><div class="sw"><button type="button" class="ib" data-act="hmp" data-id="${key}" aria-label="Mês anterior">‹</button><b aria-live="polite">${mlabel(st.m)}</b><button type="button" class="ib" data-act="hmn" data-id="${key}" aria-label="Próximo mês">›</button></div>
+ <div class="hmg" aria-hidden="true" style="margin-bottom:2px">${['D','S','T','Q','Q','S','S'].map(x=>`<span class="hmd">${x}</span>`).join('')}</div>
+ <div class="hmg fade" role="group" aria-label="Gastos por dia em ${nm} de ${y}">${cells}</div>
+ <div class="hml"><span>Sem gastos</span><i class="hm0"></i><span style="margin-left:6px">Menos</span><i class="hm1"></i><i class="hm2"></i><i class="hm3"></i><i class="hm4"></i><span>Mais</span></div>
+ ${st.sel?hmDetail(key,st.sel):'<p class="lbl" style="margin:8px 2px 0">Toque em um dia para ver os gastos.</p>'}
+ ${d.tot>0?`<div class="hmk">${k('Total gasto no mês',brl(d.tot))}${k('Média por dia',S2.avg==null?'—':brl(S2.avg))}${k('Maior dia',S2.top?S2.top.d+' de '+nm:'—',S2.top?brl(S2.top.c):'')}${k('Mês anterior',S2.cmp?(S2.cmp.pct>0?'+':'')+S2.cmp.pct+'%':'—',S2.cmp?'vs '+S2.cmp.lbl:'dados insuficientes')}</div>${S2.ins?`<div class="hmi">${esc(S2.ins)}</div>`:''}`:`<p class="lbl" style="margin:10px 2px 0">Nenhum gasto registrado neste mês${st.cat?' nesta categoria':''}.</p>`}
+ <p class="hmfoot">Conta despesas pagas e compras no cartão (na data da compra). Receitas, pagamento de fatura, dívidas e caixinhas não entram.</p></div>`}
+function hmCard(){return `<div class="card hmcard"><h3>Mapa de calor — Gastos por dia</h3>${hmHtml('main')}</div>`}
+function hmRefresh(key,focus){const w=document.querySelector('[data-hm="'+key+'"]');if(!w)return;w.outerHTML=hmHtml(key);if(focus){const e=document.querySelector(focus);if(e)e.focus({preventScroll:true})}}
+function hmCatOpen(cat){HMS.cat={m:cgm,sel:0,cat};const o=$('#ov');o.innerHTML=`<div class="sheet hms" role="dialog" aria-modal="true" aria-label="Mapa de calor: ${esc(cat)}"><h3>${esc(cat)}</h3><p class="lbl" style="margin:-4px 0 8px">Mapa de calor — gastos desta categoria</p>${hmHtml('cat')}<div class="btns" style="margin-top:14px"><button type="button" class="b2" data-act="hmlim" data-id="${esc(cat)}">Definir limite</button><button type="button" class="b1" data-act="close">Fechar</button></div></div>`;o.hidden=false}
+Object.assign(ACT,{hmp:id=>{const st=HMS[id];if(!st)return;st.m=shift(st.m,-1);st.sel=0;hmRefresh(id,'[data-hm="'+id+'"] [data-act=hmp]')},hmn:id=>{const st=HMS[id];if(!st)return;st.m=shift(st.m,1);st.sel=0;hmRefresh(id,'[data-hm="'+id+'"] [data-act=hmn]')},
+ hmsel:(id,el)=>{const st=HMS[id],n=+el.dataset.d;if(!st||!n)return;st.sel=st.sel===n?0:n;hmRefresh(id,'[data-hm="'+id+'"] [data-d="'+n+'"]');const g=document.querySelector('#hmdt-'+id);if(g&&st.sel)g.scrollIntoView({block:'nearest',behavior:'smooth'})},
+ hmgo:(id,el)=>{const k=el.dataset.kind;if(k==='i'){closeOv();itemForm('exp',id)}else if(k==='c'){closeOv();go('cc');CCO=id;CCM=null;render()}else{closeOv();go('des')}},hmlim:id=>limForm(id)});
+
 
 
 /* ===== SEGURANÇA: usuário + senha, dados criptografados (AES-256-GCM, chave derivada por PBKDF2) =====
