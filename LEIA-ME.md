@@ -279,3 +279,11 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - Dados: **nenhuma chave nova**. `S.parc[i].due` continua sendo gravado ao criar parcelas e guarda exceções/vencimentos antigos; parcelas antigas sem `due` apenas **exibem** o vencimento calculado (nada é gravado ou presumido). Parcelamento sem dia e parcela sem vencimento aparece "não definido".
 - Ao mudar o dia do parcelamento, só parcelas **pendentes sem exceção** que tinham o vencimento padrão acompanham; pagas, exceções e parcelas sem data não mudam.
 - Teste novo: `tests/suites/parcelas_vencimento_fixo.py`.
+
+## Versão 7.13 — despesas fixas por dia do mês, variáveis por data
+- **Fixa (todo mês)**: no lugar do calendário aparece **Dia do vencimento** (lista de 01 a 31). O dia se repete todo mês; em mês curto vale o último dia (31 → 28/29 em fevereiro, 30 em abril…). Ao editar, carrega o dia já configurado.
+- **Variável**: mantém o calendário completo, com a data exata da despesa. Sem repetição.
+- Trocar o tipo no formulário troca o campo na hora. Texto de ajuda abaixo: "Fixa: dia do vencimento, repetido todos os meses. Variável: data exata da despesa."
+- **Mudar o dia de uma fixa** vale a partir do mês que você está vendo; os meses anteriores continuam com o dia que tinham (e os pagamentos já registrados não mudam).
+- Dados: um campo opcional novo, `dh` (histórico de dias, só em despesas fixas que tiveram o dia alterado): lista `[mês, dia antigo]`. Despesas existentes não são alteradas. Receitas não mudaram.
+- Teste novo: `tests/suites/despesas_fixa_variavel.py`.
