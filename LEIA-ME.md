@@ -271,3 +271,11 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - Mapa de calor, totais por dia, relatórios, saldo e comparações mensais já usavam `paidOn`; agora refletem a data que você corrigir. Sem duplicação (mesma lógica de antes).
 - Estrutura de dados: **nenhuma chave nova** — `S.parc[i].paidOn` (AAAA-MM-DD) já existia. Backups e senhas continuam compatíveis.
 - Teste novo: `tests/suites/parcelas_data_pagamento.py`.
+
+## Versão 7.12 — vencimento fixo no parcelamento, pagamento por parcela
+- **Vencimento**: definido uma vez no parcelamento (campo "Dia de vencimento", só o dia do mês). Cada parcela mostra o vencimento calculado (dia 31 em mês curto cai no último dia). Na edição da parcela agora aparece só o texto **Dia de vencimento: 05/06/2026**.
+- **Exceção**: link discreto **Alterar só esta parcela** abre uma lista de dias; só aquela parcela muda (aparece "exceção desta parcela"). "Padrão do parcelamento" volta ao normal.
+- **Pagamento**: continua o calendário completo individual (v7.11). Edição agora tem 1 calendário só. Ordem: Mês, vencimento, pagamento, valor, status.
+- Dados: **nenhuma chave nova**. `S.parc[i].due` continua sendo gravado ao criar parcelas e guarda exceções/vencimentos antigos; parcelas antigas sem `due` apenas **exibem** o vencimento calculado (nada é gravado ou presumido). Parcelamento sem dia e parcela sem vencimento aparece "não definido".
+- Ao mudar o dia do parcelamento, só parcelas **pendentes sem exceção** que tinham o vencimento padrão acompanham; pagas, exceções e parcelas sem data não mudam.
+- Teste novo: `tests/suites/parcelas_vencimento_fixo.py`.

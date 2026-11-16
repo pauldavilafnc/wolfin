@@ -374,6 +374,7 @@
 #ov .sheet.hms{max-height:92vh;overflow:auto}
 </style>
 <style id="v711-css">.calh.fr{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}.calnv{min-width:44px;min-height:44px;border:0;border-radius:12px;background:var(--tile);color:var(--navy);font-size:22px;font-weight:700;cursor:pointer}</style>
+<style id="v712-css">.dueinfo{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:10px 2px 12px}.dueinfo b{font-weight:600}.duelk{min-height:44px;padding:0 12px;border:0;background:none;color:var(--blue);font:inherit;font-size:13px;font-weight:600;text-decoration:underline;cursor:pointer}#dueSel{margin-bottom:12px}#dueSel select{width:100%;min-height:44px}</style>
 </head>
 <body>
 <div id="intro" aria-hidden="true"><video id="introv" playsinline preload="auto" disablepictureinpicture tabindex="-1"></video><div class="il"><div class="ib"><img src="icon-512.png" alt="" width="512" height="512" decoding="async" onerror="this.style.visibility='hidden'"><i class="ie l"></i><i class="ie r"></i><div class="sw"><i class="sh"></i></div></div><b class="in">WOLFIN</b><span class="is">Domine seu dinheiro.</span></div></div>
@@ -425,7 +426,7 @@ const MCIDS=['wolfin','leonidas','vito','oraculo','brutus','mako','bento','penny
 /* migração: avatar antigo (10 modelos) e roupa antiga do lobo → mascote novo; sem correspondência = Wolfin */
 const MCOLD_AV=['wolfin',null,'nyx','leonidas','vito','wolfin',null,null,'oraculo','elliot'],MCOLD_MS={terno:'wolfin',rei:'leonidas',detetive:'elliot',hacker:'nyx',ostentacao:'vito'};
 function mcMigrate(p){const a=p&&p.av&&typeof p.av==='object'&&p.av.v===2?p.av:null,ia=a?MCOLD_AV[Math.floor(+a.m)]||null:null;return (a&&a.set===1&&ia)||(MCOLD_MS[p&&p.ms]&&MCOLD_MS[p.ms]!=='wolfin'?MCOLD_MS[p.ms]:null)||ia||'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.11 · data real do pagamento das parcelas · 16/11/2026';
+const KEY='wallstreet.v1',BUILD='7.12 · vencimento fixo no parcelamento, pagamento por parcela · 16/11/2026';
 const CATS={exp:['Alimentação','Transporte','Compras','Roupas','Lazer','Trabalho','Casa','Saúde','Educação','Financeiro','Tecnologia','Cuidados pessoais','Presentes','Outros'],inc:['Salário','Comissão','Freelancer','Outro']};
 const PALS=[['blue','Azul','#2563EB'],['perola','Pérola','#E8EDF5'],['violet','Violeta','#7C3AED'],['teal','Turquesa','#0D9488'],['pink','Rosa','#DB2777'],['orange','Laranja','#EA580C'],['ouro','Ouro','#B88614'],['esmeralda','Esmeralda','#15803D'],['grafite','Grafite','#4B5563']];
 const PAYS=['Pix','Cartão de débito','Cartão de crédito','Dinheiro/Espécie','Outro'];
@@ -673,6 +674,8 @@ function vMonth(t){const rows=rowsOf(t,vm),inc=t==='inc',prev=sum(rows,i=>i.c),r
  <div class="card">${rows.length?rows.map(i=>itemRow(i,vm)+`<div class="acts" style="margin:0 0 6px"><button class="b2" data-act="edi" data-id="${i.id}">Editar</button><button class="b2" data-act="deli" data-id="${i.id}">Excluir</button></div>`).join(''):'<div class="empty">Nenhum lançamento neste mês.</div>'}
  <button class="b1 full" style="margin-top:8px" data-act="addi" data-id="${t}">+ Adicionar ${inc?'receita':'despesa'}</button></div>`}
 
+const dueDef=(day,ym)=>day&&ym?ym+'-'+pad(Math.min(day,dimOf(ym))):'';
+const dueOf=p=>{if(p.due)return p.due;const x=find(S.inst||[],p.iid);return dueDef(x&&x.day,p.ym)};
 const parcOf=id=>S.parc.filter(p=>p.iid===id).sort((a,b)=>a.ym<b.ym?-1:a.ym>b.ym?1:(a.due||'')<(b.due||'')?-1:1);
 const rowAct=i=>itemRow(i,vm)+`<div class="acts" style="margin:0 0 6px"><button class="b2" data-act="edi" data-id="${i.id}">Editar</button><button class="b2" data-act="deli" data-id="${i.id}">Excluir</button></div>`;
 function vDes(){const rows=rowsOf('exp',vm),fx=rows.filter(i=>i.fixed),vr=rows.filter(i=>!i.fixed);
@@ -683,7 +686,7 @@ function vDes(){const rows=rowsOf('exp',vm),fx=rows.filter(i=>i.fixed),vr=rows.f
   <div class="lbl" style="margin-top:4px">Valor: ${x.c!=null?brl(x.c):'não informado'} · Parcelas: ${ps.length||x.np||'não informado'} · Venc.: ${x.day?'dia '+pad(x.day):'não informado'}${x.pay?' · '+esc(x.pay):''}</div>
   ${ps.length?`<div class="lbl" style="margin-top:6px">${pn} de ${ps.length} pagas · pendente ${brl(pe)}</div>${bar(pn/ps.length*100,'g')}`:''}
   <div class="acts"><button class="b1" data-act="hist" data-id="${x.id}">${open[x.id]?'Ocultar linha do tempo':'Linha do tempo'}</button><button class="b2" data-act="addp" data-id="${x.id}">+ Parcela</button><button class="b2" data-act="edinst" data-id="${x.id}">Editar</button><button class="b2" data-act="delinst" data-id="${x.id}">Excluir</button></div>
-  ${open[x.id]?`<div class="lbl" style="margin-top:10px">Linha do tempo · ${esc(x.n)}</div><div class="tl">${ps.length?ps.map(p=>`<div class="row ${p.paid?'p':''}"><div class="t"><b>${mlabel(p.ym)}</b><span class="lbl">${p.due?'Vence '+dmy(p.due):(p.h?'Histórico anterior':'Parcela')}${p.paidOn?' · pago em '+dmy(p.paidOn):(p.paid?' · pago (data não registrada)':'')}</span></div><div class="a">${brl(p.c)}<br><span class="tag ${p.paid?'ok':'pend'}">${p.paid?'Pago':'Pendente'}</span></div>${p.paid?'':`<button class="ib" data-act="remp" data-id="${p.id}" aria-label="Lembrar de pagar">⏰</button>`}<button class="ib" data-act="${p.paid?'tgp':'payp'}" data-id="${p.id}" aria-label="${p.paid?'Voltar para pendente':'Registrar pagamento'}">${p.paid?'↺':'✓'}</button><button class="ib" data-act="edp" data-id="${p.id}" aria-label="Editar">✎</button></div>`).join(''):'<div class="empty">Nenhuma parcela ainda. Toque em "+ Parcela".</div>'}</div>`:''}</div>`}).join('');
+  ${open[x.id]?`<div class="lbl" style="margin-top:10px">Linha do tempo · ${esc(x.n)}</div><div class="tl">${ps.length?ps.map(p=>`<div class="row ${p.paid?'p':''}"><div class="t"><b>${mlabel(p.ym)}</b><span class="lbl">${dueOf(p)?'Vence '+dmy(dueOf(p)):(p.h?'Histórico anterior':'Parcela')}${p.paidOn?' · pago em '+dmy(p.paidOn):(p.paid?' · pago (data não registrada)':'')}</span></div><div class="a">${brl(p.c)}<br><span class="tag ${p.paid?'ok':'pend'}">${p.paid?'Pago':'Pendente'}</span></div>${p.paid?'':`<button class="ib" data-act="remp" data-id="${p.id}" aria-label="Lembrar de pagar">⏰</button>`}<button class="ib" data-act="${p.paid?'tgp':'payp'}" data-id="${p.id}" aria-label="${p.paid?'Voltar para pendente':'Registrar pagamento'}">${p.paid?'↺':'✓'}</button><button class="ib" data-act="edp" data-id="${p.id}" aria-label="Editar">✎</button></div>`).join(''):'<div class="empty">Nenhuma parcela ainda. Toque em "+ Parcela".</div>'}</div>`:''}</div>`}).join('');
  return `<h2>Despesas</h2><button class="b2 full" data-act="nav" data-id="cc" style="margin-bottom:10px">Cartões de crédito ›</button><div class="card"><div class="sw"><button class="ib" data-act="mp" aria-label="Mês anterior">‹</button><b>${mlabel(vm)}</b><button class="ib" data-act="mn" aria-label="Próximo mês">›</button></div>
  <div class="grid"><div><div class="lbl">Previstas (fixas + variáveis)</div><div class="v">${brl(prev)}</div></div><div><div class="lbl">Pagas (sem faturas de cartão)</div><div class="v neg">${brl(real)}</div></div></div></div>
  ${blk('Fixas',fx,'+ Despesa fixa',1,'Nenhuma despesa fixa neste mês.')}
@@ -1103,14 +1106,24 @@ function instForm(id){const x=id?find(S.inst,id):null;
  form(x?'Editar parcelada':'Nova despesa parcelada',fl,v=>{
   const m=money(v.c),pc=money(v.pc);if(!v.n.trim())return'Informe o nome.';if(m.e||pc.e)return'Valor inválido.';if(v.day&&!dayOk(v.day))return'Dia inválido.';
   const np=v.np?Math.min(120,parseInt(v.np)||0)||null:null,o=x||{id:uid()};
-  Object.assign(o,{n:v.n.trim(),c:m.c,np,day:v.day?dayOk(v.day):null,pay:v.pay,paid:v.paid==='1'});
+  const od=x?x.day:null;Object.assign(o,{n:v.n.trim(),c:m.c,np,day:v.day?dayOk(v.day):null,pay:v.pay,paid:v.paid==='1'});
+  if(x&&od&&o.day&&od!==o.day)S.parc.forEach(q=>{if(q.iid===o.id&&!q.paid&&q.due&&q.due===dueDef(od,q.ym))q.due=dueDef(o.day,q.ym)});
   if(!x){S.inst.push(o);if(np&&pc.c&&/^\d{4}-\d{2}$/.test(v.fm))for(let k=0;k<np;k++){const ymk=shift(v.fm,k),q={id:uid(),iid:o.id,ym:ymk,c:pc.c,paid:false};if(o.day)q.due=ymk+'-'+pad(Math.min(o.day,dimOf(ymk)));S.parc.push(q)};open[o.id]=true}
   commit()})}
 function parcForm(id,iid){const p=id?find(S.parc,id):null,x=find(S.inst,p?p.iid:iid),ym0=p?.ym||vm;
- form((p?'Editar parcela':'Nova parcela')+(x?' · '+x.n:''),[{k:'ym',l:'Mês',t:'month',v:ym0},{k:'due',l:'Data de vencimento (opcional)',t:'cal',ym:ym0,v:p?.due||''},{k:'pd',l:'Data do pagamento',t:'cal',free:1,w:'pdw',hide:!p?.paid,ym:(p?.paidOn||p?.due||todayStr()).slice(0,7),v:p?.paid?(p.paidOn||''):''},{k:'c',l:'Valor (R$)',t:'money',v:fin(p?.c)},{k:'paid',l:'Status',t:'sel',v:p?.paid?1:0,o:[[0,'Pendente'],[1,'Pago']]}],v=>{
-  const m=money(v.c,1);if(!/^\d{4}-\d{2}$/.test(v.ym))return'Informe o mês.';if(m.e)return m.e;if(v.due&&!v.due.startsWith(v.ym+'-'))return'O vencimento deve estar no mês da parcela.';
-  const o=p||{id:uid(),iid};const was=o.paid;Object.assign(o,{ym:v.ym,c:m.c,paid:v.paid==='1'});if(v.due)o.due=v.due;else delete o.due;
+ form((p?'Editar parcela':'Nova parcela')+(x?' · '+x.n:''),[{k:'ym',l:'Mês',t:'month',v:ym0},{k:'pd',l:'Data do pagamento',t:'cal',free:1,w:'pdw',hide:!p?.paid,ym:(p?.paidOn||p?.due||todayStr()).slice(0,7),v:p?.paid?(p.paidOn||''):''},{k:'c',l:'Valor (R$)',t:'money',v:fin(p?.c)},{k:'paid',l:'Status',t:'sel',v:p?.paid?1:0,o:[[0,'Pendente'],[1,'Pago']]}],v=>{
+  const m=money(v.c,1);if(!/^\d{4}-\d{2}$/.test(v.ym))return'Informe o mês.';if(m.e)return m.e;
+  const o=p||{id:uid(),iid};const was=o.paid;Object.assign(o,{ym:v.ym,c:m.c,paid:v.paid==='1'});const dd=DUE.cur(v.ym);if(dd&&(!p||p.due||DUE.isEx(dd,v.ym)))o.due=dd;else if(!dd)delete o.due;
   if(o.paid){if(v.pd){if(!dOk(v.pd))return'Data do pagamento inválida.';o.paidOn=v.pd}else if(!(p&&was&&!p.paidOn))return'Informe a data do pagamento.'}else delete o.paidOn;if(!p)S.parc.push(o);commit()});
+ const DUE=(()=>{const st={mode:'orig',ex:0},pd=p&&p.due&&p.due!==dueDef(x&&x.day,p.ym)?+p.due.slice(8):0,ymv=()=>($('#f input[name=ym]')||{}).value||ym0;
+  const base=()=>st.mode==='ex'?st.ex:st.mode==='def'?(x&&x.day)||0:(pd||(x&&x.day)||0),cur=ym=>/^\d{4}-\d{2}$/.test(ym)?dueDef(base(),ym):'',isEx=(d,ym)=>!!d&&d!==dueDef(x&&x.day,ym);
+  const paint=()=>{const ym=ymv(),d=cur(ym),t=$('#dueTxt'),sl=$('#dueSel select');if(!t)return;t.textContent=d?'Dia de vencimento: '+dmy(d)+(isEx(d,ym)?' (exceção desta parcela)':''):'Dia de vencimento: não definido';
+   if(sl){const n=/^\d{4}-\d{2}$/.test(ym)?dimOf(ym):31,cd=d?+d.slice(8):'';sl.innerHTML=`<option value="">${x&&x.day?'Padrão do parcelamento (dia '+pad(x.day)+')':'Sem vencimento'}</option>`+Array.from({length:n},(_,i)=>`<option value="${i+1}"${st.mode==='ex'&&st.ex===i+1?' selected':''}>Dia ${pad(i+1)}</option>`).join('');if(st.mode==='ex'&&st.ex>n)sl.value=String(n)}};
+  return{cur,isEx,st,paint}})();
+ $('#pdw').insertAdjacentHTML('beforebegin','<div class="dueinfo"><b id="dueTxt"></b><button type="button" class="duelk" id="dueBtn">Alterar só esta parcela</button></div><div id="dueSel" hidden><select aria-label="Dia de vencimento só desta parcela"></select></div>');
+ DUE.paint();$('#dueBtn').onclick=()=>{const b=$('#dueSel');b.hidden=!b.hidden;if(!b.hidden)$('#dueSel select').focus()};
+ $('#dueSel select').onchange=e=>{const v=e.target.value;if(v){DUE.st.mode='ex';DUE.st.ex=+v}else DUE.st.mode='def';DUE.paint()};
+ const ymi=$('#f input[name=ym]');if(ymi)ymi.addEventListener('change',()=>DUE.paint());
  const stp=$('#f select[name=paid]');if(stp)stp.onchange=()=>{const on=stp.value==='1',w=$('#pdw .calw');$('#pdw').hidden=!on;if(on&&!w.dataset.sel){w.dataset.sel=todayStr();w.dataset.ym=todayStr().slice(0,7)}if(!on)w.dataset.sel='';calMount(w)};
  if(p){$('#f .btns').insertAdjacentHTML('beforebegin','<button type="button" class="b2 full" data-act="delp" data-id="'+p.id+'" style="margin-bottom:8px">Excluir parcela</button>')}}
 function iniForm(){const o=S.opening;
