@@ -373,6 +373,7 @@
 .hmfoot{font-size:11.5px;color:var(--gray);margin:10px 2px 0;line-height:1.35}
 #ov .sheet.hms{max-height:92vh;overflow:auto}
 </style>
+<style id="v711-css">.calh.fr{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}.calnv{min-width:44px;min-height:44px;border:0;border-radius:12px;background:var(--tile);color:var(--navy);font-size:22px;font-weight:700;cursor:pointer}</style>
 </head>
 <body>
 <div id="intro" aria-hidden="true"><video id="introv" playsinline preload="auto" disablepictureinpicture tabindex="-1"></video><div class="il"><div class="ib"><img src="icon-512.png" alt="" width="512" height="512" decoding="async" onerror="this.style.visibility='hidden'"><i class="ie l"></i><i class="ie r"></i><div class="sw"><i class="sh"></i></div></div><b class="in">WOLFIN</b><span class="is">Domine seu dinheiro.</span></div></div>
@@ -424,7 +425,7 @@ const MCIDS=['wolfin','leonidas','vito','oraculo','brutus','mako','bento','penny
 /* migração: avatar antigo (10 modelos) e roupa antiga do lobo → mascote novo; sem correspondência = Wolfin */
 const MCOLD_AV=['wolfin',null,'nyx','leonidas','vito','wolfin',null,null,'oraculo','elliot'],MCOLD_MS={terno:'wolfin',rei:'leonidas',detetive:'elliot',hacker:'nyx',ostentacao:'vito'};
 function mcMigrate(p){const a=p&&p.av&&typeof p.av==='object'&&p.av.v===2?p.av:null,ia=a?MCOLD_AV[Math.floor(+a.m)]||null:null;return (a&&a.set===1&&ia)||(MCOLD_MS[p&&p.ms]&&MCOLD_MS[p.ms]!=='wolfin'?MCOLD_MS[p.ms]:null)||ia||'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.10 · avatares na cor do tema, mapa de calor quente · 16/11/2026';
+const KEY='wallstreet.v1',BUILD='7.11 · data real do pagamento das parcelas · 16/11/2026';
 const CATS={exp:['Alimentação','Transporte','Compras','Roupas','Lazer','Trabalho','Casa','Saúde','Educação','Financeiro','Tecnologia','Cuidados pessoais','Presentes','Outros'],inc:['Salário','Comissão','Freelancer','Outro']};
 const PALS=[['blue','Azul','#2563EB'],['perola','Pérola','#E8EDF5'],['violet','Violeta','#7C3AED'],['teal','Turquesa','#0D9488'],['pink','Rosa','#DB2777'],['orange','Laranja','#EA580C'],['ouro','Ouro','#B88614'],['esmeralda','Esmeralda','#15803D'],['grafite','Grafite','#4B5563']];
 const PAYS=['Pix','Cartão de débito','Cartão de crédito','Dinheiro/Espécie','Outro'];
@@ -682,7 +683,7 @@ function vDes(){const rows=rowsOf('exp',vm),fx=rows.filter(i=>i.fixed),vr=rows.f
   <div class="lbl" style="margin-top:4px">Valor: ${x.c!=null?brl(x.c):'não informado'} · Parcelas: ${ps.length||x.np||'não informado'} · Venc.: ${x.day?'dia '+pad(x.day):'não informado'}${x.pay?' · '+esc(x.pay):''}</div>
   ${ps.length?`<div class="lbl" style="margin-top:6px">${pn} de ${ps.length} pagas · pendente ${brl(pe)}</div>${bar(pn/ps.length*100,'g')}`:''}
   <div class="acts"><button class="b1" data-act="hist" data-id="${x.id}">${open[x.id]?'Ocultar linha do tempo':'Linha do tempo'}</button><button class="b2" data-act="addp" data-id="${x.id}">+ Parcela</button><button class="b2" data-act="edinst" data-id="${x.id}">Editar</button><button class="b2" data-act="delinst" data-id="${x.id}">Excluir</button></div>
-  ${open[x.id]?`<div class="lbl" style="margin-top:10px">Linha do tempo · ${esc(x.n)}</div><div class="tl">${ps.length?ps.map(p=>`<div class="row ${p.paid?'p':''}"><div class="t"><b>${mlabel(p.ym)}</b><span class="lbl">${p.due?'Vence '+dmy(p.due):(p.h?'Histórico anterior':'Parcela')}${p.paidOn?' · pago em '+dmy(p.paidOn):''}</span></div><div class="a">${brl(p.c)}<br><span class="tag ${p.paid?'ok':'pend'}">${p.paid?'Pago':'Pendente'}</span></div>${p.paid?'':`<button class="ib" data-act="remp" data-id="${p.id}" aria-label="Lembrar de pagar">⏰</button>`}<button class="ib" data-act="tgp" data-id="${p.id}" aria-label="Alternar">${p.paid?'↺':'✓'}</button><button class="ib" data-act="edp" data-id="${p.id}" aria-label="Editar">✎</button></div>`).join(''):'<div class="empty">Nenhuma parcela ainda. Toque em "+ Parcela".</div>'}</div>`:''}</div>`}).join('');
+  ${open[x.id]?`<div class="lbl" style="margin-top:10px">Linha do tempo · ${esc(x.n)}</div><div class="tl">${ps.length?ps.map(p=>`<div class="row ${p.paid?'p':''}"><div class="t"><b>${mlabel(p.ym)}</b><span class="lbl">${p.due?'Vence '+dmy(p.due):(p.h?'Histórico anterior':'Parcela')}${p.paidOn?' · pago em '+dmy(p.paidOn):(p.paid?' · pago (data não registrada)':'')}</span></div><div class="a">${brl(p.c)}<br><span class="tag ${p.paid?'ok':'pend'}">${p.paid?'Pago':'Pendente'}</span></div>${p.paid?'':`<button class="ib" data-act="remp" data-id="${p.id}" aria-label="Lembrar de pagar">⏰</button>`}<button class="ib" data-act="${p.paid?'tgp':'payp'}" data-id="${p.id}" aria-label="${p.paid?'Voltar para pendente':'Registrar pagamento'}">${p.paid?'↺':'✓'}</button><button class="ib" data-act="edp" data-id="${p.id}" aria-label="Editar">✎</button></div>`).join(''):'<div class="empty">Nenhuma parcela ainda. Toque em "+ Parcela".</div>'}</div>`:''}</div>`}).join('');
  return `<h2>Despesas</h2><button class="b2 full" data-act="nav" data-id="cc" style="margin-bottom:10px">Cartões de crédito ›</button><div class="card"><div class="sw"><button class="ib" data-act="mp" aria-label="Mês anterior">‹</button><b>${mlabel(vm)}</b><button class="ib" data-act="mn" aria-label="Próximo mês">›</button></div>
  <div class="grid"><div><div class="lbl">Previstas (fixas + variáveis)</div><div class="v">${brl(prev)}</div></div><div><div class="lbl">Pagas (sem faturas de cartão)</div><div class="v neg">${brl(real)}</div></div></div></div>
  ${blk('Fixas',fx,'+ Despesa fixa',1,'Nenhuma despesa fixa neste mês.')}
@@ -1070,17 +1071,18 @@ function form(title,fields,onsave){
  o.hidden=false;o.querySelectorAll('.calw').forEach(calMount);$('#f').onsubmit=e=>{e.preventDefault();Promise.resolve(onsave(Object.fromEntries(new FormData(e.target)))).then(r=>{if(r){const e=$('#er');if(e)e.textContent=r}else closeOv()})}}
 function ask(msg,ok){pend=ok;$('#ov').innerHTML=`<div class="sheet"><h3>Confirmar</h3><p style="margin-bottom:14px">${esc(msg)}</p><div class="btns"><button class="b2" data-act="close">Cancelar</button><button class="b1" data-act="yes" style="background:#DC2626">Confirmar</button></div></div>`;$('#ov').hidden=false}
 const money=(v,req)=>{const c=parseMoney(v);if(Number.isNaN(c))return{e:'Valor inválido.'};if(c==null)return req?{e:'Informe um valor.'}:{c:null};if(req&&c<=0)return{e:'O valor deve ser maior que zero.'};return{c}};
+const dOk=s=>/^\d{4}-\d{2}-\d{2}$/.test(s)&&new Date(s+'T12:00:00').toISOString().slice(0,10)===s;
 const dayOk=v=>{const n=Number(v);return Number.isInteger(n)&&n>=1&&n<=31?n:null};
 const find=(a,id)=>a.find(x=>x.id===id);
 const dimOf=ym=>{const [y,m]=ym.split('-').map(Number);return new Date(y,m,0).getDate()};
 const WD=['D','S','T','Q','Q','S','S'];
-function calHtml(f){return `<div class="lab">${esc(f.l)}</div><div class="calw" data-k="${f.k}" data-ym="${esc(f.ym)}" data-sel="${esc(f.v||'')}"></div><input type="hidden" name="${f.k}" value="${esc(f.v||'')}">`}
-function calMount(w){ /* calendário travado no mês/ano do lançamento */
- const ym=w.dataset.ym,[y,m]=ym.split('-').map(Number),sel=w.dataset.sel&&w.dataset.sel.startsWith(ym+'-')?w.dataset.sel:'',td=todayStr();
- let h=`<div class="calh"><b>${mlabel(ym).replace(/^./,c=>c.toUpperCase())}</b><span class="lbl">${sel?dmy(sel):'Toque em um dia'}</span></div><div class="calg">${WD.map(x=>`<i>${x}</i>`).join('')}`+'<span></span>'.repeat(new Date(y,m-1,1).getDay());
+function calHtml(f){const h=`<div class="lab">${esc(f.l)}</div><div class="calw" data-k="${f.k}" data-ym="${esc(f.ym)}" data-sel="${esc(f.v||'')}"${f.free?' data-free="1"':''}></div><input type="hidden" name="${f.k}" value="${esc(f.v||'')}">`;return f.w?`<div id="${f.w}"${f.hide?' hidden':''}>${h}</div>`:h}
+function calMount(w){ /* calendário travado no mês/ano do lançamento; com data-free="1" aceita qualquer data (setas de mês) */
+ const free=w.dataset.free==='1',ym=w.dataset.ym,[y,m]=ym.split('-').map(Number),sel=free?(w.dataset.sel||''):(w.dataset.sel&&w.dataset.sel.startsWith(ym+'-')?w.dataset.sel:''),td=todayStr(),ttl=mlabel(ym).replace(/^./,c=>c.toUpperCase());
+ let h=(free?`<div class="calh fr"><button type="button" class="calnv" data-nv="-1" aria-label="Mês anterior">‹</button><b>${ttl}</b><button type="button" class="calnv" data-nv="1" aria-label="Próximo mês">›</button></div><div class="lbl" style="margin:0 0 6px">${sel?'Pagamento em '+dmy(sel):'Toque no dia do pagamento'}</div>`:`<div class="calh"><b>${ttl}</b><span class="lbl">${sel?dmy(sel):'Toque em um dia'}</span></div>`)+`<div class="calg">${WD.map(x=>`<i>${x}</i>`).join('')}`+'<span></span>'.repeat(new Date(y,m-1,1).getDay());
  for(let d=1;d<=dimOf(ym);d++){const ds=ym+'-'+pad(d);h+=`<button type="button" class="cd${ds===sel?' on':''}${ds===td?' td':''}" data-d="${ds}" aria-label="${dmy(ds)}">${d}</button>`}
  w.innerHTML=h+'</div>';w.dataset.sel=sel;const inp=w.parentElement.querySelector('input[name="'+w.dataset.k+'"]');if(inp)inp.value=sel}
-$('#ov').addEventListener('click',e=>{const b=e.target.closest('.cd');if(!b)return;const w=b.closest('.calw');w.dataset.sel=b.dataset.d;calMount(w)});
+$('#ov').addEventListener('click',e=>{const n=e.target.closest('.calnv');if(n){const w=n.closest('.calw');w.dataset.ym=shift(w.dataset.ym,+n.dataset.nv);calMount(w);const k=w.querySelector('.calnv[data-nv="'+n.dataset.nv+'"]');if(k)k.focus();return}const b=e.target.closest('.cd');if(!b)return;const w=b.closest('.calw');w.dataset.sel=b.dataset.d;calMount(w)});
 $('#ov').addEventListener('change',e=>{if(e.target.name==='ym'){const w=$('#ov .calw');if(w&&/^\d{4}-\d{2}$/.test(e.target.value)){w.dataset.ym=e.target.value;w.dataset.sel='';calMount(w)}}});
 
 function itemForm(t,id,f0){const i=id?find(S.items,id):null;t=t||i.t;const inc=t==='inc',cl=[...CATS[t]];if(i&&i.cat&&!cl.includes(i.cat))cl.push(i.cat);
@@ -1105,10 +1107,11 @@ function instForm(id){const x=id?find(S.inst,id):null;
   if(!x){S.inst.push(o);if(np&&pc.c&&/^\d{4}-\d{2}$/.test(v.fm))for(let k=0;k<np;k++){const ymk=shift(v.fm,k),q={id:uid(),iid:o.id,ym:ymk,c:pc.c,paid:false};if(o.day)q.due=ymk+'-'+pad(Math.min(o.day,dimOf(ymk)));S.parc.push(q)};open[o.id]=true}
   commit()})}
 function parcForm(id,iid){const p=id?find(S.parc,id):null,x=find(S.inst,p?p.iid:iid),ym0=p?.ym||vm;
- form((p?'Editar parcela':'Nova parcela')+(x?' · '+x.n:''),[{k:'ym',l:'Mês',t:'month',v:ym0},{k:'due',l:'Data de vencimento (opcional)',t:'cal',ym:ym0,v:p?.due||''},{k:'c',l:'Valor (R$)',t:'money',v:fin(p?.c)},{k:'paid',l:'Status',t:'sel',v:p?.paid?1:0,o:[[0,'Pendente'],[1,'Pago']]}],v=>{
+ form((p?'Editar parcela':'Nova parcela')+(x?' · '+x.n:''),[{k:'ym',l:'Mês',t:'month',v:ym0},{k:'due',l:'Data de vencimento (opcional)',t:'cal',ym:ym0,v:p?.due||''},{k:'pd',l:'Data do pagamento',t:'cal',free:1,w:'pdw',hide:!p?.paid,ym:(p?.paidOn||p?.due||todayStr()).slice(0,7),v:p?.paid?(p.paidOn||''):''},{k:'c',l:'Valor (R$)',t:'money',v:fin(p?.c)},{k:'paid',l:'Status',t:'sel',v:p?.paid?1:0,o:[[0,'Pendente'],[1,'Pago']]}],v=>{
   const m=money(v.c,1);if(!/^\d{4}-\d{2}$/.test(v.ym))return'Informe o mês.';if(m.e)return m.e;if(v.due&&!v.due.startsWith(v.ym+'-'))return'O vencimento deve estar no mês da parcela.';
   const o=p||{id:uid(),iid};const was=o.paid;Object.assign(o,{ym:v.ym,c:m.c,paid:v.paid==='1'});if(v.due)o.due=v.due;else delete o.due;
-  if(o.paid&&!was&&!o.paidOn)o.paidOn=todayStr();if(!o.paid)delete o.paidOn;if(!p)S.parc.push(o);commit()});
+  if(o.paid){if(v.pd){if(!dOk(v.pd))return'Data do pagamento inválida.';o.paidOn=v.pd}else if(!(p&&was&&!p.paidOn))return'Informe a data do pagamento.'}else delete o.paidOn;if(!p)S.parc.push(o);commit()});
+ const stp=$('#f select[name=paid]');if(stp)stp.onchange=()=>{const on=stp.value==='1',w=$('#pdw .calw');$('#pdw').hidden=!on;if(on&&!w.dataset.sel){w.dataset.sel=todayStr();w.dataset.ym=todayStr().slice(0,7)}if(!on)w.dataset.sel='';calMount(w)};
  if(p){$('#f .btns').insertAdjacentHTML('beforebegin','<button type="button" class="b2 full" data-act="delp" data-id="'+p.id+'" style="margin-bottom:8px">Excluir parcela</button>')}}
 function iniForm(){const o=S.opening;
  form(o?'Editar saldo inicial':'Saldo inicial',[{k:'c',l:'Valor (R$)',t:'money',v:fin(o?.c),p:'0,00'},{k:'d',l:'Data de referência',t:'date',v:o?.d||todayStr()},{k:'note',l:'Observação (opcional)',v:o?.note,p:'Ex.: dinheiro guardado em casa'}],v=>{
@@ -1144,7 +1147,7 @@ const ACT={
  addi:(t,b)=>itemForm(t,null,b.dataset.f),edi:id=>itemForm(null,id),
  deli:id=>ask('Excluir este lançamento e todo o seu histórico de pagamentos?',()=>{S.items=S.items.filter(x=>x.id!==id);commit('Excluído')}),
  addinst:()=>instForm(),edinst:id=>instForm(id),delinst:id=>ask('Excluir esta despesa parcelada e todas as suas parcelas?',()=>{S.inst=S.inst.filter(x=>x.id!==id);S.parc=S.parc.filter(p=>p.iid!==id);commit('Excluído')}),
- addp:id=>parcForm(null,id),edp:id=>parcForm(id),tgp:id=>{const p=find(S.parc,id);if(p){p.paid=!p.paid;if(p.paid)p.paidOn=todayStr();else delete p.paidOn;commit()}},
+ addp:id=>parcForm(null,id),edp:id=>parcForm(id),payp:id=>{const p=find(S.parc,id);if(!p)return;form('Registrar pagamento · '+mlabel(p.ym),[{k:'pd',l:'Data do pagamento',t:'cal',free:1,ym:todayStr().slice(0,7),v:todayStr()}],v=>{if(!dOk(v.pd))return'Informe a data do pagamento.';p.paid=true;p.paidOn=v.pd;commit()})},tgp:id=>{const p=find(S.parc,id);if(p){p.paid=!p.paid;if(p.paid)p.paidOn=todayStr();else delete p.paidOn;commit()}},
  delp:id=>{closeOv();ask('Excluir esta parcela?',()=>{S.parc=S.parc.filter(x=>x.id!==id);commit('Excluído')})},
  addd:()=>debtForm(),edd:id=>debtForm(id),deld:id=>ask('Excluir esta dívida e seu histórico de pagamentos?',()=>{S.debts=S.debts.filter(x=>x.id!==id);commit('Excluído')}),
  pay:id=>moveForm('pay',id),dep:id=>moveForm('dep',id),wd:id=>{const b=find(S.boxes,id);if(savedOf(b)<=0)return toast('Não há dinheiro guardado para retirar');moveForm('wd',id)},

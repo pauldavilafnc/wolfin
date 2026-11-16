@@ -262,3 +262,12 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - **Mapa de calor:** escala quente — sem gasto neutro, 1 amarelo suave, 2 amarelo-alaranjado, 3 laranja, 4 vermelho (versões própria para claro e escuro). A legenda usa as mesmas classes. O dia selecionado tem contorno neutro (cor do texto do tema), sem confundir com a intensidade.
 - **Regra do maior dia:** o dia de maior gasto do mês sempre fica na faixa vermelha (antes, com poucos dias com gasto, podia ficar laranja). O restante do cálculo de intensidade não mudou.
 - Teste: `python3 tests/run_all.py --suite tema_avatares_calor` (60 verificações). Regressão completa: 33 suítes, 1416 verificações.
+
+## Versão 7.11 — data real do pagamento das parcelas
+- **Editar parcela** ganhou o campo **Data do pagamento** (calendário, qualquer data, passada ou futura), logo abaixo do vencimento. Só aparece quando o status é **Pago**; ao escolher Pago ele sugere hoje, mas dá para mudar. Em parcela já paga carrega a data guardada. Pago → Pendente apaga a data.
+- O botão ✓ da lista de parcelas agora abre uma janelinha "Registrar pagamento" com a data (hoje por padrão) antes de confirmar. O botão ↺ volta para pendente e remove a data.
+- Parcelas antigas pagas com data errada (ex.: 15/11/2026): abra a parcela, toque em **Editar** e escolha a data real. Nada é corrigido automaticamente; parcelas pagas sem data continuam sem data até você informar (a lista mostra "pago (data não registrada)").
+- Vencimento (`due`) e pagamento (`paidOn`) são independentes. A parcela não tem "data de registro" guardada, então nada foi inventado.
+- Mapa de calor, totais por dia, relatórios, saldo e comparações mensais já usavam `paidOn`; agora refletem a data que você corrigir. Sem duplicação (mesma lógica de antes).
+- Estrutura de dados: **nenhuma chave nova** — `S.parc[i].paidOn` (AAAA-MM-DD) já existia. Backups e senhas continuam compatíveis.
+- Teste novo: `tests/suites/parcelas_data_pagamento.py`.
