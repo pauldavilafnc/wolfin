@@ -294,3 +294,8 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - Paletas de cores, temas e as outras telas não mudaram (as 64 regras de paleta são idênticas às da v7.13; as regras de contraste de `.pos` e do balão do mascote, que estavam na mesma linha de CSS da intro, foram mantidas).
 - Nota: depois de atualizar, o ícone já instalado na tela inicial só troca quando o Android/iPhone renovar o atalho (às vezes é preciso remover e adicionar de novo à tela inicial).
 - Teste novo: `tests/suites/sem_intro_logo.py` (a suíte `intro_wolfin` foi retirada).
+
+## Versão 7.15 — intro minimalista com a nova logo e som
+- Ao abrir o app (uma vez por sessão; recarregar não repete) aparece uma intro de ~2,6 s: a logo do lobo entra suave, depois "WOLFIN" e o slogan, tudo nas cores do tema escolhido (claro ou escuro), e some sozinha. **Tocar na tela (ou apertar uma tecla) pula.** Com "reduzir movimento" ligado no aparelho ela fica bem curta e sem som.
+- **Som**: um acorde curto e suave gerado pelo próprio aparelho (não há arquivo de áudio nem de vídeo, então o app continua leve e funciona offline). Os navegadores só deixam tocar som sozinho em certas condições; quando bloqueiam, a intro roda muda e o **botão de som** (canto superior direito) liga o acorde com um toque. Esse mesmo botão desliga; a escolha fica lembrada para as próximas aberturas.
+- Nada mudou em dados, paletas ou nas outras telas. Teste novo: `tests/suites/intro_minimalista.py` (33 verificações).
