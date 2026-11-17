@@ -295,7 +295,10 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - Nota: depois de atualizar, o ícone já instalado na tela inicial só troca quando o Android/iPhone renovar o atalho (às vezes é preciso remover e adicionar de novo à tela inicial).
 - Teste novo: `tests/suites/sem_intro_logo.py` (a suíte `intro_wolfin` foi retirada).
 
-## Versão 7.15 — intro minimalista com a nova logo e som
-- Ao abrir o app (uma vez por sessão; recarregar não repete) aparece uma intro de ~2,6 s: a logo do lobo entra suave, depois "WOLFIN" e o slogan, tudo nas cores do tema escolhido (claro ou escuro), e some sozinha. **Tocar na tela (ou apertar uma tecla) pula.** Com "reduzir movimento" ligado no aparelho ela fica bem curta e sem som.
-- **Som**: um acorde curto e suave gerado pelo próprio aparelho (não há arquivo de áudio nem de vídeo, então o app continua leve e funciona offline). Os navegadores só deixam tocar som sozinho em certas condições; quando bloqueiam, a intro roda muda e o **botão de som** (canto superior direito) liga o acorde com um toque. Esse mesmo botão desliga; a escolha fica lembrada para as próximas aberturas.
-- Nada mudou em dados, paletas ou nas outras telas. Teste novo: `tests/suites/intro_minimalista.py` (33 verificações).
+## Versão 7.16 — intro em vídeo do lobo (a v7.15 foi substituída)
+- A intro agora é o vídeo enviado (lobo + WOLFIN + "Controle seu dinheiro", ~3,9 s), em tela cheia. Começa **sem som** (o navegador exige); o **botão de som** (canto superior direito) liga e desliga, e a escolha fica lembrada (se você deixou ligado, tenta começar com som; se o navegador bloquear, toca mudo).
+- **Transição suave**: nos últimos ~0,5 s a imagem desvanece (e o volume também) revelando o app por baixo, sem corte seco. Tocar na tela ou apertar uma tecla pula (com desvanecer rápido).
+- **Mais leve, mesma qualidade**: o original tinha 3,4 MB; agora são `intro-lobo.mp4` (≈490 KB, H.264+AAC) e `intro-lobo.webm` (≈355 KB, reserva), ambos na resolução original 720x1280 (qualidade medida contra o original: PSNR ≈ 51 dB, ou seja, sem diferença visível).
+- Uma vez por sessão; recarregar não repete. Com "reduzir movimento" no aparelho, vai direto ao app. Se o vídeo não carregar, a intro some sozinha (o app nunca fica preso). Funciona offline (o vídeo fica guardado no cache do app).
+- Os arquivos `intro-lobo.mp4` e `intro-lobo.webm` precisam subir junto com `index.html` e `sw.js`.
+- Teste novo: `tests/suites/intro_video.py` (35 verificações); a suíte `intro_minimalista` (v7.15) foi retirada.
