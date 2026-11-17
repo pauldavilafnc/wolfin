@@ -287,3 +287,10 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - **Mudar o dia de uma fixa** vale a partir do mês que você está vendo; os meses anteriores continuam com o dia que tinham (e os pagamentos já registrados não mudam).
 - Dados: um campo opcional novo, `dh` (histórico de dias, só em despesas fixas que tiveram o dia alterado): lista `[mês, dia antigo]`. Despesas existentes não são alteradas. Receitas não mudaram.
 - Teste novo: `tests/suites/despesas_fixa_variavel.py`.
+
+## Versão 7.14 — sem intro, nova logo do lobo
+- **Intro removida**: o app abre direto na tela de boas-vindas/login (sem vídeo, sem animação inicial, sem botão de som). Saíram o código, o estilo, o tratamento do vídeo no Service Worker e os arquivos `intro-wolfin.mp4` e `intro-wolfin.webm` (você pode apagá-los do repositório).
+- **Nova logo** (a imagem do ícone enviada): ícone do app (192/512), ícone "maskable", ícone da tela inicial do iPhone (apple-touch-icon), favicons 32/48 e o quadradinho do "Sobre". Os nomes dos arquivos são os mesmos.
+- Paletas de cores, temas e as outras telas não mudaram (as 64 regras de paleta são idênticas às da v7.13; as regras de contraste de `.pos` e do balão do mascote, que estavam na mesma linha de CSS da intro, foram mantidas).
+- Nota: depois de atualizar, o ícone já instalado na tela inicial só troca quando o Android/iPhone renovar o atalho (às vezes é preciso remover e adicionar de novo à tela inicial).
+- Teste novo: `tests/suites/sem_intro_logo.py` (a suíte `intro_wolfin` foi retirada).
