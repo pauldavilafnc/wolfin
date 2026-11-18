@@ -1097,6 +1097,7 @@ function pqvCheck(){try{if(window.__WS_NOTOUR||!S||!LK.hidden||(SECMODE&&!DEK))r
 /* pede ao navegador para não apagar os dados do app em caso de pouco espaço (silencioso; o navegador decide) */
 let PERSISTED=false;function persistReq(){if(PERSISTED||window.__WS_NOTOUR||!S||!LK.hidden)return;PERSISTED=true;try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist().catch(()=>{})}catch(e){}}
 function render(){
+ try{document.querySelectorAll('details[data-det]').forEach(d=>{d.open?DET.add(d.dataset.det):DET.delete(d.dataset.det)})}catch(e){}
  applyPref();
  for(const k in VIEWS){$('#'+VIEWS[k][3]).hidden=k!==view}
  const fk=a11yFocusKey();try{$('#'+VIEWS[view][3]).innerHTML=(MEMO=new Map(),(()=>{try{return VIEWS[view][2]()}finally{MEMO=null}})());if(['rec','des','div','cx','rel','cc'].includes(view))$('#'+VIEWS[view][3]).insertAdjacentHTML('afterbegin',eyeBtn('eyefl'))}catch(e){$('#'+VIEWS[view][3]).innerHTML='<div class="card">Erro ao exibir esta tela. Seus dados continuam salvos.</div>';console.error(e)}a11yFocusBack(fk);pqvCheck();persistReq();bktCheck();try{window.__qtRefresh&&window.__qtRefresh()}catch(e){}{const sc=$('#'+VIEWS[view][3]);if(view!==LASTV&&!RM.matches){sc.classList.remove('vin');void sc.offsetWidth;sc.classList.add('vin');setTimeout(()=>sc.classList.remove('vin'),800)}}
