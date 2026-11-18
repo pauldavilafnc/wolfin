@@ -302,3 +302,17 @@ O botão "Toque para ativar o som" foi removido. A intro **tenta tocar com som s
 - Uma vez por sessão; recarregar não repete. Com "reduzir movimento" no aparelho, vai direto ao app. Se o vídeo não carregar, a intro some sozinha (o app nunca fica preso). Funciona offline (o vídeo fica guardado no cache do app).
 - Os arquivos `intro-lobo.mp4` e `intro-lobo.webm` precisam subir junto com `index.html` e `sw.js`.
 - Teste novo: `tests/suites/intro_video.py` (35 verificações); a suíte `intro_minimalista` (v7.15) foi retirada.
+
+## Versão 7.17 — acabamentos (auditoria de uso)
+Só ajustes de uso; nenhuma função foi removida e **nenhum dado mudou de formato** (as contas e os backups continuam compatíveis).
+- **Saldo da Home que fecha**: o cartão mostra Recebido, Pago e (quando houver) Guardado e dívidas do mês, mais a frase "Inclui R$ X de saldo inicial e de outros meses". Conta: anterior + recebido − pago − guardado/dívidas = saldo.
+- **Calculadora/ferramentas rápidas**: começa no canto inferior direito, logo acima do menu, mais discreta (um pouco transparente). Uma dica "arraste este botão" aparece **uma única vez** por aparelho. Quem já tinha mudado o botão de lugar mantém a posição escolhida.
+- **Home mais curta**: saiu a repetição de "Dívidas pendentes" e "Dinheiro guardado" (continuam nas seções logo abaixo) e a frase da marca dentro do saldo; "Este mês" (gráfico) foi para o fim.
+- **Saudação curta**: "Bom dia/Boa tarde/Boa noite, Nome!".
+- **Listas sem botões soltos**: em Receitas e Despesas, tocar na linha abre a edição, e **Excluir fica dentro da edição** (com a mesma confirmação). Parceladas, Dívidas e Caixinhas ganharam um ✎ no cabeçalho; ficam na tela só as ações do dia a dia (Pagar, Histórico, Guardar, Retirar…). O botão ✓/↺ continua marcando direto.
+- **Despesas**: "Já pagas" e "Previstas no mês" (a nota sobre faturas de cartão só aparece se houver cartão); ordem Fixas → Variáveis → Parceladas.
+- **Relatórios** (de ≈6.650 px para ≈2.960 px): "Indicadores do mês" e "Despesas por categoria" deixaram de repetir o que já existia — o que era único (dívidas vencidas, limites por categoria) foi para o bloco de contas do mês, e "Gastos por categoria" ficou como a lista de categorias. As seções extras ficaram recolhidas e lembram se estão abertas: Despesas que se repetem, Evolução das dívidas, Comparar dois meses, Mapa de calor, Gráficos do ano e Resumo para compartilhar. Um "?" explica o "Saldo no início do mês".
+- **Ajustes**: ordem Backup → Segurança → Aparência → Mascote → Zerar → Sobre; paletas, vidro e animações ficam em "Cores, vidro e animações" (Claro/Escuro continuam à vista). O rodapé não mostra mais texto de desenvolvedor. "Meu mascote" ganhou o botão "Ver conquistas".
+- **Conquistas**: mostra as conquistadas e as 3 próximas; as demais ficam em "Ver as outras N conquistas".
+- **Fontes**: nada abaixo de 11 px (barra inferior, mapa de calor, eixos dos gráficos), exceto a barra inferior em telas de 320 px, que fica em 9 px para caber.
+- Teste novo: `tests/suites/acabamentos_v717.py` (66 verificações). Regressão completa da v7.17: 1.570 verificações em 38 suítes, 0 falhas (Chromium simulado). Ajustados por mudança intencional: marca_wolfin, correcoes_auditoria, relatorios, acessibilidade, auditoria_geral, ferramentas_rapidas e as suítes que abrem o mapa de calor.
