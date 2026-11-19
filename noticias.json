@@ -1,14 +1,85 @@
 {
- "at": "2026-11-18T22:27-03:00",
+ "at": "2026-11-19T01:10-03:00",
  "items": [
   {
    "c": "mu",
-   "t": "Quem são os sete jovens fundadores da Anthropic que estão prestes a se tornarem multibilionários",
-   "f": "BBC News Brasil",
+   "t": "Trump, Putin e Xi fazem encontro histórico nesta quinta; saiba o que cada um quer",
+   "f": "G1 Mundo",
+   "d": "2026-11-19",
+   "h": "00:00",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/19/trump-putin-e-xi-fazem-encontro-historico-nesta-quinta-saiba-o-que-cada-um-quer.ghtml",
+   "s": "via REUTERS Mas, afinal, o que cada país busca com a reunião? Confira abaixo: Estados Unidos: incluir a China em um novo acordo de controle de armas nucleares e buscar visibilidade diplomática nas negociações com a Coreia do…"
+  },
+  {
+   "c": "br",
+   "t": "Consciência Negra será o último feriadão antes do Natal; veja as regras para quem trabalha",
+   "f": "G1 Economia",
+   "d": "2026-11-19",
+   "h": "00:00",
+   "u": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/11/19/consciencia-negra-feriado.ghtml",
+   "s": "Na próxima sexta-feira (20), é celebrado o Dia Nacional de Zumbi e da Consciência Negra, data que marca a morte do líder quilombola Zumbi dos Palmares. Desde 2024, a data é feriado nacional. 🗒️ Tem alguma sugestão de reportagem?…"
+  },
+  {
+   "c": "mu",
+   "t": "Anthropic, dona do Claude, estreia na bolsa avaliada em US$ 1,5 trilhão; conheça a empresa",
+   "f": "G1 Economia",
+   "d": "2026-11-19",
+   "h": "00:00",
+   "u": "https://g1.globo.com/inovacao/noticia/2026/11/19/anthropic-dona-do-claude-estreia-na-bolsa-conheca-a-empresa.ghtml",
+   "s": "A Anthropic, startup de inteligência artificial responsável pelo Claude, deve estrear nesta quinta-feira (19) na Nasdaq, bolsa americana que reúne algumas das maiores empresas de tecnologia do mundo. Com a oferta pública inicial…"
+  },
+  {
+   "c": "mu",
+   "t": "De ruptura com a OpenAI a gigante da bolsa: veja 5 fatos importantes sobre a Anthropic",
+   "f": "G1 Economia",
+   "d": "2026-11-19",
+   "h": "00:00",
+   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/19/de-ruptura-com-a-openai-a-gigante-da-bolsa-veja-5-fatos-importantes-sobre-a-anthropic.ghtml",
+   "s": "Anthropic Reuters A Anthropic, startup americana criadora do assistente de inteligência artificial Claude, estreia na bolsa de valores dos Estados Unidos nesta quinta-feira (19). A empresa arrecadou US$ 81,3 bilhões (R$ 478,3…"
+  },
+  {
+   "c": "br",
+   "t": "Maior IPO da história: como a Anthropic superou a SpaceX em estreia bilionária na bolsa",
+   "f": "G1 Economia",
+   "d": "2026-11-19",
+   "h": "00:00",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/19/maior-ipo-da-historia-como-a-anthropic-superou-a-spacex.ghtml"
+  },
+  {
+   "c": "br",
+   "t": "Mega-Sena pode pagar R$ 40 milhões nesta quinta-feira; g1 transmite ao vivo",
+   "f": "G1 Economia",
+   "d": "2026-11-19",
+   "h": "00:00",
+   "u": "https://g1.globo.com/loterias/mega-sena/noticia/2026/11/19/mega-sena-pode-pagar-r-40-milhoes-nesta-quinta-feira-g1-transmite-ao-vivo.ghtml",
+   "s": "Como funciona a Mega-Sena? O concurso 3.088 da Mega-Sena pode pagar um prêmio de R$ 40 milhões para os apostadores que acertarem as seis dezenas. O sorteio ocorre às 21h desta quinta-feira (19), em São Paulo. 📱Favorite o g1 no…"
+  },
+  {
+   "c": "mu",
+   "t": "Conferência de Yalta: o que foi o encontro que está sendo comparado à cúpula entre Trump, Putin e Xi",
+   "f": "G1 Mundo",
+   "d": "2026-11-19",
+   "h": "00:00",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/19/conferencia-de-yalta-o-que-foi-o-encontro-que-esta-sendo-comparado-a-cupula-entre-trump-putin-e-xi.ghtml",
+   "s": "🔎 Para Vitélio Brustolin, professor de Relações Internacionais da Universidade Federal Fluminense (UFF), embora existam semelhanças que permitam comparar os dois encontros, também é preciso considerar as diferenças. \"Naquela…"
+  },
+  {
+   "c": "br",
+   "t": "Sem avanço nas negociações, Brasil pede à OMC para julgar tarifaço imposto pelos EUA",
+   "f": "G1 Mundo",
    "d": "2026-11-18",
-   "h": "19:42",
-   "u": "https://www.bbc.com/portuguese/articles/cmn0dykxex82o?at_medium=RSS&at_campaign=rss",
-   "s": "A empresa de inteligência artificial por trás do Claude está prestes a vender suas ações na Bolsa dos EUA, tornando seus fundadores muito ricos."
+   "h": "23:41",
+   "u": "https://g1.globo.com/politica/noticia/2026/11/18/apos-falta-de-acordo-brasil-pede-a-omc-para-julgar-tarifaco-imposto-pelos-eua.ghtml",
+   "s": "O governo do presidente Luiz Inácio Lula da Silva (PT) formalizou na Organização Mundial do Comércio (OMC) um pedido para que a entidade julgue o tarifaço imposto pelos Estados Unidos contra produtos brasileiros vendidos no…"
+  },
+  {
+   "c": "mu",
+   "t": "Novo líder dos democratas na Câmara dos EUA promete investigar Trump",
+   "f": "G1 Mundo",
+   "d": "2026-11-18",
+   "h": "19:44",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/18/novo-lider-dos-democratas-no-congresso-dos-eua-promete-investigar-trump.ghtml",
+   "s": "O líder da minoria democrata na Câmara dos Representantes, Hakeem Jeffries, de Nova York, conversa com jornalistas antes da eleição da liderança do partido, no Capitólio, em Washington, nos Estados Unidos. J. Scott Applewhite /…"
   },
   {
    "c": "br",
@@ -47,15 +118,6 @@
    "s": "O preço definido torna a oferta da Anthropic o segundo mega-IPO do ano com foco em IA, seguindo a venda de ações da SpaceX em junho The post Anthropic fixa preço de IPO em US$83 por ação, diz fonte appeared first on InfoMoney ."
   },
   {
-   "c": "br",
-   "t": "Senado pede explicações a TCU sobre alíquota de 11,3% da CBS",
-   "f": "Agência Brasil",
-   "d": "2026-11-18",
-   "h": "17:07",
-   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/senado-pede-explicacoes-tcu-sobre-aliquota-de-113-da-cbs",
-   "s": "Após dois dias de audiência pública, a Comissão de Assuntos Econômicos (CAE) do Senado aprovou nesta quarta-feira (18) um requerimento para pedir explicações ao Tribunal de Contas da União (TCU) sobre a alíquota de referência de…"
-  },
-  {
    "c": "mu",
    "t": "O disco de ouro com mensagens para extraterrestres levado pela sonda Voyager 1 (e como eles poderão decifrá-lo)",
    "f": "BBC News Brasil",
@@ -65,13 +127,13 @@
    "s": "As sondas americanas Voyager 1 e 2 foram lançadas ao espaço na década de 1970 com discos de ouro contendo mensagens destinadas a civilizações extraterrestres. Será que, algum dias, elas encontrarão algum destinatário?"
   },
   {
-   "c": "br",
-   "t": "Número de desempregados há dois anos ou mais é o menor já registrado",
-   "f": "Agência Brasil",
+   "c": "mu",
+   "t": "Vazamento de documentos expõe relações do Deutsche Bank com Epstein, Trump e oligarcas russos",
+   "f": "G1 Economia",
    "d": "2026-11-18",
-   "h": "12:36",
-   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/numero-de-desempregados-ha-dois-anos-ou-mais-e-o-menor-ja-registrado",
-   "s": "O número de trabalhadores que procuram emprego há pelo menos dois anos foi o menor em 14 anos no terceiro trimestre de 2026. O dado foi divulgado nesta quarta-feira (18) pelo Instituto Brasileiro de Geografia e Estatística…"
+   "h": "13:30",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/18/vazamento-de-documentos-expoe-relacoes-do-deutsche-bank-com-epstein-trump-e-oligarcas-russos.ghtml",
+   "s": "Vazamento de documentos expõe relações do Deutsche Bank com Epstein, Trump e oligarcas russos REUTERS/Yves Herman Uma investigação jornalística baseada em milhões de documentos vazados revelou, nesta terça-feira (17), que o…"
   },
   {
    "c": "mu",
@@ -81,23 +143,6 @@
    "h": "07:26",
    "u": "https://www.bbc.com/portuguese/articles/c60mdv3k3wdpo?at_medium=RSS&at_campaign=rss",
    "s": "Ilana Casoy, que esteve envolvida na investigação e no julgamento do caso, ajudou a produzir filme sobre Suzane que tem despertado reações acaloradas nas redes sociais."
-  },
-  {
-   "c": "br",
-   "t": "Os segredos dos últimos anos de Belchior",
-   "f": "BBC News Brasil",
-   "d": "2026-11-16",
-   "h": "13:39",
-   "u": "https://www.bbc.com/portuguese/watch/c6x2wnkg33y7o?at_medium=RSS&at_campaign=rss",
-   "s": "A BBC News Brasil foi ao interior do Rio Grande do Sul para investigar os últimos anos de vida do cantor, reconstituir seu afastamento dos holofotes e conhecer a casa onde ele viveu longe dos fãs."
-  },
-  {
-   "c": "br",
-   "t": "Pix celebra 6 anos como motor de inclusão e eficiência financeira em todo o Brasil",
-   "f": "Banco Central do Brasil",
-   "d": "2026-11-16",
-   "h": "07:46",
-   "u": "https://www.bcb.gov.br/detalhenoticia/21320/noticia"
   }
  ]
 }
