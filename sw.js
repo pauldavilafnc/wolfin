@@ -5,7 +5,7 @@
    Este arquivo só cria, lê e apaga caches com essa identificação (e o nome antigo wallstreet-vN usado
    por versões anteriores deste app). Caches de outros projetos do mesmo domínio nunca são tocados.
    Não guarda dados financeiros (eles ficam no localStorage). */
-const VERSAO = '3';
+const VERSAO = '4';
 const ESCOPO = new URL(self.registration.scope).pathname;            // ex.: /wallstreet/
 const PREFIXO = 'wallstreet::' + ESCOPO + '::';
 const CACHE = PREFIXO + 'v' + VERSAO;
