@@ -1,6 +1,42 @@
 {
- "at": "2026-11-18T19:01-03:00",
+ "at": "2026-11-18T22:27-03:00",
  "items": [
+  {
+   "c": "mu",
+   "t": "Quem são os sete jovens fundadores da Anthropic que estão prestes a se tornarem multibilionários",
+   "f": "BBC News Brasil",
+   "d": "2026-11-18",
+   "h": "19:42",
+   "u": "https://www.bbc.com/portuguese/articles/cmn0dykxex82o?at_medium=RSS&at_campaign=rss",
+   "s": "A empresa de inteligência artificial por trás do Claude está prestes a vender suas ações na Bolsa dos EUA, tornando seus fundadores muito ricos."
+  },
+  {
+   "c": "br",
+   "t": "O que é a Lei Kandir, que motivou acordo no Senado e quase travou ajuste fiscal",
+   "f": "InfoMoney",
+   "d": "2026-11-18",
+   "h": "19:31",
+   "u": "https://www.infomoney.com.br/politica/o-que-e-a-lei-kandir-que-motivou-acordo-no-senado-e-quase-travou-ajuste-fiscal/",
+   "s": "Pacote de ajuste fiscal proposto pelo governo originalmente reduzia repasse previsto na Lei, mas resistência de parlamentares e pressão de governadores motivou acordo The post O que é a Lei Kandir, que motivou acordo no Senado e…"
+  },
+  {
+   "c": "br",
+   "t": "Dólar sobe para R$ 5,87 com expectativa sobre votação de ajuste fiscal",
+   "f": "Agência Brasil",
+   "d": "2026-11-18",
+   "h": "19:26",
+   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-sobe-para-r-587-com-expectativa-sobre-votacao-de-ajuste-fiscal",
+   "s": "O mercado financeiro brasileiro teve mais um dia de perdas nesta quarta-feira (18). O dólar subiu pela quinta sessão consecutiva e atingiu a maior cotação em 19 meses, fechando próximo de R$ 5,87. Na bolsa, o Ibovespa recuou…"
+  },
+  {
+   "c": "br",
+   "t": "Ibovespa fecha em queda com receios sobre cenário fiscal e juro maior nos EUA",
+   "f": "InfoMoney",
+   "d": "2026-11-18",
+   "h": "19:16",
+   "u": "https://www.infomoney.com.br/mercados/ibovespa-fecha-em-queda-com-receios-sobre-cenario-fiscal-e-juro-maior-nos-eua/",
+   "s": "Índice de referência do mercado acionário brasileiro, o Ibovespa caiu 1,34%, a 167.537,95 pontos, chegando a 167.099,04 na mínima e a 170.259,68 na máxima do dia The post Ibovespa fecha em queda com receios sobre cenário fiscal e…"
+  },
   {
    "c": "br",
    "t": "Anthropic fixa preço de IPO em US$83 por ação, diz fonte",
@@ -9,42 +45,6 @@
    "h": "18:46",
    "u": "https://www.infomoney.com.br/mercados/anthropic-fixa-preco-de-ipo-em-us83-por-acao-diz-fonte/",
    "s": "O preço definido torna a oferta da Anthropic o segundo mega-IPO do ano com foco em IA, seguindo a venda de ações da SpaceX em junho The post Anthropic fixa preço de IPO em US$83 por ação, diz fonte appeared first on InfoMoney ."
-  },
-  {
-   "c": "br",
-   "t": "Senado rejeita destaques e pacote fiscal proposto pelo governo Lula segue para Câmara",
-   "f": "InfoMoney",
-   "d": "2026-11-18",
-   "h": "18:40",
-   "u": "https://www.infomoney.com.br/politica/senado-rejeita-destaques-e-avanca-com-pacote-fiscal-proposto-pelo-governo-lula/",
-   "s": "Projeto de Lei Complementar proposto por economistas do governo Lula (PT) deve ser apreciado por deputados na semana que vem The post Senado rejeita destaques e pacote fiscal proposto pelo governo Lula segue para Câmara appeared…"
-  },
-  {
-   "c": "mu",
-   "t": "Wall St fecha sem direção única após divulgação dos resultados da Nvidia",
-   "f": "InfoMoney",
-   "d": "2026-11-18",
-   "h": "18:34",
-   "u": "https://www.infomoney.com.br/mercados/wall-st-fecha-sem-direcao-unica-apos-divulgacao-dos-resultados-da-nvidia/",
-   "s": "Tom agressivo na ata do Fed também pressionaram ações The post Wall St fecha sem direção única após divulgação dos resultados da Nvidia appeared first on InfoMoney ."
-  },
-  {
-   "c": "br",
-   "t": "Governo fecha acordo e flexibiliza trecho do ajuste fiscal sobre Lei Kandir",
-   "f": "InfoMoney",
-   "d": "2026-11-18",
-   "h": "18:33",
-   "u": "https://www.infomoney.com.br/politica/governo-fecha-acordo-e-flexibiliza-trecho-do-ajuste-fiscal-sobre-lei-kandir/",
-   "s": "Acordo foi formalizado pelo relator do texto, o senador Eduardo Braga (MDB-AM) The post Governo fecha acordo e flexibiliza trecho do ajuste fiscal sobre Lei Kandir appeared first on InfoMoney ."
-  },
-  {
-   "c": "mu",
-   "t": "VÍDEO: mais de 100 robôs humanoides fazem coreografia na cidade chinesa onde acontece cúpula mundial",
-   "f": "G1 Mundo",
-   "d": "2026-11-18",
-   "h": "17:38",
-   "u": "https://g1.globo.com/mundo/noticia/2026/11/18/video-mais-de-100-robos-humanoides-fazem-coreografia-na-cidade-chinesa-onde-acontece-cupula-mundial.ghtml",
-   "s": "Além da dança sincronizada, os visitantes puderam acompanhar lutas entre robôs dentro de uma gaiola de metal e demonstrações de artes marciais realizadas pelas máquinas. Na Galaxy Robotics 6S Base, um centro dedicado à robótica…"
   },
   {
    "c": "br",
@@ -66,42 +66,6 @@
   },
   {
    "c": "br",
-   "t": "Banco do Brasil alerta clientes sobre vazamento de dados pessoais; veja o que foi exposto",
-   "f": "G1 Economia",
-   "d": "2026-11-18",
-   "h": "16:30",
-   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/18/banco-do-brasil-dados.ghtml",
-   "s": "O Banco do Brasil (BB) soma R$ 1,64 bilhão em valores relacionados à renegociação de dívidas rurais em Mato Grosso Reprodução O Banco do Brasil informou nesta quarta-feira (18) que identificou, em 12 de novembro, um acesso não…"
-  },
-  {
-   "c": "br",
-   "t": "Toyota confirma chegada da picape Tacoma híbrida ao Brasil; modelo será fabricado na Argentina",
-   "f": "G1 Economia",
-   "d": "2026-11-18",
-   "h": "15:32",
-   "u": "https://g1.globo.com/carros/noticia/2026/11/18/toyota-tacoma-feita-na-argentina-sera-vendida-no-brasil.ghtml",
-   "s": "Toyota Tacoma feita na Argentina será vendida no Brasil Reprodução/Toyota Durante a inauguração da fábrica da Toyota em Sorocaba (SP), nesta quarta-feira (18), o presidente da montadora no Brasil, Evandro Maggio, confirmou que a…"
-  },
-  {
-   "c": "br",
-   "t": "Reforma tributária: alíquota de 11,3% da CBS pode valer só em 2027 e mudar depois; entenda",
-   "f": "G1 Economia",
-   "d": "2026-11-18",
-   "h": "15:28",
-   "u": "https://g1.globo.com/economia/noticia/2026/11/18/tributaria-aliquota-de-113percent-para-imposto-federal-valera-so-em-2027-e-segundo-receita-pode-subir-ou-descer-depois-entenda.ghtml",
-   "s": "Secretário especial da Receita Federal do Brasil, Robinson Sakiyama Barreirinhas Saulo Cruz/Agência Senado O secretário da Receita Federal, Robinson Barreirinhas, lembrou nesta quarta-feira (18) que, pelas regras da reforma…"
-  },
-  {
-   "c": "mu",
-   "t": "Vazamento de documentos expõe relações do Deutsche Bank com Epstein, Trump e oligarcas russos",
-   "f": "G1 Economia",
-   "d": "2026-11-18",
-   "h": "13:30",
-   "u": "https://g1.globo.com/economia/noticia/2026/11/18/vazamento-de-documentos-expoe-relacoes-do-deutsche-bank-com-epstein-trump-e-oligarcas-russos.ghtml",
-   "s": "Vazamento de documentos expõe relações do Deutsche Bank com Epstein, Trump e oligarcas russos REUTERS/Yves Herman Uma investigação jornalística baseada em milhões de documentos vazados revelou, nesta terça-feira (17), que o…"
-  },
-  {
-   "c": "br",
    "t": "Número de desempregados há dois anos ou mais é o menor já registrado",
    "f": "Agência Brasil",
    "d": "2026-11-18",
@@ -111,38 +75,29 @@
   },
   {
    "c": "mu",
-   "t": "Polícia das Filipinas pede indiciamento do pai de Meghan Markle",
-   "f": "G1 Mundo",
+   "t": "'Sociedade se sente traída por Suzane von Richthofen' porque se vê nela, diz consultora de documentário",
+   "f": "BBC News Brasil",
    "d": "2026-11-18",
-   "h": "11:18",
-   "u": "https://g1.globo.com/mundo/noticia/2026/11/18/policia-filipina-pede-indiciamento-do-pai-de-meghan-markle.ghtml",
-   "s": "Thomas Markle, de 82 anos, também é investigado nos Estados Unidos. Ele foi detido por agentes do FBI na casa de repouso onde vivia, na Flórida, sob suspeita de posse de material de abuso sexual infantil. A juíza responsável pelo…"
+   "h": "07:26",
+   "u": "https://www.bbc.com/portuguese/articles/c60mdv3k3wdpo?at_medium=RSS&at_campaign=rss",
+   "s": "Ilana Casoy, que esteve envolvida na investigação e no julgamento do caso, ajudou a produzir filme sobre Suzane que tem despertado reações acaloradas nas redes sociais."
   },
   {
-   "c": "mu",
-   "t": "Boato de 'apagão mundial' e onda de ataques hackers: o que aconteceu no mundo nas últimas semanas",
-   "f": "G1 Economia",
-   "d": "2026-11-18",
-   "h": "11:00",
-   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/18/boato-de-apagao-mundial-e-onda-de-ataques-hackers-o-que-aconteceu-no-mundo-nas-ultimas-semanas.ghtml",
-   "s": "O mundo, de novo, não acabou. Mas a previsão de um \"apagão mundial\" dominou as redes sociais na terça-feira (17), em meio a uma onda de ataques hackers que, desde outubro, atinge de geladeiras de supermercados a bancos. Só no…"
+   "c": "br",
+   "t": "Os segredos dos últimos anos de Belchior",
+   "f": "BBC News Brasil",
+   "d": "2026-11-16",
+   "h": "13:39",
+   "u": "https://www.bbc.com/portuguese/watch/c6x2wnkg33y7o?at_medium=RSS&at_campaign=rss",
+   "s": "A BBC News Brasil foi ao interior do Rio Grande do Sul para investigar os últimos anos de vida do cantor, reconstituir seu afastamento dos holofotes e conhecer a casa onde ele viveu longe dos fãs."
   },
   {
-   "c": "mu",
-   "t": "Tribunal espanhol abre investigação contra Julio Iglesias após denúncias de agressão sexual",
-   "f": "G1 Mundo",
-   "d": "2026-11-18",
-   "h": "09:29",
-   "u": "https://g1.globo.com/pop-arte/noticia/2026/11/18/tribunal-espanhol-abre-investigacao-contra-julio-iglesias-apos-denuncias-de-agressao-sexual.ghtml",
-   "s": "O tribunal espanhol abriu, nesta quarta-feira (18), uma investigação contra o cantor Julio Iglesias após denúncias de agressão sexual por parte de duas ex-funcionárias do artista. As duas haviam apresentado uma primeira denúncia…"
-  },
-  {
-   "c": "mu",
-   "t": "Nvidia interrompe envio de chips Hopper para a China em meio à crise por espionagem",
-   "f": "G1 Economia",
-   "d": "2026-11-18",
-   "h": "08:37",
-   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/18/nvidia-interrompe-envio-de-chips-hopper-para-a-china-em-meio-a-crise-por-espionagem.ghtml"
+   "c": "br",
+   "t": "Pix celebra 6 anos como motor de inclusão e eficiência financeira em todo o Brasil",
+   "f": "Banco Central do Brasil",
+   "d": "2026-11-16",
+   "h": "07:46",
+   "u": "https://www.bcb.gov.br/detalhenoticia/21320/noticia"
   }
  ]
 }
