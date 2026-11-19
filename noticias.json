@@ -1,68 +1,94 @@
 {
- "at": "2026-11-19T10:30-03:00",
+ "at": "2026-11-19T13:15-03:00",
  "items": [
   {
    "c": "br",
-   "t": "Pacote fiscal depende 70% de receita incerta e não banca gastos extras, alerta IFI",
+   "t": "Câmara divulga pauta com votação do ajuste fiscal para segunda-feira (23)",
    "f": "InfoMoney",
    "d": "2026-11-19",
-   "h": "10:30",
-   "u": "https://www.infomoney.com.br/economia/plp-299-2026-ifi-orcamento-2027-receitas-incertas/",
-   "s": "Relatório da Instituição Fiscal Independente do Senado aponta que PLP 299 abre espaço insuficiente no Orçamento de 2027 The post Pacote fiscal depende 70% de receita incerta e não banca gastos extras, alerta IFI appeared first on…"
+   "h": "13:12",
+   "u": "https://www.infomoney.com.br/politica/camara-divulga-pauta-com-votacao-do-ajuste-fiscal-para-segunda-feira-23/",
+   "s": "Texto foi aprovado no Senado nesta quarta-feira (18) The post Câmara divulga pauta com votação do ajuste fiscal para segunda-feira (23) appeared first on InfoMoney ."
   },
   {
    "c": "br",
-   "t": "Moretti diz que ainda não é o momento de tratar de medidas fiscais adicionais",
+   "t": "Dólar hoje chega a zerar após leilão do BC, mas volta a superar R$ 5,90 na sequência",
    "f": "InfoMoney",
    "d": "2026-11-19",
-   "h": "10:27",
-   "u": "https://www.infomoney.com.br/mercados/moretti-diz-que-ainda-nao-e-o-momento-de-tratar-de-medidas-fiscais-adicionais/",
-   "s": "Na quarta-feira, o ‌ministro da Fazenda, ​Dario Durigan, afirmou que o pacote fiscal em tramitação no Congresso ⁠era ​apenas um 'primeiro ​passo' The post Moretti diz que ainda não é o momento de tratar de medidas fiscais…"
+   "h": "13:06",
+   "u": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-19112026/",
+   "s": "Senado rejeitou destaques e pacote fiscal proposto pelo governo Lula segue para Câmara The post Dólar hoje chega a zerar após leilão do BC, mas volta a superar R$ 5,90 na sequência appeared first on InfoMoney ."
   },
   {
    "c": "br",
-   "t": "ANTH34: BDR da Anthropic estreia na B3 junto com ação na Nasdaq por cerca de R$ 60",
-   "f": "InfoMoney",
-   "d": "2026-11-19",
-   "h": "10:24",
-   "u": "https://www.infomoney.com.br/mercados/anth34-bdr-da-anthropic-estreia-na-b3-simultaneamente-a-estreia-na-nasdaq-por-cerca-de-r-60/",
-   "s": "Ativo negociado sob o código ANTH34 permitirá investir na empresa de inteligência artificial sem abrir conta no exterior The post ANTH34: BDR da Anthropic estreia na B3 junto com ação na Nasdaq por cerca de R$ 60 appeared first…"
-  },
-  {
-   "c": "br",
-   "t": "Anthropic estreia na bolsa nesta quinta; saiba quanto custa investir na criadora do Claude pelo Brasil",
+   "t": "Ministro afirma que pacote fiscal dará segurança ao mercado, mas admite possíveis novas medidas para cumprir metas",
    "f": "G1 Economia",
    "d": "2026-11-19",
-   "h": "10:21",
-   "u": "https://g1.globo.com/economia/noticia/2026/11/19/anthropic-estreia-bolsa-como-investir-brasil.ghtml",
-   "s": "Segundo a B3, os BDRs da Anthropic chegam à bolsa brasileira nesta quinta-feira (19) com preço estimado de R$ 60 por certificado. Nos Estados Unidos, as ações da companhia foram precificadas em US$ 83 (cerca de R$ 482) para sua…"
+   "h": "13:05",
+   "u": "https://g1.globo.com/politica/blog/camila-bomfim/post/2026/11/19/moreti-fiscal-mercado.ghtml",
+   "s": "Pacote fiscal dará segurança ao mercado, afirma Bruno Moretti Um dia depois de o Senado concluir a votação do pacote de ajuste fiscal do governo, o ministro do Planejamento e Orçamento, Bruno Moretti, defendeu que as medidas…"
   },
   {
    "c": "br",
-   "t": "Ataque com uso de IA leva Comissão Europeia a tirar aplicativos do ar",
+   "t": "Anthropic: fortunas de fundadores disparam e somam R$ 817,5 bilhões após estreia na bolsa; veja ranking",
    "f": "G1 Economia",
    "d": "2026-11-19",
-   "h": "10:18",
-   "u": "https://g1.globo.com/tecnologia/ciberseguranca/noticia/2026/11/19/comissao-europeia-ataque-hacker.ghtml",
-   "s": "A Comissão Europeia confirmou nesta quinta-feira (19) que foi alvo de um ataque cibernético com o uso de ferramentas de inteligência artificial (IA). Segundo a Comissão, ainda é difícil avaliar a dimensão do incidente porque a…"
+   "h": "13:02",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/19/anthropic-fortunas-de-fundadores-disparam-apos-estreia-na-bolsa-veja-ranking.ghtml"
+  },
+  {
+   "c": "br",
+   "t": "Brasil pede à OMC julgamento de tarifas dos EUA após fracasso de negociações",
+   "f": "InfoMoney",
+   "d": "2026-11-19",
+   "h": "12:58",
+   "u": "https://www.infomoney.com.br/politica/brasil-pede-a-omc-julgamento-de-tarifas-dos-eua-apos-fracasso-de-negociacoes/",
+   "s": "Governo Lula quer que organismo avalie sobretaxas de 25% e 12,5% impostas por Trump; pedido será analisado em 24 de novembro The post Brasil pede à OMC julgamento de tarifas dos EUA após fracasso de negociações appeared first on…"
   },
   {
    "c": "mu",
-   "t": "BCE diz que exposição de bancos da zona do euro a data centers ainda é pequena",
-   "f": "InfoMoney",
+   "t": "Anthropic estreia na Nasdaq com IPO recorde de US$ 81 bilhões e testa apetite de investidores por IA",
+   "f": "G1 Economia",
    "d": "2026-11-19",
-   "h": "10:06",
-   "u": "https://www.infomoney.com.br/business/bce-diz-que-exposicao-de-bancos-da-zona-do-euro-a-data-centers-ainda-e-pequena/",
-   "s": "Supervisora do Banco Central Europeu diz que 1,2% ‌a 1,3% das exposições ​corporativas dos bancos da zona do euro estão vinculadas aos centros de dados The post BCE diz que exposição de bancos da zona do euro a data centers ainda…"
+   "h": "12:51",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/19/anthropic-estreia-na-nasdaq-investidores.ghtml",
+   "s": "Anthropic estreia na bolsa avaliada em US$ 1,5 trilhão A Anthropic, empresa americana responsável pelo desenvolvimento do chatbot Claude, estreou na bolsa Nasdaq nesta quinta-feira (19) com uma oferta pública inicial de ações…"
   },
   {
    "c": "br",
-   "t": "Ministro do Planejamento prevê estabilizar dívida pública em até 3 anos; economistas acham pacote insuficiente",
+   "t": "IPO da Anthropic pode criar 2.800 milionários entre funcionários e ex-funcionários",
    "f": "G1 Economia",
    "d": "2026-11-19",
-   "h": "09:51",
-   "u": "https://g1.globo.com/politica/blog/camila-bomfim/post/2026/11/19/divida-publica-deve-se-estabilizar-em-dois-ou-tres-anos-diz-moretti.ghtml",
-   "s": "O ministro do Planejamento, Bruno Moretti, afirmou nesta quinta-feira (19) que trabalha com a previsão da estabilização da dívida pública em até 3 anos, segundo a trajetória prevista na Lei de Diretrizes Orçamentárias (LDO). De…"
+   "h": "12:20",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/19/ipo-da-anthropic-pode-criar-2800-milionarios-entre-funcionarios-e-ex-funcionarios.ghtml",
+   "s": "CEO da Anthropic Dario Amodei, Presidente e cofundadora da Anthropic Daniela Amodei, Cofundador e Diretor Científico da Anthropic Jared Kaplan, Cofundador e Chefe de Benefícios Públicos da Anthropic Jack Clark comemoram enquanto…"
+  },
+  {
+   "c": "mu",
+   "t": "Quando começa a valer o fim da escala 6x1? Qual a regra de transição? Entenda o que está mudando na lei",
+   "f": "BBC News Brasil",
+   "d": "2026-11-19",
+   "h": "12:12",
+   "u": "https://www.bbc.com/portuguese/articles/cvlyjkw9zr5jo?at_medium=RSS&at_campaign=rss",
+   "s": "A maior mudança nas jornadas de trabalho em quase 40 anos começará a entrar em vigor no mês que vem, com um período de transição. Ainda há contestações na Justiça."
+  },
+  {
+   "c": "mu",
+   "t": "Trump, Xi e Putin passam ao largo do multilateralismo",
+   "f": "G1 Mundo",
+   "d": "2026-11-19",
+   "h": "12:10",
+   "u": "https://g1.globo.com/mundo/blog/sandra-cohen/post/2026/11/19/trump-xi-e-putin-passam-ao-largo-do-multilateralismo.ghtml",
+   "s": "via REUTERS Putin, aliás, saiu triunfante de um encontro marcado por simbolismos. Retornou em grande estilo à mesa de negociações, após ser ostracizado do cenário internacional, e alçou a Rússia ao mesmo patamar das duas…"
+  },
+  {
+   "c": "br",
+   "t": "Avaliada em R$ 8,8 tri, Anthropic bate recorde em estreia na bolsa: empresa pode evitar o estouro da bolha da IA?",
+   "f": "BBC News Brasil",
+   "d": "2026-11-19",
+   "h": "11:39",
+   "u": "https://www.bbc.com/portuguese/articles/cm782wyv0153o?at_medium=RSS&at_campaign=rss",
+   "s": "O preço inicial da ação será de US$ 83 quando começar a ser negociada nesta quinta-feira. Com esse preço, o valor de mercado da Anthropic é estimado em US$ 1,5 trilhão."
   },
   {
    "c": "mu",
@@ -83,15 +109,6 @@
    "s": "Caso Ueno Bank: Polícia tenta abrir porta blindada escondida em casa de Santiago Peña O presidente do Paraguai, Pedro Alliana, demitiu nesta quarta-feira (18) o diretor paraguaio da usina de Itaipu, Justo Zacarías, em meio à…"
   },
   {
-   "c": "br",
-   "t": "O que a The Economist prevê para o quarto mandato de Lula",
-   "f": "BBC News Brasil",
-   "d": "2026-11-19",
-   "h": "08:32",
-   "u": "https://www.bbc.com/portuguese/articles/c85y1430dql0o?at_medium=RSS&at_campaign=rss",
-   "s": "A revista descreve a vitória de Lula nas urnas como impressionante e resume assim o que espera do próximo mandato: 'Governar será mais difícil'."
-  },
-  {
    "c": "mu",
    "t": "Perdas do Ueno Bank se aproximam de US$ 1 bilhão, segundo Banco Central do Paraguai",
    "f": "G1 Economia",
@@ -99,15 +116,6 @@
    "h": "07:39",
    "u": "https://g1.globo.com/economia/noticia/2026/11/19/perdas-do-ueno-bank-se-aproximam-de-us-1-bilhao-segundo-banco-central.ghtml",
    "s": "O Escândalo do banco Ueno no Paraguai As perdas causadas pela quebra do banco paraguaio Ueno podem chegar a cerca de US$ 1 bilhão (R$ 5,8 bilhões), no pior cenário, estimou o novo presidente do Banco Central do Paraguai (BCP)…"
-  },
-  {
-   "c": "mu",
-   "t": "Recorde da Anthropic em estreia na bolsa de valores conseguirá impedir o estouro da bolha da IA?",
-   "f": "G1 Economia",
-   "d": "2026-11-19",
-   "h": "07:25",
-   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/19/recorde-da-anthropic-em-estreia-na-bolsa-de-valores-conseguira-impedir-o-estouro-da-bolha-da-ia.ghtml",
-   "s": "via BBC Não são apenas alguns investidores de Wall Street que questionam se a IA é tudo aquilo que se diz. Nas ruas, as pessoas também têm suas preocupações. Com os EUA impulsionando boa parte do crescimento global da IA, a…"
   },
   {
    "c": "mu",
@@ -126,15 +134,6 @@
    "h": "05:35",
    "u": "https://www.bbc.com/portuguese/articles/cmn0dykxex82o?at_medium=RSS&at_campaign=rss",
    "s": "A empresa de inteligência artificial por trás do Claude está fazendo sua estreia na bolsa dos EUA, tornando seus fundadores muito ricos."
-  },
-  {
-   "c": "mu",
-   "t": "Recorde da Anthropic em estreia na bolsa conseguirá impedir o estouro da bolha da IA?",
-   "f": "BBC News Brasil",
-   "d": "2026-11-19",
-   "h": "05:28",
-   "u": "https://www.bbc.com/portuguese/articles/cm782wyv0153o?at_medium=RSS&at_campaign=rss",
-   "s": "O preço inicial da ação será de US$ 83 quando começar a ser negociada nesta quinta-feira. Com esse preço, o valor de mercado da Anthropic é estimado em US$ 1,5 trilhão."
   },
   {
    "c": "br",
