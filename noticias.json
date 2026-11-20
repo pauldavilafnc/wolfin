@@ -1,41 +1,86 @@
 {
- "at": "2026-11-20T16:14-03:00",
+ "at": "2026-11-20T18:59-03:00",
  "items": [
   {
    "c": "mu",
-   "t": "Ações da Nvidia têm pior sequência de quedas na bolsa desde 2008",
-   "f": "G1 Economia",
+   "t": "Bitcoin cai a US$ 57 mil e vai à mínima em mais de 2 anos, de olho em mercado global",
+   "f": "InfoMoney",
    "d": "2026-11-20",
-   "h": "15:47",
-   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/20/acoes-da-nvidia-tem-pior-sequencia-de-quedas-na-bolsa-desde-2008.ghtml",
-   "s": "Chips da Nvidia são usados ​​para criar e executar aplicações de IA Annegret Hilse/REUTERS Com uma queda que supera 7% nesta sexta-feira (20) na Nasdaq, as ações da fabricante de chips Nvidia encaminham a sétima semana…"
+   "h": "18:50",
+   "u": "https://www.infomoney.com.br/mercados/bitcoin-cai-abaixo-de-us-60-mil-pela-primeira-vez-desde-julho/",
+   "s": "Um dólar mais forte e as crescentes expectativas de um novo aumento da taxa de juros pelo Federal Reserve pressionaram os mercados esta semana The post Bitcoin cai a US$ 57 mil e vai à mínima em mais de 2 anos, de olho em mercado…"
+  },
+  {
+   "c": "mu",
+   "t": "CME: Mercado vê chance de manutenção de juro pelo Fed em dezembro",
+   "f": "InfoMoney",
+   "d": "2026-11-20",
+   "h": "18:29",
+   "u": "https://www.infomoney.com.br/economia/cme-mercado-ve-chance-de-manutencao-de-juro-pelo-fed-em-dezembro/",
+   "s": "O movimento ocorre apesar das consecutivas sinalizações de dirigentes do Fed quanto à disposição para aumento de juros diante da inflação The post CME: Mercado vê chance de manutenção de juro pelo Fed em dezembro appeared first…"
+  },
+  {
+   "c": "mu",
+   "t": "Nasdaq desaba 5% com febre de IA virando medo; S&P e Dow Jones entram em correção",
+   "f": "InfoMoney",
+   "d": "2026-11-20",
+   "h": "18:22",
+   "u": "https://www.infomoney.com.br/mercados/nasdaq-registra-queda-seguindo-baixa-de-acoes-da-anthropic/",
+   "s": "IPO da Anthropic parece ter feito pouco para acalmar as preocupações sobre o setor de inteligência artificial após a empolgação inicial The post Nasdaq desaba 5% com febre de IA virando medo; S&P e Dow Jones entram em correção…"
   },
   {
    "c": "br",
-   "t": "Ações de emergentes ficam próximas a “bear market” com expansão da crise de IA",
+   "t": "Ação da Anthropic cai 8,5% após estreia e traz choque de realidade para setor de IA",
    "f": "InfoMoney",
    "d": "2026-11-20",
-   "h": "15:30",
-   "u": "https://www.infomoney.com.br/mercados/acoes-de-emergentes-ficam-proximas-a-bear-market-com-expansao-da-crise-de-ia/",
-   "s": "A Ásia, com forte presença do setor de tecnologia, foi a mais afetada pelas vendas nos mercados emergentes The post Ações de emergentes ficam próximas a “bear market” com expansão da crise de IA appeared first on InfoMoney ."
+   "h": "18:13",
+   "u": "https://www.infomoney.com.br/mercados/queda-da-anthropic-apos-estreia-no-mercado-traz-choque-de-realidade-para-setor-de-ia/",
+   "s": "“Uma queda no valor das ações é normal após uma abertura de capital de grande repercussão, mas não sabemos se essa queda seguirá a tendência de outras IPOs ou será mais volátil, ​e isso deve servir de alerta para os…"
+  },
+  {
+   "c": "br",
+   "t": "Ação da Nvidia desaba 14% após notícia sobre investigação e têm 7ª semana de queda",
+   "f": "InfoMoney",
+   "d": "2026-11-20",
+   "h": "18:11",
+   "u": "https://www.infomoney.com.br/mercados/acoes-da-nvidia-desabam-noticia-sobre-investigacao-da-sec-sobre-companhia/",
+   "s": "Isso acrescenta mais um problema jurídico para a fabricante de chips, já abalada por escândalos The post Ação da Nvidia desaba 14% após notícia sobre investigação e têm 7ª semana de queda appeared first on InfoMoney ."
   },
   {
    "c": "mu",
-   "t": "Praga mortal que ameaça gado avança nos EUA, e moscas estéreis viram aposta contra parasita",
+   "t": "'Cobiçadas' por Trump, Filipinas lideram compra de carne suína do Brasil, mas são 22º destino das exportações do agro",
    "f": "G1 Economia",
    "d": "2026-11-20",
-   "h": "15:14",
-   "u": "https://g1.globo.com/economia/agronegocios/noticia/2026/11/20/praga-mortal-que-ameaca-gado-avanca-nos-eua-e-moscas-estereis-viram-aposta-contra-parasita.ghtml",
-   "s": "Imagem de uma mosca-da-bicheira (Cochliomyia hominivorax). Departamento de Agricultura dos EUA. Os surtos da mosca-da-bicheira do Novo Mundo nos Estados Unidos aumentaram devido ao clima úmido e quente no sudoeste do país…"
+   "h": "18:05",
+   "u": "https://g1.globo.com/economia/agronegocios/noticia/2026/11/20/cobicadas-por-trump-filipinas-lideram-compra-de-carne-suina-do-brasil-mas-sao-22o-destino-das-exportacoes-do-agro.ghtml",
+   "s": "Trump diz que Filipinas vão trocar Brasil pelos EUA na agricultura O presidente dos Estados Unidos, Donald Trump, afirmou nesta sexta-feira (20) que teria firmado um acordo com as Filipinas para assegurar a preferência de…"
   },
   {
    "c": "mu",
-   "t": "Após falhas que afetaram Microsoft e suspenderam voos, Trump demite diretor de segurança cibernética",
+   "t": "Míssil russo atinge a Polônia, e primeiro-ministro fala em 'provocação'",
+   "f": "G1 Mundo",
+   "d": "2026-11-20",
+   "h": "17:18",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/20/missil-russo-atinge-a-polonia-e-primeiro-ministro-fala-em-provocacao.ghtml",
+   "s": "via BBC O presidente do Conselho Europeu, António Costa, por sua vez, expressou a sua \"forte solidariedade\" com o povo polonês, e afirmou que a Rússia deve se sentar à mesa de negociações para pôr fim à guerra na Ucrânia. As…"
+  },
+  {
+   "c": "mu",
+   "t": "'Mosca-da-bicheira': parasita que devora animais vivos avança pelos EUA e alerta pecuaristas",
    "f": "G1 Economia",
    "d": "2026-11-20",
-   "h": "14:36",
-   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/20/apos-falhas-que-afetaram-microsoft-e-suspenderam-voos-trump-demite-diretor-de-seguranca-cibernetica.ghtml",
-   "s": "Diretor Nacional de Cibernética dos EUA, Sean Cairncross, conversa com o presidente dos EUA, Donald Trump REUTERS/Jonathan Ernst/File Photo O diretor nacional de segurança cibernética da Casa Branca, Sean Cairncross, foi demitido…"
+   "h": "16:58",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/20/mosca-da-bicheira-parasita-que-devora-animais-vivos-avanca-pelos-eua-e-alerta-pecuaristas.ghtml",
+   "s": "Duas moscas-da-bicheira do Novo Mundo no Laboratório de Pesquisa de Insetos Pecuários Knipling-Bushland, em Kerrville, Texas, EUA. REUTERS/Kaylee Greenlee Os surtos nos Estados Unidos (EUA) da chamada mosca-da-bicheira do Novo…"
+  },
+  {
+   "c": "mu",
+   "t": "Trump diz que convenceu Filipinas a substituir produtos agrícolas do Brasil pelos dos EUA",
+   "f": "G1 Economia",
+   "d": "2026-11-20",
+   "h": "16:16",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/20/trump-brasil-filipinas.ghtml",
+   "s": "Trump diz que Filipinas vão trocar Brasil pelos EUA na agricultura O presidente dos Estados Unidos, Donald Trump, afirmou nesta sexta-feira (20) que teria firmado um acordo com as Filipinas para assegurar a preferência de…"
   },
   {
    "c": "mu",
@@ -47,15 +92,6 @@
    "s": "O Serviço Secreto da Dinamarca impediu a tentativa de assassinato de um cidadão americano-ucraniano no país. O atentado teria ocorrido em setembro, segundo as autoridades dinamarquesas. De acordo com informações da DR, emissora…"
   },
   {
-   "c": "mu",
-   "t": "FOTOS: Na Europa, jovens da geração Z protestam nesta sexta (20) por educação e custo de vida",
-   "f": "G1 Mundo",
-   "d": "2026-11-20",
-   "h": "10:42",
-   "u": "https://g1.globo.com/mundo/noticia/2026/11/20/protestos-jovens-europa.ghtml",
-   "s": "Manifestações estudantis tomam conta da Europa Jovens tomaram as ruas de diversas cidades europeias nesta sexta (20) para protestar contra o alto custo de vista e em defesa de direitos sociais. A expectativa é que manifestações…"
-  },
-  {
    "c": "br",
    "t": "Master: relatório da PF sobre Mendonça cita tentativas de aproximação de Vorcaro ao ministro do STF",
    "f": "G1 Economia",
@@ -63,15 +99,6 @@
    "h": "08:43",
    "u": "https://g1.globo.com/economia/blog/ana-flor/post/2026/11/20/master-relatorio-da-pf-sobre-mendonca-cita-tentativas-de-aproximacao-de-vorcaro-ao-ministro-do-stf.ghtml",
    "s": "O relatório da Polícia Federal com menções ao ministro André Mendonça, do Supremo Tribunal Federal (STF), detalha tentativas de aproximação do ex-banqueiro Daniel Vorcaro, e de pessoas próximas ao dono do Master, ao magistrado da…"
-  },
-  {
-   "c": "mu",
-   "t": "Mianmar chama de ‘injusta’ decisão da Corte da ONU sobre genocídio de rohingyas",
-   "f": "G1 Mundo",
-   "d": "2026-11-20",
-   "h": "05:29",
-   "u": "https://g1.globo.com/mundo/noticia/2026/11/20/mianmar-chama-de-injusta-decisao-da-corte-da-onu-sobre-genocidio-de-rohingyas.ghtml",
-   "s": "A Corte também determinou que Mianmar deve compensar os rohingyas pelas violações cometidas. Os valores das indenizações serão estabelecidos posteriormente. Além disso, o país deverá permitir o“retorno seguro e digno” dos…"
   },
   {
    "c": "br",
@@ -117,24 +144,6 @@
    "h": "20:22",
    "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/banco-central-amplia-acesso-de-cooperativas-ao-mercado-aberto",
    "s": "Instituições financeiras de menor porte, como cooperativas de crédito, terão mais acesso ao mercado aberto, que regula a quantidade de dinheiro em circulação na economia. O Banco Central (BC) aprovou, nesta quinta-feira (19)…"
-  },
-  {
-   "c": "br",
-   "t": "Hora extra mais cara com fim da 6x1? Veja conta com salário de R$ 3 mil e o que muda com decreto de Lula",
-   "f": "BBC News Brasil",
-   "d": "2026-11-19",
-   "h": "17:39",
-   "u": "https://www.bbc.com/portuguese/articles/cvlyjkw9zr5jo?at_medium=RSS&at_campaign=rss",
-   "s": "A maior mudança nas jornadas de trabalho em quase 40 anos começará a entrar em vigor no mês que vem, com um período de transição. Ainda há contestações na Justiça."
-  },
-  {
-   "c": "mu",
-   "t": "As pessoas que só precisam dormir 4 horas por dia — e como a genética explica isso",
-   "f": "BBC News Brasil",
-   "d": "2026-11-15",
-   "h": "08:12",
-   "u": "https://www.bbc.com/portuguese/articles/cw99e005k17lo?at_medium=RSS&at_campaign=rss",
-   "s": "A ciência tem comprovado que mutações podem levar algumas pessoas a precisarem de muito menos sono. Mas pode ser bem difícil saber se você é uma delas."
   }
  ]
 }
