@@ -346,7 +346,7 @@ main{padding-bottom:calc(150px + env(safe-area-inset-bottom))} /* o último bot�
 #intsnd[hidden]{display:none}#intsnd.out{opacity:0;pointer-events:none}#intsnd svg{width:24px;height:24px}#intsnd .son{display:none}#intsnd.on .son{display:inline}#intsnd.on .soff{display:none}#intsnd:focus-visible{outline:3px solid #fff;outline-offset:2px}
 @media(prefers-reduced-motion:reduce){#intro,#intro video{transition-duration:.01s!important}}</style>
 <style id="v720-css">/* v7.20 — Home refinada (só visual; usa os tokens dos temas) */
-#s-home{--r1:20px;--r2:16px;--pd:14px}
+#s-home{--r1:24px;--r2:20px;--pd:14px}
 #s-home .top{gap:10px;margin-bottom:10px;align-items:center}
 #s-home .top .hello{font-weight:700;letter-spacing:-.2px;line-height:1.15;margin:0}
 #s-home .top small{font-size:12px;color:var(--gray);text-transform:capitalize;display:block;margin-top:2px}
@@ -354,22 +354,32 @@ main{padding-bottom:calc(150px + env(safe-area-inset-bottom))} /* o último bot�
 #s-home .top .tb .ib{width:44px;height:44px;background:transparent;border:0;box-shadow:none;border-radius:14px;-webkit-backdrop-filter:none;backdrop-filter:none}
 #s-home .top .tb .ib svg{width:22px;height:22px}
 #s-home .top .tb .ib:active{background:var(--light)}
-#s-home .sqb{min-height:44px;border-radius:14px;padding:0 14px;gap:10px;font-size:14px;box-shadow:none;background:var(--tile);border:1px solid var(--line);-webkit-backdrop-filter:none;backdrop-filter:none;margin-bottom:12px;align-items:center}
+#s-home .sqb{min-height:44px;border-radius:14px;padding:0 14px;gap:10px;font-size:14px;margin-bottom:12px;align-items:center}
 #s-home .sqb svg{flex:none;width:18px;height:18px}
-#s-home .card,#s-home .tile{border-radius:var(--r1);padding:var(--pd);margin-bottom:10px;box-shadow:0 4px 14px rgba(0,0,0,.10);border:1px solid var(--line);-webkit-backdrop-filter:none;backdrop-filter:none}
-[data-theme=dark] #s-home .card,[data-theme=dark] #s-home .tile{box-shadow:0 6px 16px rgba(0,0,0,.28);border-color:var(--line)}
+#s-home .card,#s-home .tile{border-radius:var(--r1);padding:var(--pd);margin-bottom:10px}
 #s-home .tile{border-radius:var(--r2)}
-/* saldo */
-#s-home .hero{padding:16px 16px 14px;border-radius:24px;background:linear-gradient(155deg,var(--btn1),var(--btn2));border:0;box-shadow:0 8px 22px rgba(0,0,0,.22);margin-bottom:10px;overflow:hidden}
-#s-home .hero:before,#s-home .hero:after{display:none!important}
-#s-home .hero .lbl{font-size:12px;opacity:1;color:#fff;letter-spacing:.2px}
-#s-home .hero .big{font-size:32px!important;line-height:1.1;font-weight:800;letter-spacing:-.6px;margin:2px 0 10px;overflow-wrap:anywhere}
+/* saldo: vidro azul iluminado (v7.21) */
+#s-home .hero{padding:16px 16px 14px;border-radius:28px;color:#fff;isolation:isolate;
+ background:radial-gradient(120% 85% at 100% 0%,rgba(255,255,255,.14),rgba(255,255,255,0) 58%),repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 1px,transparent 1px 7px),linear-gradient(135deg,color-mix(in srgb,var(--btn1) 80%,var(--h1)) 0%,var(--h2) 46%,var(--h1) 100%);
+ border:1px solid rgba(255,255,255,.28);
+ box-shadow:0 16px 34px color-mix(in srgb,var(--h2) 34%,transparent),0 2px 8px rgba(2,8,23,.22),inset 0 1px 0 rgba(255,255,255,.42),inset 0 -22px 34px rgba(2,8,23,.20),inset 0 0 0 1px rgba(255,255,255,.04);
+ -webkit-backdrop-filter:none;backdrop-filter:none;margin-bottom:10px;overflow:hidden}
+#s-home .hero:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;border-radius:inherit;background:linear-gradient(115deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,.04) 30%,rgba(255,255,255,0) 31%),linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,0) 34%)}
+#s-home .hero:after{display:block!important;content:"";position:absolute;pointer-events:none;width:200px;height:200px;right:-60px;top:-90px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.22),rgba(255,255,255,0) 66%)}
+#s-home .hero>*{position:relative;z-index:1}
+#s-home .hero .lbl{font-size:12px;opacity:1;color:#fff;letter-spacing:.2px;text-shadow:0 1px 2px rgba(2,8,23,.35)}
+#s-home .hero .big{font-size:32px!important;line-height:1.1;font-weight:800;letter-spacing:-.6px;margin:2px 0 10px;overflow-wrap:anywhere;text-shadow:0 2px 10px rgba(2,8,23,.38)}
 #s-home .hero .pills{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0}
 #s-home .hero .pills.p3 .pill:nth-child(3){grid-column:1/-1}
-#s-home .hero .pill{background:rgba(0,0,0,.18);color:#fff;border:0;box-shadow:none;border-radius:12px;padding:7px 10px;font-size:12px;line-height:1.25;min-width:0;white-space:normal;overflow-wrap:anywhere;-webkit-backdrop-filter:none;backdrop-filter:none}
-#s-home .hero #hsub{font-size:11.5px;line-height:1.3;opacity:1;color:#fff;margin-top:8px}
+#s-home .hero .pill{position:relative;display:flex;align-items:center;gap:8px;color:#fff;font-size:12px;font-weight:600;line-height:1.25;min-width:0;white-space:normal;overflow-wrap:anywhere;border-radius:14px;padding:6px 10px 6px 7px;
+ background:linear-gradient(180deg,rgba(255,255,255,.13),rgba(255,255,255,.03)),rgba(2,8,23,.26);border:1px solid rgba(255,255,255,.26);box-shadow:inset 0 1px 0 rgba(255,255,255,.34),0 3px 8px rgba(2,8,23,.18);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+#s-home .hero .pill>span{display:flex;flex-direction:column;min-width:0}#s-home .hero .pill small{font-size:11px;line-height:1.2;color:rgba(255,255,255,.92);font-weight:600}#s-home .hero .pill b{font-size:13px;line-height:1.25;font-weight:700;letter-spacing:-.1px}
+#s-home .hero .pills.p3 .pill:nth-child(3)>span{flex-direction:row;justify-content:space-between;align-items:baseline;gap:8px;width:100%}
+#s-home .hero .pi{flex:none;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,rgba(255,255,255,.34),rgba(255,255,255,.10));box-shadow:inset 0 0 0 1px rgba(255,255,255,.34);color:#fff}
+#s-home .hero .pi svg{width:12px;height:12px}
+#s-home .hero #hsub{font-size:11.5px;line-height:1.3;opacity:1;color:#fff;margin-top:8px;text-shadow:0 1px 2px rgba(2,8,23,.3)}
 /* aviso compacto */
-#s-home .mqc{padding:8px 8px 8px 12px;border-radius:var(--r2);box-shadow:none;background:var(--tile)}
+#s-home .mqc{padding:8px 8px 8px 12px;border-radius:var(--r2)}
 #s-home .mqc .bub{display:flex;align-items:center;gap:10px;margin:0;padding:0;background:none;border:0;box-shadow:none;min-width:0}
 #s-home .mqc .mi{flex:none;width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:var(--light);color:var(--blue)}
 #s-home .mqc .mi svg{width:18px;height:18px}
@@ -384,18 +394,26 @@ main{padding-bottom:calc(150px + env(safe-area-inset-bottom))} /* o último bot�
 #s-home .mqc .cl{flex:none;display:inline-flex;align-items:center;gap:4px;min-width:44px;min-height:44px;padding:0 8px;border:0;border-radius:12px;background:none;color:var(--gray);font:inherit;font-size:11.5px;font-weight:600;box-shadow:none;cursor:pointer}
 [data-theme=dark] #s-home .mqc .cl{color:var(--gray)}
 #s-home .mqc .cl svg{width:16px;height:16px}
-/* ações rápidas */
+/* ações rápidas: botões de vidro colorido (v7.21) */
 #s-home .qa{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 10px}
-#s-home .qa button{flex-direction:row;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:8px 6px;border-radius:var(--r2);font-size:13.5px;font-weight:700;box-shadow:none;background:var(--tile);border:1px solid var(--line);-webkit-backdrop-filter:none;backdrop-filter:none;transition:transform .12s,background .15s}
-#s-home .qa button:active{transform:scale(.96);background:var(--light)}
-#s-home .qa button i{width:26px;height:26px;border-radius:9px;display:grid;place-items:center;font-style:normal;font-size:16px;line-height:1;margin:0;flex:none;color:var(--blue);background:var(--light)}
+#s-home .qa button{--ac:var(--blue);position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:8px 6px;border-radius:var(--r2);font-size:13.5px;font-weight:700;
+ background-image:linear-gradient(160deg,color-mix(in srgb,var(--ac) 26%,transparent) 0%,color-mix(in srgb,var(--ac) 8%,transparent) 62%,color-mix(in srgb,var(--ac) 14%,transparent) 100%);
+ border:1px solid color-mix(in srgb,var(--ac) 40%,var(--edge));
+ box-shadow:var(--shadow),var(--hi),0 8px 18px color-mix(in srgb,var(--ac) 18%,transparent),inset 0 1px 0 rgba(255,255,255,.30);
+ transition:transform .15s ease,box-shadow .2s ease,filter .2s ease}
+#s-home .qa button:before{content:"";position:absolute;z-index:-1;left:0;right:0;top:0;height:54%;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.26),rgba(255,255,255,0));border-radius:inherit;transition:opacity .2s ease}
+#s-home .qa button:after{content:"";position:absolute;z-index:-1;left:-30%;top:-80%;width:90%;height:200%;pointer-events:none;background:linear-gradient(115deg,rgba(255,255,255,.14),rgba(255,255,255,0) 55%);transform:rotate(8deg)}
 #s-home .qa button:nth-child(1){--ac:var(--green)}#s-home .qa button:nth-child(2){--ac:var(--red)}#s-home .qa button:nth-child(3){--ac:var(--blue)}
-#s-home .qa button i{color:var(--navy);background:color-mix(in srgb,var(--ac) 24%,transparent)}
-#s-home .qa button:nth-child(1){--ac:var(--green)}#s-home .qa button:nth-child(2){--ac:var(--red)}#s-home .qa button:nth-child(3){--ac:var(--ink,var(--blue))}
-#s-home .qa button:nth-child(3) i{background:color-mix(in srgb,var(--blue) 24%,transparent)}
-#s-home .qa button{border-color:color-mix(in srgb,var(--ac) 28%,var(--line))}
+#s-home .qa button:active{transform:translateY(1px) scale(.965);filter:brightness(1.08);box-shadow:var(--shadow),inset 0 2px 6px rgba(2,8,23,.18),0 3px 8px color-mix(in srgb,var(--ac) 16%,transparent)}
+#s-home .qa button:active:before{opacity:.5}
+#s-home .qa button i{flex:none;width:30px;height:30px;border-radius:11px;display:grid;place-items:center;margin:0;color:#fff;
+ background:linear-gradient(145deg,color-mix(in srgb,var(--ac) 86%,#fff) 0%,color-mix(in srgb,var(--ac) 66%,#000) 100%);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 -2px 4px rgba(0,0,0,.18),0 3px 8px color-mix(in srgb,var(--ac) 40%,transparent)}
+#s-home .qa button i svg{width:18px;height:18px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.3))}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){#s-home .qa button,#s-home .card,#s-home .tile{background-color:var(--solid,var(--card))}}
+@media(prefers-reduced-motion:reduce){#s-home .qa button{transition:none}}
 /* notas e cartões */
-#s-home .nth0{min-height:56px;padding:8px 12px;border-radius:var(--r2);gap:12px;box-shadow:none;background:var(--tile)}
+#s-home .nth0{min-height:56px;padding:8px 12px;border-radius:var(--r2);gap:12px}
 #s-home .nth0 .nic{width:36px;height:36px;border-radius:12px}
 #s-home .nth0 .nic svg{width:20px;height:20px}
 #s-home .nth0 b{font-size:14px}
@@ -412,8 +430,34 @@ nav{background:var(--solid,var(--navbase));-webkit-backdrop-filter:none;backdrop
 #s-home .g2 .tile .lbl{margin:0!important;font-size:11.5px}
 #s-home .g2 .tile .v{font-size:16px;font-weight:700;overflow-wrap:anywhere}
 body::before{opacity:.6}
+@media(max-width:350px){#s-home .qa button{flex-direction:column;gap:3px;min-height:60px;padding:6px 2px;font-size:12.5px}#s-home .qa button i{width:26px;height:26px}}
 @media(max-width:380px){#s-home .top{gap:8px}#s-home .top .tb{gap:0}#s-home .top .hello{font-size:16px!important;letter-spacing:-.25px}}
-@media(max-width:360px){#s-home .hero .big{font-size:28px!important}#s-home .qa button{font-size:12.5px;gap:5px}#s-home .qa button i{width:22px;height:22px;font-size:14px}}
+@media(max-width:360px){#s-home .hero .big{font-size:28px!important}#s-home .qa button{font-size:12.5px;gap:5px}#s-home .qa button i{width:26px;height:26px}#s-home .qa button i svg{width:16px;height:16px}}
+
+/* v7.21 — menu do perfil (foto) */
+.av.avfl{position:absolute;top:0;right:48px;z-index:4}
+#pm{position:fixed;inset:0;z-index:13}#pm[hidden]{display:none}
+#pm .pmsc{position:absolute;inset:0;background:rgba(8,16,36,.34);opacity:0;transition:opacity .18s ease}
+#pm.on .pmsc{opacity:1}
+#pm .pmp{position:absolute;width:min(320px,calc(100vw - 20px));overflow-y:auto;overscroll-behavior:contain;border-radius:22px;padding:8px;background:var(--solid,var(--card));color:var(--navy);border:1px solid var(--edge);box-shadow:var(--shadow),var(--hi);-webkit-backdrop-filter:blur(20px) saturate(160%);backdrop-filter:blur(20px) saturate(160%);opacity:0;transform:translateY(-6px) scale(.96);transition:opacity .18s ease,transform .2s cubic-bezier(.2,.8,.3,1)}
+#pm.on .pmp{opacity:1;transform:none}
+#pm .pmh{display:flex;align-items:center;gap:12px;padding:8px 8px 12px;border-bottom:1px solid var(--line);margin-bottom:6px}
+#pm .pmav{width:52px;height:52px;min-height:52px;position:relative;overflow:visible}
+#pm .pmav img,#pm .pmav .avi{border-radius:50%}
+#pm .pmcam{position:absolute;right:-3px;bottom:-3px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;border:2px solid var(--solid,var(--card))}
+#pm .pmcam svg{width:11px;height:11px}
+#pm .pmn{min-width:0}#pm .pmn b{display:block;font-size:16px;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#pm .pmn span{display:block;font-size:12px;color:var(--gray);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#pm .pmi{display:flex;align-items:center;gap:12px;width:100%;min-height:48px;padding:6px 10px;border:0;border-radius:14px;background:none;color:inherit;font:inherit;font-size:14.5px;font-weight:600;text-align:left;cursor:pointer;transition:background-color .15s ease,transform .12s ease}
+#pm .pmi:active,#pm .pmi:focus-visible{background:var(--light)}#pm .pmi:active{transform:scale(.985)}
+#pm .pmic{flex:none;width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:var(--light);color:var(--blue)}
+#pm .pmic svg{width:19px;height:19px}
+#pm .pmt{flex:1;min-width:0}#pm .pmch{flex:none;width:16px;height:16px;color:var(--gray)}
+#pm .pmf{margin-top:6px;padding-top:6px;border-top:1px solid var(--line)}
+#pm .pmf .pmic{background:color-mix(in srgb,var(--red) 14%,transparent);color:var(--red)}
+#pm .pmf .pmi[data-id=secon] .pmic{background:var(--light);color:var(--blue)}
+#s-cfg .card{scroll-margin-top:12px}
+@media(prefers-reduced-motion:reduce){#pm .pmsc,#pm .pmp,#pm .pmi{transition:none}}
 </style>
 </head>
 <body>
@@ -467,7 +511,7 @@ e.addEventListener("pointerdown",function(){fin(1)});addEventListener("keydown",
 const MCIDS=['wolfin'];
 /* migração: qualquer mascote ou roupa antiga (10 personagens, avatares e roupas do lobo) vira o Wolfin atual */
 function mcMigrate(){return 'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.20 · Home refinada · 20/11/2026';
+const KEY='wallstreet.v1',BUILD='7.21 · Menu do perfil · 20/11/2026';
 const CATS={exp:['Alimentação','Transporte','Compras','Roupas','Lazer','Trabalho','Casa','Saúde','Educação','Financeiro','Tecnologia','Cuidados pessoais','Presentes','Outros'],inc:['Salário','Comissão','Freelancer','Outro']};
 const PALS=[['blue','Azul','#2563EB'],['perola','Pérola','#E8EDF5'],['violet','Violeta','#7C3AED'],['teal','Turquesa','#0D9488'],['pink','Rosa','#DB2777'],['orange','Laranja','#EA580C'],['ouro','Ouro','#B88614'],['esmeralda','Esmeralda','#15803D'],['grafite','Grafite','#4B5563']];
 const PAYS=['Pix','Cartão de débito','Cartão de crédito','Dinheiro/Espécie','Outro'];
@@ -701,10 +745,10 @@ function vHome(){const d=new Date(),cm=ymOf(d),hr=d.getHours(),gr=hr<12?'Bom dia
  const prox=[...rowsOf('inc',cm),...rowsOf('exp',cm)].filter(i=>stat(i,cm)!=='ok').sort((a,b)=>a.day-b.day).slice(0,6);
  const row=i=>{const s=stat(i,cm);return `<div class="row"><div class="dchip ${s}">${pad(dayAt(i,cm))}</div><div class="t"><b>${esc(i.d)}</b><span class="tag ${s}">${slabel(i,s)}</span></div><div class="a ${i.t==='inc'?'pos':'neg'}">${i.t==='inc'?'+':'−'}${brl(i.c)}</div></div>`};
  const gt=greet(),un=unread();
- return `<div class="top"><button class="av" id="avh" data-act="avs" aria-label="${esc(avLbl())}">${avInner()}</button><div class="tx"><h1 class="hello" style="font-size:${gt.length>34?16:gt.length>24?18:20}px">${esc(gt)}</h1><small>${d.toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long'})}</small></div><div class="tb"><button class="ib bellw${un?' ring':''}" data-act="ntf" aria-label="Notificações${un?', '+un+' não lidas':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a6 6 0 0112 0c0 6 2 7 2 7H4s2-1 2-7"/><path d="M10 20a2 2 0 004 0"/></svg>${un?`<span class="bdg">${un>9?'9+':un}</span>`:''}</button><button class="ib" data-act="nav" data-id="news" aria-label="Notícias financeiras"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="14" height="16" rx="2"/><path d="M17 8h3v10a2 2 0 01-2 2M7 8h6M7 12h6M7 16h4"/></svg></button>${eyeBtn()}</div></div>
+ return `<div class="top"><button class="av" id="avh" data-act="pm" aria-haspopup="menu" aria-expanded="false" aria-label="Abrir menu do perfil">${avInner()}</button><div class="tx"><h1 class="hello" style="font-size:${gt.length>34?16:gt.length>24?18:20}px">${esc(gt)}</h1><small>${d.toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long'})}</small></div><div class="tb"><button class="ib bellw${un?' ring':''}" data-act="ntf" aria-label="Notificações${un?', '+un+' não lidas':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a6 6 0 0112 0c0 6 2 7 2 7H4s2-1 2-7"/><path d="M10 20a2 2 0 004 0"/></svg>${un?`<span class="bdg">${un>9?'9+':un}</span>`:''}</button><button class="ib" data-act="nav" data-id="news" aria-label="Notícias financeiras"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="14" height="16" rx="2"/><path d="M17 8h3v10a2 2 0 01-2 2M7 8h6M7 12h6M7 16h4"/></svg></button>${eyeBtn()}</div></div>
  ${bkpBanner()}${sqBar()}<div class="card hero"><div class="lbl">Saldo disponível</div><div class="big" style="font-size:32px">${brl(bal)}</div>
-  <div class="pills${gd?' p3':''}"><span class="pill">↓ Recebido ${brl(fl.inc)}</span><span class="pill">↑ Pago ${brl(fl.exp)}</span>${gd?`<span class="pill">▣ Guardado e dívidas ${brl(gd)}</span>`:''}</div><div class="lbl" id="hsub">${prior?`Inclui ${brl(prior)} de saldo inicial e de outros meses. `:''}Só conta o que já aconteceu.</div></div>
- ${mqHome()}<div class="qa" id="hqa"><button data-act="qinc"><i aria-hidden="true">+</i>Receita</button><button data-act="qexp"><i aria-hidden="true">−</i>Despesa</button><button data-act="nav" data-id="cx"><i aria-hidden="true">▣</i>Guardar</button></div>${ntHomeCard()}${ccHomeCard()}
+  <div class="pills${gd?' p3':''}"><span class="pill"><b class="pi in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5.5v12M7.5 13l4.5 4.5 4.5-4.5"/></svg></b><span><small>Recebido</small> <b>${brl(fl.inc)}</b></span></span><span class="pill"><b class="pi out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 18.5v-12M7.5 11 12 6.5l4.5 4.5"/></svg></b><span><small>Pago</small> <b>${brl(fl.exp)}</b></span></span>${gd?`<span class="pill"><b class="pi sv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="6" width="14" height="12" rx="3"/><circle cx="12" cy="12" r="2.2"/></svg></b><span><small>Guardado e dívidas</small> <b>${brl(gd)}</b></span></span>`:''}</div><div class="lbl" id="hsub">${prior?`Inclui ${brl(prior)} de saldo inicial e de outros meses. `:''}Só conta o que já aconteceu.</div></div>
+ ${mqHome()}<div class="qa" id="hqa"><button data-act="qinc"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5" opacity=".4"/><path d="M12 7.5v9M8.5 13l3.5 3.5 3.5-3.5"/></svg></i>Receita</button><button data-act="qexp"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5" opacity=".4"/><path d="M12 16.5v-9M8.5 11 12 7.5l3.5 3.5"/></svg></i>Despesa</button><button data-act="nav" data-id="cx"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="13.5" rx="3.5"/><circle cx="12" cy="11.8" r="3"/><path d="M12 9.6v.9M12 13.1v.9M9.8 11.8h.9M13.3 11.8h.9M7.5 18.5v1.8M16.5 18.5v1.8"/></svg></i>Guardar</button></div>${ntHomeCard()}${ccHomeCard()}
  <div class="g2"><div class="tile"><div class="chip g">↓</div><div class="lbl" style="margin-top:8px">Receitas previstas</div><div class="v">${brl(rec)}</div></div>
   <div class="tile"><div class="chip r">↑</div><div class="lbl" style="margin-top:8px">Despesas fixas</div><div class="v">${brl(exp)}</div></div></div>
  <div class="sec">Próximos compromissos</div><div class="card">${prox.length?prox.map(row).join(''):`<div class="empty">${S.items.length?'Tudo em dia neste mês 🎉':'Nenhum compromisso cadastrado ainda.'}</div>`}</div>
@@ -841,10 +885,10 @@ function vRel(){const f=flows(),ms=Array.from({length:12},(_,i)=>ry+'-'+pad(i+1)
  <div class="rch"><h4>Quitação das dívidas (acumulado pago)</h4>${paidAll?chart(L,[dp],['#16A34A'],{line:1,t:'Total pago das dívidas, acumulado',ls:ms.map(m=>MN[+m.slice(5)-1])})+`<div class="lbl">Quitado até hoje: ${Math.round(paidAll/od*100)}% de ${brl(od)}</div>`:noData('Nenhum pagamento de dívida registrado ainda.')}</div>`)}
  ${rdet('shr','Resumo para compartilhar','Uma imagem só com totais, sem nomes nem lançamentos',rstrip(rsCard()))}`}
 
-function vCfg(){const p=S.pref;return `<h2>Configurações</h2><div class="card"><label>Nome do proprietário<input id="own" value="${esc(S.owner)}" maxlength="40"></label><button class="b1 full" data-act="own">Salvar nome</button></div>
- <div class="card"><h3>Backup</h3><div class="acts"><button class="b1" data-act="exp" style="flex:1">Exportar backup</button><button class="b2" data-act="imp" style="flex:1">Importar backup</button></div>${hasCrypto?'<button class="b2 full" style="margin-top:8px" data-act="expenc">Exportar backup criptografado</button>':''}<p class="lbl" style="margin-top:8px">Os dados ficam só neste navegador. Exporte um backup de vez em quando. O backup comum é um arquivo aberto; o <b>criptografado</b> só abre com a senha que você escolher (não é a senha de login — guarde-a: sem ela ninguém recupera o arquivo).</p>${bkpLine()}<button type="button" class="b2 bkth" data-act="bkt">Como fazer backup?</button></div>
- ${secCard()}
- <div class="card"><h3>Aparência</h3><div class="acts" style="margin:0 0 12px"><button class="${p.theme!=='dark'?'b1':'b2'}" style="flex:1" data-act="theme" data-id="light" aria-pressed="${p.theme!=='dark'}">☀ Claro</button><button class="${p.theme==='dark'?'b1':'b2'}" style="flex:1" data-act="theme" data-id="dark" aria-pressed="${p.theme==='dark'}">☾ Escuro</button></div><details class="mo" data-det="aparencia"${detOpen('aparencia')?' open':''}><summary>Cores, vidro e animações</summary><div class="lbl" style="margin:10px 0 6px">Paleta de cores</div><div class="pals">${PALS.map(([k,n,c])=>`<button class="pal${p.pal===k?' on':''}" data-act="pal" data-id="${k}" aria-pressed="${p.pal===k}"><i style="background:${c}"></i>${n}</button>`).join('')}</div><label style="margin:12px 0 0">Efeito de vidro<select id="glSel"><option value="1"${p.gl!==0?' selected':''}>Completo</option><option value="0"${p.gl===0?' selected':''}>Leve (mais rápido)</option></select></label><label>Animações dos ícones<select id="anSel"><option value="1"${p.av&&p.av.an!==0?' selected':''}>Ligadas</option><option value="0"${p.av&&p.av.an===0?' selected':''}>Desligadas</option></select></label></details></div>
+function vCfg(){const p=S.pref;return `<h2>Configurações</h2><div class="card" id="cs-own"><label>Nome do proprietário<input id="own" value="${esc(S.owner)}" maxlength="40"></label><button class="b1 full" data-act="own">Salvar nome</button></div>
+ <div class="card" id="cs-bkp"><h3>Backup</h3><div class="acts"><button class="b1" data-act="exp" style="flex:1">Exportar backup</button><button class="b2" data-act="imp" style="flex:1">Importar backup</button></div>${hasCrypto?'<button class="b2 full" style="margin-top:8px" data-act="expenc">Exportar backup criptografado</button>':''}<p class="lbl" style="margin-top:8px">Os dados ficam só neste navegador. Exporte um backup de vez em quando. O backup comum é um arquivo aberto; o <b>criptografado</b> só abre com a senha que você escolher (não é a senha de login — guarde-a: sem ela ninguém recupera o arquivo).</p>${bkpLine()}<button type="button" class="b2 bkth" data-act="bkt">Como fazer backup?</button></div>
+ ${secCard().replace('<div class="card">','<div class="card" id="cs-sec">')}
+ <div class="card" id="cs-apa"><h3>Aparência</h3><div class="acts" style="margin:0 0 12px"><button class="${p.theme!=='dark'?'b1':'b2'}" style="flex:1" data-act="theme" data-id="light" aria-pressed="${p.theme!=='dark'}">☀ Claro</button><button class="${p.theme==='dark'?'b1':'b2'}" style="flex:1" data-act="theme" data-id="dark" aria-pressed="${p.theme==='dark'}">☾ Escuro</button></div><details class="mo" data-det="aparencia"${detOpen('aparencia')?' open':''}><summary>Cores, vidro e animações</summary><div class="lbl" style="margin:10px 0 6px">Paleta de cores</div><div class="pals">${PALS.map(([k,n,c])=>`<button class="pal${p.pal===k?' on':''}" data-act="pal" data-id="${k}" aria-pressed="${p.pal===k}"><i style="background:${c}"></i>${n}</button>`).join('')}</div><label style="margin:12px 0 0">Efeito de vidro<select id="glSel"><option value="1"${p.gl!==0?' selected':''}>Completo</option><option value="0"${p.gl===0?' selected':''}>Leve (mais rápido)</option></select></label><label>Animações dos ícones<select id="anSel"><option value="1"${p.av&&p.av.an!==0?' selected':''}>Ligadas</option><option value="0"${p.av&&p.av.an===0?' selected':''}>Desligadas</option></select></label></details></div>
  ${conqCard()}
  <div class="card"><h3>Zerar todos os dados</h3><p class="lbl" style="margin-bottom:8px">Apaga tudo o que você registrou e deixa o app em branco. Seu nome, tema, avatar, senha e suas anotações, lembretes e tarefas continuam. Exporte um backup antes.</p><button class="b2 full neg" data-act="reset">Zerar todos os dados</button></div>
  <div class="card abt"><h3>Sobre</h3>
@@ -1077,7 +1121,38 @@ const IC={home:SV('<path class="fl" d="M4 10.6 12 4l8 6.6V19a1.5 1.5 0 0 1-1.5 1
  cx:SV('<path d="M8.5 4h7M9.5 4v2.5M14.5 4v2.5"/><rect class="fl" x="5.5" y="6.5" width="13" height="14" rx="3.5"/><circle cx="12" cy="13.5" r="2.4"/>'),
  rel:SV('<path d="M5.5 19.5v-7M12 19.5v-14M18.5 19.5v-9" stroke-width="2.6"/>'),
  cfg:SV('<path d="M4 7.5h9M17 7.5h3M4 16.5h3M11 16.5h9"/><circle cx="15" cy="7.5" r="2.2"/><circle cx="9" cy="16.5" r="2.2"/>')};
-const VIEWS={home:['Home','⌂',vHome,'s-home'],rec:['Receitas','↓',()=>vMonth('inc'),'s-rec'],des:['Despesas','↑',vDes,'s-des'],div:['Dívidas','!',vDiv,'s-div'],cx:['Caixinhas','▣',vCx,'s-cx'],rel:['Relat.','▤',vRel,'s-rel'],cfg:['Ajustes','⚙',vCfg,'s-cfg'],ntf:['Avisos','🔔',vNtf,'s-ntf',1],news:['Notícias','📰',vNews,'s-news',1],conq:['Conquistas','★',vConq,'s-conq',1],nt:['Anotações','✎',vNt,'s-nt',1],cc:['Cartões','▭',vCc,'s-cc',1]};
+/* ===== menu do perfil (toque na foto): Ajustes saiu da barra inferior ===== */
+let PMO=false,PMFROM=null,PMT=0;
+const pmAv=()=>`<button class="av avfl" data-act="pm" aria-haspopup="menu" aria-expanded="false" aria-label="Abrir menu do perfil">${avInner()}</button>`;
+function pmHtml(){const nm=(S.owner||'').trim()||'Sua conta',inf=SECMODE&&SECOBJ&&SECOBJ.u?'Protegido por senha · '+esc(SECOBJ.u):'Dados só neste aparelho',
+ I=d=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`,
+ L=[['own','Meu perfil',I('<circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.9-4 4-5.5 7.5-5.5s6.6 1.5 7.5 5.5"/>')],
+ ['cfg','Configurações',I('<path d="M4 7.5h9M17 7.5h3M4 16.5h3M11 16.5h9"/><circle cx="15" cy="7.5" r="2.2"/><circle cx="9" cy="16.5" r="2.2"/>')],
+ ['apa','Aparência e temas',I('<path d="M12 3a9 9 0 100 18c1.500 0 2-1 1.600-2.100-.4-1.200.2-2.400 1.600-2.400H17a4 4 0 004-4c0-5-4-9.500-9-9.500z"/><circle cx="7.500" cy="11" r=".9"/><circle cx="10" cy="7" r=".9"/><circle cx="14.500" cy="7" r=".9"/>')],
+ ['sec','Privacidade e segurança',I('<path d="M12 3l7.500 3v5.500c0 4.500-3.200 8-7.500 9.500-4.300-1.500-7.500-5-7.500-9.500V6z"/><path d="M9 12l2.200 2.200L15.500 10"/>')],
+ ['bkp','Backups',I('<path d="M4 7.500h16v3H4z"/><path d="M5.500 10.500V19h13v-8.500"/><path d="M12 12.500v4M10 14.800l2 2 2-2"/>')]],
+ ft=SECMODE?['lock','Sair da conta',I('<path d="M9 4H6a2 2 0 00-2 2v12a2 2 0 002 2h3"/><path d="M16 8l4 4-4 4M20 12H9"/>')]:['secon','Ativar proteção por senha',I('<path d="M12 3l7.500 3v5.500c0 4.500-3.200 8-7.500 9.500-4.300-1.500-7.500-5-7.500-9.500V6z"/>')];
+ const bt=a=>`<button type="button" class="pmi" role="menuitem" data-act="pmgo" data-id="${a[0]}"><span class="pmic">${a[2]}</span><span class="pmt">${a[1]}</span><svg class="pmch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>`;
+ return `<div class="pmsc" data-act="pmx"></div><div class="pmp" role="menu" aria-label="Menu do perfil"><div class="pmh"><button type="button" class="av pmav" data-act="pmgo" data-id="foto" aria-label="${esc(avLbl())}">${avInner()}<span class="pmcam" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.500-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3"/></svg></span></button><div class="pmn"><b>${esc(nm)}</b><span>${inf}</span></div></div><div class="pml">${L.map(bt).join('')}</div><div class="pmf">${bt(ft)}</div></div>`}
+function pmOpen(from){if(PMO||!from)return;PMO=true;PMFROM=from;clearTimeout(PMT);let m=document.getElementById('pm');if(!m){m=document.createElement('div');m.id='pm';document.body.appendChild(m)}
+ m.innerHTML=pmHtml();m.hidden=false;m.classList.remove('on');const pn=m.querySelector('.pmp'),r=from.getBoundingClientRect(),left=r.left+r.width/2<innerWidth/2,top=Math.max(8,r.bottom+8),W=Math.min(320,innerWidth-20);pn.style.width=W+'px';
+ pn.style.top=top+'px';pn.style.maxHeight=Math.max(200,innerHeight-top-12)+'px';if(left){pn.style.left=Math.min(Math.max(10,r.left),innerWidth-W-10)+'px';pn.style.transformOrigin='top left'}else{pn.style.right=Math.min(Math.max(10,innerWidth-r.right),innerWidth-W-10)+'px';pn.style.transformOrigin='top right'}
+ from.setAttribute('aria-expanded','true');requestAnimationFrame(()=>requestAnimationFrame(()=>m.classList.add('on')));
+ try{history.pushState({pm:1},'')}catch(e){}
+ const f=m.querySelector('.pmi');if(f)f.focus({preventScroll:true})}
+function pmClose(o){if(!PMO)return;o=o||{};PMO=false;const m=document.getElementById('pm');if(m)m.classList.remove('on');
+ PMT=setTimeout(()=>{if(!PMO&&m)m.hidden=true},RM.matches?0:200);if(PMFROM){PMFROM.setAttribute('aria-expanded','false');if(!o.nofocus&&document.body.contains(PMFROM))try{PMFROM.focus({preventScroll:true})}catch(e){}}
+ if(!o.pop){try{if(history.state&&history.state.pm)history.back()}catch(e){}}}
+function pmGo(id){pmClose({nofocus:1});if(id==='lock'){lockNow();return}if(id==='secon'){ACT.secon();return}if(id==='foto'){avSheet();return}
+ const T={own:'cs-own',apa:'cs-apa',sec:'cs-sec',bkp:'cs-bkp'}[id];go('cfg');if(id==='apa'){const d=document.querySelector('#s-cfg details[data-det=aparencia]');if(d){d.open=true;DET.add('aparencia')}}
+ if(T)setTimeout(()=>{const e=document.getElementById(T);if(e&&view==='cfg'){e.scrollIntoView({block:'start',behavior:'auto'});window.scrollBy(0,-12)}},90)}
+addEventListener('popstate',()=>{if(PMO)pmClose({pop:1})});
+addEventListener('resize',()=>{if(PMO)pmClose({nofocus:1})});
+document.addEventListener('keydown',e=>{if(!PMO)return;if(e.key==='Escape'){e.preventDefault();pmClose();return}
+ const it=[...document.querySelectorAll('#pm .pmi')],i=it.indexOf(document.activeElement);
+ if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();it[(i+(e.key==='ArrowDown'?1:-1)+it.length)%it.length].focus()}
+ else if(e.key==='Tab'){e.preventDefault();it[(i+(e.shiftKey?-1:1)+it.length)%it.length].focus()}});
+const VIEWS={home:['Home','⌂',vHome,'s-home'],rec:['Receitas','↓',()=>vMonth('inc'),'s-rec'],des:['Despesas','↑',vDes,'s-des'],div:['Dívidas','!',vDiv,'s-div'],cx:['Caixinhas','▣',vCx,'s-cx'],rel:['Relat.','▤',vRel,'s-rel'],cfg:['Ajustes','⚙',vCfg,'s-cfg',1],ntf:['Avisos','🔔',vNtf,'s-ntf',1],news:['Notícias','📰',vNews,'s-news',1],conq:['Conquistas','★',vConq,'s-conq',1],nt:['Anotações','✎',vNt,'s-nt',1],cc:['Cartões','▭',vCc,'s-cc',1]};
 let LASTV=null;
 let MEMO=null;const memoR=f=>function(){if(!MEMO)return f.apply(this,arguments);const k=f.name+'|'+Array.prototype.join.call(arguments,',');if(MEMO.has(k))return MEMO.get(k);const v=f.apply(this,arguments);MEMO.set(k,v);return v};
 flows=memoR(flows);relFlow=memoR(relFlow);relCommit=memoR(relCommit);catSpend=memoR(catSpend);finSit=memoR(finSit);
@@ -1089,7 +1164,7 @@ function render(){
  try{document.querySelectorAll('details[data-det]').forEach(d=>{d.open?DET.add(d.dataset.det):DET.delete(d.dataset.det)})}catch(e){}
  applyPref();
  for(const k in VIEWS){$('#'+VIEWS[k][3]).hidden=k!==view}
- const fk=a11yFocusKey();try{$('#'+VIEWS[view][3]).innerHTML=(MEMO=new Map(),(()=>{try{return VIEWS[view][2]()}finally{MEMO=null}})());if(['rec','des','div','cx','rel','cc'].includes(view))$('#'+VIEWS[view][3]).insertAdjacentHTML('afterbegin',eyeBtn('eyefl'))}catch(e){$('#'+VIEWS[view][3]).innerHTML='<div class="card">Erro ao exibir esta tela. Seus dados continuam salvos.</div>';console.error(e)}a11yFocusBack(fk);pqvCheck();persistReq();bktCheck();try{window.__qtRefresh&&window.__qtRefresh()}catch(e){}{const sc=$('#'+VIEWS[view][3]);if(view!==LASTV&&!RM.matches){sc.classList.remove('vin');void sc.offsetWidth;sc.classList.add('vin');setTimeout(()=>sc.classList.remove('vin'),800)}}
+ const fk=a11yFocusKey();try{$('#'+VIEWS[view][3]).innerHTML=(MEMO=new Map(),(()=>{try{return VIEWS[view][2]()}finally{MEMO=null}})());if(['rec','des','div','cx','rel','cc'].includes(view))$('#'+VIEWS[view][3]).insertAdjacentHTML('afterbegin',eyeBtn('eyefl'));if(['rec','des','div','cx','rel'].includes(view))$('#'+VIEWS[view][3]).insertAdjacentHTML('afterbegin',pmAv())}catch(e){$('#'+VIEWS[view][3]).innerHTML='<div class="card">Erro ao exibir esta tela. Seus dados continuam salvos.</div>';console.error(e)}a11yFocusBack(fk);pqvCheck();persistReq();bktCheck();try{window.__qtRefresh&&window.__qtRefresh()}catch(e){}{const sc=$('#'+VIEWS[view][3]);if(view!==LASTV&&!RM.matches){sc.classList.remove('vin');void sc.offsetWidth;sc.classList.add('vin');setTimeout(()=>sc.classList.remove('vin'),800)}}
  {const nv=$('#nav'),ents=Object.entries(VIEWS).filter(([k,v])=>!v[4]),key=ents.map(([k,v])=>k+v[0]).join('|');
  if(nv.dataset.k!==key){nv.innerHTML=ents.map(([k,v])=>`<button data-act="nav" data-id="${k}" class="${k===view?'on':''}">${IC[k]||'<span>'+v[1]+'</span>'}${v[0]}</button>`).join('');nv.dataset.k=key}
  else nv.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===view));nv.querySelectorAll('button').forEach(b=>{if(b.dataset.id===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
@@ -1201,7 +1276,7 @@ const ACT={
  nav:id=>go(id),close:closeOv,yes:()=>{const f=pend;pend=null;closeOv();if(f)f()},
  mp:()=>{vm=shift(vm,-1);render()},mn:()=>{vm=shift(vm,1);render()},yp:()=>{ry--;render()},yn:()=>{ry++;render()},
  tog:(id,b)=>{const i=find(S.items,id),m=b.dataset.m||vm;if(!i)return;i.done=i.done||{};i.paidOn=i.paidOn||{};if(i.done[m]!=null){delete i.done[m];delete i.paidOn[m]}else{i.done[m]=i.c;i.paidOn[m]=todayStr()}commit()},
- avs:()=>avSheet(),avpick:()=>{const f=$('#phf');f.value='';f.click()},avrm:()=>{delete S.pref.ph;save();closeOv();render();toast('Foto removida')},avsave:()=>{if(!AVC)return;const cv=document.createElement('canvas');cv.width=cv.height=256;avDraw(cv,256);let u='';try{u=cv.toDataURL('image/jpeg',.86)}catch(e){}if(!phOk(u))return toast('Não foi possível salvar a foto. Tente outra imagem.');S.pref.ph=u;S.pref.av.set=1;const nw=achCheck();save();closeOv();render();toast('Foto atualizada');if(nw.length)celebrate(nw)},
+ avs:()=>avSheet(),pm:(id,b)=>PMO?pmClose():pmOpen(b),pmx:()=>pmClose(),pmgo:id=>pmGo(id),avpick:()=>{const f=$('#phf');f.value='';f.click()},avrm:()=>{delete S.pref.ph;save();closeOv();render();toast('Foto removida')},avsave:()=>{if(!AVC)return;const cv=document.createElement('canvas');cv.width=cv.height=256;avDraw(cv,256);let u='';try{u=cv.toDataURL('image/jpeg',.86)}catch(e){}if(!phOk(u))return toast('Não foi possível salvar a foto. Tente outra imagem.');S.pref.ph=u;S.pref.av.set=1;const nw=achCheck();save();closeOv();render();toast('Foto atualizada');if(nw.length)celebrate(nw)},
  ntf:()=>go('ntf'),expenc:()=>expEncForm(),cgp:()=>{cgm=shift(cgm,-1);render()},cgn:()=>{cgm=shift(cgm,1);render()},catlim:id=>hmCatOpen(id),catadd:()=>limAddForm(),ntfr:id=>{S.ntf.read[id]=true;const ids=new Set(notifs().map(n=>n.id)),ks=Object.keys(S.ntf.read);if(ks.length>400)ks.forEach(k=>{if(!ids.has(k))delete S.ntf.read[k]});save();render()},
  ntfall:()=>{notifs().forEach(n=>{S.ntf.read[n.id]=true});save();render();toast('Tudo marcado como lido')},nw:id=>{nwTab=id;render()},
  secon:()=>viewSetup(true),secchg:()=>chgForm(),secnew:()=>newCodeForm(),seclock:()=>lockNow(),secoff:()=>offForm(),
@@ -1631,7 +1706,7 @@ const TSTEPS=[
  {t:'Despesas',x:'Contas fixas, variáveis e parcelas. Marque como pago e acompanhe seus cartões de crédito aqui também.',ic:'des',sel:()=>$('#nav button[data-id=des]')},
  {t:'Dívidas e Caixinhas',x:'Dívidas: veja quanto falta pagar. Caixinhas: guarde dinheiro para suas metas, como uma viagem.',ic:'div',sel:()=>[$('#nav button[data-id=div]'),$('#nav button[data-id=cx]')]},
  {t:'Relatórios',x:'Gráficos do mês, gastos por categoria e como está a sua situação financeira.',ic:'rel',sel:()=>$('#nav button[data-id=rel]')},
- {t:'Ajustes',x:'Tema e cores, backup e segurança. Faça backup de vez em quando!',ic:'cfg',sel:()=>$('#nav button[data-id=cfg]')},
+ {t:'Seu perfil',x:'Toque na sua foto para abrir Ajustes, temas, segurança e backups. Faça backup de vez em quando!',ic:'cfg',sel:()=>$('#avh')},
  {t:'Pronto!',x:'Use a calculadora flutuante, o sino de avisos e as Anotações na Home. Dá para rever este tutorial em Ajustes. Bem-vindo ao Wolfin: domine seu dinheiro!',sel:null}];
 let TOUR=null;
 function tourSoon(){setTimeout(()=>tourStart(false),900)}
@@ -1679,7 +1754,7 @@ const BKI=(()=>{
  ].map(c=>`<svg viewBox="0 0 320 170" class="bi" role="img" focusable="false" aria-hidden="true">${c}</svg>`)})();
 const BKS=()=>[
  {t:'Seus dados merecem proteção.',b:'<p>O Wolfin guarda receitas, despesas, contas, dívidas e planejamentos. Esses dados ficam <b>só neste aparelho</b>, no navegador.</p><p>Se você trocar de celular, limpar os dados do navegador ou desinstalar o app, esse histórico pode ser perdido — e o controle financeiro que você montou junto com ele.</p>'},
- {t:'Crie sua cópia de segurança.',b:'<ol class="bkol"><li>Abra <b>Ajustes</b> (Configurações) e vá até o cartão <b>Backup</b>.</li><li>Toque em <b>Exportar backup</b>.</li><li>O navegador salva o arquivo <b>wolfin-backup-AAAA-MM-DD.json</b> no aparelho (em geral na pasta Downloads).</li><li>Depois, escolha onde guardar: copie ou envie esse arquivo para o lugar que preferir.</li></ol><p class="bkn">O Wolfin <b>não envia</b> o backup para nenhum serviço. Quem escolhe o destino e conclui o salvamento é você.</p>'+(hasCrypto?'<p class="bkn">Se preferir, use <b>Exportar backup criptografado</b>: ele pede uma senha só do backup.</p>':'')},
+ {t:'Crie sua cópia de segurança.',b:'<ol class="bkol"><li>Toque na sua foto, escolha <b>Backups</b> e vá até o cartão <b>Backup</b>.</li><li>Toque em <b>Exportar backup</b>.</li><li>O navegador salva o arquivo <b>wolfin-backup-AAAA-MM-DD.json</b> no aparelho (em geral na pasta Downloads).</li><li>Depois, escolha onde guardar: copie ou envie esse arquivo para o lugar que preferir.</li></ol><p class="bkn">O Wolfin <b>não envia</b> o backup para nenhum serviço. Quem escolhe o destino e conclui o salvamento é você.</p>'+(hasCrypto?'<p class="bkn">Se preferir, use <b>Exportar backup criptografado</b>: ele pede uma senha só do backup.</p>':'')},
  {t:'Guarde em um lugar seguro.',b:'<ul class="bkul"><li>No <b>Google Drive</b>.</li><li>Na <b>pasta de arquivos do celular</b>.</li><li>Em <b>outro local seguro</b> de sua preferência.</li></ul><p>Mantenha uma cópia <b>fora do armazenamento do app</b>.</p><div class="bkw" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L2.5 20h19Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 17.6v.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Não deixe sua única cópia de segurança no mesmo dispositivo onde utiliza o aplicativo.</span></div>'+(hasCrypto?'<p class="bkn">No backup <b>criptografado</b>, guarde também a senha que você escolheu ao exportar (não é a senha de login): sem ela, ninguém consegue recuperar o arquivo. O backup comum é um arquivo aberto, sem senha.</p>':'<p class="bkn">O backup é um arquivo aberto, sem senha: guarde-o em um lugar privado.</p>')+'<p class="bkn">Nunca compartilhe o arquivo de backup nem a senha com outras pessoas.</p>'},
  {t:'Recupere seus dados quando precisar.',b:'<ol class="bkol"><li>Abra <b>Ajustes</b> e vá até o cartão <b>Backup</b>.</li><li>Toque em <b>Importar backup</b>.</li><li>Localize o arquivo salvo no aparelho ou no Drive e selecione o correto.</li><li>Confira as informações que o Wolfin mostrar sobre o backup.</li><li>Se estiver seguro, confirme a restauração.'+(hasCrypto?' No backup criptografado, o Wolfin pede a senha do backup.':'')+'</li></ol><div class="bkw" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L2.5 20h19Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 17.6v.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Importar <b>substitui</b> os dados atuais e não pode ser desfeito. Os dados não são mesclados.</span></div><p class="bkn">Em um aparelho novo, toque em <b>ENTRAR</b> na tela inicial para importar o backup.</p>'},
  {t:'Backup feito, tranquilidade maior.',b:'<p class="bkq">Seus dados financeiros fazem parte da sua história. Proteja essa informação. Crie backups regularmente e mantenha uma cópia segura.</p><p class="bkn">Para rever este tutorial: Ajustes → Backup → <b>Como fazer backup?</b></p>'}];
