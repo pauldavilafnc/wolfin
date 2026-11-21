@@ -435,7 +435,6 @@ body::before{opacity:.6}
 @media(max-width:360px){#s-home .hero .big{font-size:28px!important}#s-home .qa button{font-size:12.5px;gap:5px}#s-home .qa button i{width:26px;height:26px}#s-home .qa button i svg{width:16px;height:16px}}
 
 /* v7.21 — menu do perfil (foto) */
-.av.avfl{position:absolute;top:0;right:48px;z-index:4}
 #pm{position:fixed;inset:0;z-index:13}#pm[hidden]{display:none}
 #pm .pmsc{position:absolute;inset:0;background:rgba(8,16,36,.34);opacity:0;transition:opacity .18s ease}
 #pm.on .pmsc{opacity:1}
@@ -1123,7 +1122,6 @@ const IC={home:SV('<path class="fl" d="M4 10.6 12 4l8 6.6V19a1.5 1.5 0 0 1-1.5 1
  cfg:SV('<path d="M4 7.5h9M17 7.5h3M4 16.5h3M11 16.5h9"/><circle cx="15" cy="7.5" r="2.2"/><circle cx="9" cy="16.5" r="2.2"/>')};
 /* ===== menu do perfil (toque na foto): Ajustes saiu da barra inferior ===== */
 let PMO=false,PMFROM=null,PMT=0;
-const pmAv=()=>`<button class="av avfl" data-act="pm" aria-haspopup="menu" aria-expanded="false" aria-label="Abrir menu do perfil">${avInner()}</button>`;
 function pmHtml(){const nm=(S.owner||'').trim()||'Sua conta',inf=SECMODE&&SECOBJ&&SECOBJ.u?'Protegido por senha · '+esc(SECOBJ.u):'Dados só neste aparelho',
  I=d=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`,
  L=[['own','Meu perfil',I('<circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.9-4 4-5.5 7.5-5.5s6.6 1.5 7.5 5.5"/>')],
@@ -1164,7 +1162,7 @@ function render(){
  try{document.querySelectorAll('details[data-det]').forEach(d=>{d.open?DET.add(d.dataset.det):DET.delete(d.dataset.det)})}catch(e){}
  applyPref();
  for(const k in VIEWS){$('#'+VIEWS[k][3]).hidden=k!==view}
- const fk=a11yFocusKey();try{$('#'+VIEWS[view][3]).innerHTML=(MEMO=new Map(),(()=>{try{return VIEWS[view][2]()}finally{MEMO=null}})());if(['rec','des','div','cx','rel','cc'].includes(view))$('#'+VIEWS[view][3]).insertAdjacentHTML('afterbegin',eyeBtn('eyefl'));if(['rec','des','div','cx','rel'].includes(view))$('#'+VIEWS[view][3]).insertAdjacentHTML('afterbegin',pmAv())}catch(e){$('#'+VIEWS[view][3]).innerHTML='<div class="card">Erro ao exibir esta tela. Seus dados continuam salvos.</div>';console.error(e)}a11yFocusBack(fk);pqvCheck();persistReq();bktCheck();try{window.__qtRefresh&&window.__qtRefresh()}catch(e){}{const sc=$('#'+VIEWS[view][3]);if(view!==LASTV&&!RM.matches){sc.classList.remove('vin');void sc.offsetWidth;sc.classList.add('vin');setTimeout(()=>sc.classList.remove('vin'),800)}}
+ const fk=a11yFocusKey();try{$('#'+VIEWS[view][3]).innerHTML=(MEMO=new Map(),(()=>{try{return VIEWS[view][2]()}finally{MEMO=null}})());if(['rec','des','div','cx','rel','cc'].includes(view))$('#'+VIEWS[view][3]).insertAdjacentHTML('afterbegin',eyeBtn('eyefl'))}catch(e){$('#'+VIEWS[view][3]).innerHTML='<div class="card">Erro ao exibir esta tela. Seus dados continuam salvos.</div>';console.error(e)}a11yFocusBack(fk);pqvCheck();persistReq();bktCheck();try{window.__qtRefresh&&window.__qtRefresh()}catch(e){}{const sc=$('#'+VIEWS[view][3]);if(view!==LASTV&&!RM.matches){sc.classList.remove('vin');void sc.offsetWidth;sc.classList.add('vin');setTimeout(()=>sc.classList.remove('vin'),800)}}
  {const nv=$('#nav'),ents=Object.entries(VIEWS).filter(([k,v])=>!v[4]),key=ents.map(([k,v])=>k+v[0]).join('|');
  if(nv.dataset.k!==key){nv.innerHTML=ents.map(([k,v])=>`<button data-act="nav" data-id="${k}" class="${k===view?'on':''}">${IC[k]||'<span>'+v[1]+'</span>'}${v[0]}</button>`).join('');nv.dataset.k=key}
  else nv.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===view));nv.querySelectorAll('button').forEach(b=>{if(b.dataset.id===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
