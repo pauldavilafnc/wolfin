@@ -526,7 +526,7 @@ e.addEventListener("pointerdown",function(){fin(1)});addEventListener("keydown",
 const MCIDS=['wolfin'];
 /* migração: qualquer mascote ou roupa antiga (10 personagens, avatares e roupas do lobo) vira o Wolfin atual */
 function mcMigrate(){return 'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.22 · Redesign da Home · 20/11/2026';
+const KEY='wallstreet.v1',BUILD='7.23 · Correção em Editar parcela · 21/11/2026';
 const CATS={exp:['Alimentação','Transporte','Compras','Roupas','Lazer','Trabalho','Casa','Saúde','Educação','Financeiro','Tecnologia','Cuidados pessoais','Presentes','Outros'],inc:['Salário','Comissão','Freelancer','Outro']};
 const PALS=[['blue','Azul','#2563EB'],['perola','Pérola','#E8EDF5'],['violet','Violeta','#7C3AED'],['teal','Turquesa','#0D9488'],['pink','Rosa','#DB2777'],['orange','Laranja','#EA580C'],['ouro','Ouro','#B88614'],['esmeralda','Esmeralda','#15803D'],['grafite','Grafite','#4B5563']];
 const PAYS=['Pix','Cartão de débito','Cartão de crédito','Dinheiro/Espécie','Outro'];
@@ -1252,8 +1252,14 @@ form(x?'Editar parcelada':'Nova despesa parcelada',fl,v=>{
 function parcForm(id,iid){const p=id?find(S.parc,id):null,x=find(S.inst,p?p.iid:iid),ym0=p?.ym||vm;
  form((p?'Editar parcela':'Nova parcela')+(x?' · '+x.n:''),[{k:'ym',l:'Mês',t:'month',v:ym0},{k:'pd',l:'Data do pagamento',t:'cal',free:1,w:'pdw',hide:!p?.paid,ym:(p?.paidOn||p?.due||todayStr()).slice(0,7),v:p?.paid?(p.paidOn||''):''},{k:'c',l:'Valor (R$)',t:'money',v:fin(p?.c)},{k:'paid',l:'Status',t:'sel',v:p?.paid?1:0,o:[[0,'Pendente'],[1,'Pago']]}],v=>{
   const m=money(v.c,1);if(!/^\d{4}-\d{2}$/.test(v.ym))return'Informe o mês.';if(m.e)return m.e;
-  const o=p||{id:uid(),iid};const was=o.paid;Object.assign(o,{ym:v.ym,c:m.c,paid:v.paid==='1'});const dd=DUE.cur(v.ym);if(dd&&(!p||p.due||DUE.isEx(dd,v.ym)))o.due=dd;else if(!dd)delete o.due;
-  if(o.paid){if(v.pd){if(!dOk(v.pd))return'Data do pagamento inválida.';o.paidOn=v.pd}else if(!(p&&was&&!p.paidOn))return'Informe a data do pagamento.'}else delete o.paidOn;if(!p)S.parc.push(o);commit()});
+  const was=!!(p&&p.paid),paid=v.paid==='1',pd=String(v.pd||'').trim();
+  /* valida TUDO antes de tocar na parcela (nada é alterado se houver erro) */
+  if(paid){if(pd){if(!dOk(pd))return'Data do pagamento inválida.'}else if(!(was&&!p.paidOn))return'Informe a data do pagamento.'}
+  const dd=DUE.cur(v.ym),o=p||{id:uid(),iid};
+  Object.assign(o,{ym:v.ym,c:m.c,paid});
+  if(dd&&(!p||p.due||DUE.isEx(dd,v.ym)))o.due=dd;else if(!dd)delete o.due;
+  if(paid){if(pd)o.paidOn=pd}else delete o.paidOn;
+  if(!p)S.parc.push(o);commit()});
  const DUE=(()=>{const st={mode:'orig',ex:0},pd=p&&p.due&&p.due!==dueDef(x&&x.day,p.ym)?+p.due.slice(8):0,ymv=()=>($('#f input[name=ym]')||{}).value||ym0;
   const base=()=>st.mode==='ex'?st.ex:st.mode==='def'?(x&&x.day)||0:(pd||(x&&x.day)||0),cur=ym=>/^\d{4}-\d{2}$/.test(ym)?dueDef(base(),ym):'',isEx=(d,ym)=>!!d&&d!==dueDef(x&&x.day,ym);
   const paint=()=>{const ym=ymv(),d=cur(ym),t=$('#dueTxt'),sl=$('#dueSel select');if(!t)return;t.textContent=d?'Dia de vencimento: '+dmy(d)+(isEx(d,ym)?' (exceção desta parcela)':''):'Dia de vencimento: não definido';
