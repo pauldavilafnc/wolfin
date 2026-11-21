@@ -1,6 +1,51 @@
 {
- "at": "2026-11-21T04:25-03:00",
+ "at": "2026-11-21T06:58-03:00",
  "items": [
+  {
+   "c": "mu",
+   "t": "Ataques cibernéticos, IA ou atualizações pendentes: o que há por trás da onda de apagões dos últimos dias",
+   "f": "BBC News Brasil",
+   "d": "2026-11-21",
+   "h": "06:21",
+   "u": "https://www.bbc.com/portuguese/articles/c3grendp775qo?at_medium=RSS&at_campaign=rss",
+   "s": "Microsoft, PHP, Java, o sistema de aviação: não existem provas de que os recentes problemas tecnológicos estejam relacionados, mas as seguidas ocorrências podem causar preocupações."
+  },
+  {
+   "c": "mu",
+   "t": "Morre Phumzile Mlambo-Ngcuka, 1ª mulher vice da África do Sul e ex-chefe da ONU Mulheres",
+   "f": "G1 Mundo",
+   "d": "2026-11-21",
+   "h": "05:14",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/21/morre-phumzile-mlambo-ngcuka-1a-mulher-vice-da-africa-do-sul-e-ex-chefe-da-onu-mulheres.ghtml",
+   "s": "Phumzile Mlambo-Ngcuka, primeira mulher a ocupar a vice-presidência da África do Sul e ex-subsecretária-geral das Nações Unidas, morreu aos 71 anos, anunciou o governo sul-africano nesta sexta-feira (20). Mlambo-Ngcuka…"
+  },
+  {
+   "c": "mu",
+   "t": "O que aprendi ao passar 14 anos acompanhando famílias que não saem da pobreza: 'Muito além de decisões pessoais'",
+   "f": "G1 Economia",
+   "d": "2026-11-21",
+   "h": "05:00",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/21/o-que-aprendi-ao-passar-14-anos-acompanhando-familias-que-nao-saem-da-pobreza-muito-alem-de-decisoes-pessoais.ghtml",
+   "s": "Andrés Ruiz é um jornalista e documentarista colombiano Andrés Ruiz/Arquivo Pessoal via BBC A Colômbia é o país mais desigual da América Latina e um dos mais desiguais do mundo, segundo o índice de Gini do Banco Mundial. Também…"
+  },
+  {
+   "c": "br",
+   "t": "Mercados globais desabam em feriado na B3 e Goldman alerta: mais quedas estão por vir",
+   "f": "InfoMoney",
+   "d": "2026-11-21",
+   "h": "05:00",
+   "u": "https://www.infomoney.com.br/mercados/mercados-globais-desabam-em-feriado-na-b3-e-goldman-alerta-quedas-devem-continuar/",
+   "s": "Tombo de Nvidia e Anthropic desencadeia onda global de aversão a risco, que pode seguir nas próximas sessões The post Mercados globais desabam em feriado na B3 e Goldman alerta: mais quedas estão por vir appeared first on…"
+  },
+  {
+   "c": "br",
+   "t": "Black Friday? As 10 ações com maior queda de um dos múltiplos mais usados no mercado",
+   "f": "InfoMoney",
+   "d": "2026-11-21",
+   "h": "05:00",
+   "u": "https://www.infomoney.com.br/mercados/black-friday-na-bolsa-as-10-acoes-com-maior-queda-do-multiplo-p-l/",
+   "s": "Dez ações de empresas lucrativas e geradoras de caixa ficaram mais baratas em relação ao lucro em duas semanas, de acordo com levantamento da Economatica The post Black Friday? As 10 ações com maior queda de um dos múltiplos mais…"
+  },
   {
    "c": "br",
    "t": "'Skincare comestível': gelatina com frutas viraliza como fonte de colágeno, mas funciona?",
@@ -57,15 +102,6 @@
   },
   {
    "c": "mu",
-   "t": "Acerola na carne? Veja como a fruta virou conservante natural de alimentos nos EUA e na Europa",
-   "f": "G1 Economia",
-   "d": "2026-11-21",
-   "h": "02:06",
-   "u": "https://g1.globo.com/economia/agronegocios/noticia/2026/11/21/acerola-na-carne-veja-como-a-fruta-virou-conservante-natural-de-alimentos-nos-eua-e-na-europa.ghtml",
-   "s": "Acerola na carne? Veja como a fruta virou conservante natural de alimentos A acerola ganhou uma função inesperada: ajudar a conservar a carne por mais tempo. A fruta, transformada em pó, passou a ser exportada para os Estados…"
-  },
-  {
-   "c": "mu",
    "t": "Embaixada brasileira na Ucrânia é atingida por destroços após ataques a Kiev, diz Itamaraty",
    "f": "G1 Mundo",
    "d": "2026-11-20",
@@ -81,24 +117,6 @@
    "h": "20:03",
    "u": "https://www.infomoney.com.br/mundo/nova-caravana-com-cerca-de-300-migrantes-entra-no-sul-do-mexico-rumo-aos-eua/",
    "s": "Ação acontece uma semana ‌após o presidente dos Estados Unidos, Donald Trump, ameaçar impor novas tarifas ao México caso o país não impeça o movimento The post Nova caravana com cerca de 300 migrantes entra no sul do México rumo…"
-  },
-  {
-   "c": "mu",
-   "t": "Áustria diz que site de ministério foi hackeado e que houve acesso a dados de funcionários",
-   "f": "G1 Mundo",
-   "d": "2026-11-20",
-   "h": "19:33",
-   "u": "https://g1.globo.com/mundo/noticia/2026/11/20/austria-site-de-ministerio-ataque-hacker.ghtml",
-   "s": "O Ministério das Relações Exteriores da Áustria informou nesta sexta-feira (20) que seu site foi hackeado na semana passada e que registros contendo os dados de contato de funcionários foram acessados. O ministério não indicou…"
-  },
-  {
-   "c": "mu",
-   "t": "Moedas: dólar tem sinais díspares com incertezas sobre Fed; cautela em NY apoia iene",
-   "f": "InfoMoney",
-   "d": "2026-11-20",
-   "h": "19:01",
-   "u": "https://www.infomoney.com.br/mercados/moedas-dolar-tem-sinais-dispares-com-incertezas-sobre-fed-cautela-em-ny-apoia-iene/",
-   "s": "O dólar, porém, caía a 158,53 ienes e a 0,8401 francos suíços, à medida que investidores buscam refúgio na segurança das duas moedas, em um dia de aversão ao risco nos mercados acionários The post Moedas: dólar tem sinais…"
   },
   {
    "c": "br",
@@ -126,24 +144,6 @@
    "h": "20:22",
    "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/banco-central-amplia-acesso-de-cooperativas-ao-mercado-aberto",
    "s": "Instituições financeiras de menor porte, como cooperativas de crédito, terão mais acesso ao mercado aberto, que regula a quantidade de dinheiro em circulação na economia. O Banco Central (BC) aprovou, nesta quinta-feira (19)…"
-  },
-  {
-   "c": "br",
-   "t": "Hora extra mais cara com fim da 6x1? Veja conta com salário de R$ 3 mil e o que muda com decreto de Lula",
-   "f": "BBC News Brasil",
-   "d": "2026-11-19",
-   "h": "17:39",
-   "u": "https://www.bbc.com/portuguese/articles/cvlyjkw9zr5jo?at_medium=RSS&at_campaign=rss",
-   "s": "A maior mudança nas jornadas de trabalho em quase 40 anos começará a entrar em vigor no mês que vem, com um período de transição. Ainda há contestações na Justiça."
-  },
-  {
-   "c": "br",
-   "t": "Anthropic dispara na estreia na bolsa e chega a valer R$ 11 trilhões: empresa pode evitar estouro da bolha da IA?",
-   "f": "BBC News Brasil",
-   "d": "2026-11-19",
-   "h": "11:39",
-   "u": "https://www.bbc.com/portuguese/articles/cm782wyv0153o?at_medium=RSS&at_campaign=rss",
-   "s": "Ações começaram a ser negociadas com alta de 34%, mas recuaram depois, de US$ 111,50 para cerca de US$ 100."
   }
  ]
 }
