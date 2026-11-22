@@ -1,6 +1,33 @@
 {
- "at": "2026-11-22T04:25-03:00",
+ "at": "2026-11-22T06:57-03:00",
  "items": [
+  {
+   "c": "br",
+   "t": "Enquanto Brasil perde preferência dos bancões, México ganha espaço entre emergentes",
+   "f": "InfoMoney",
+   "d": "2026-11-22",
+   "h": "05:00",
+   "u": "https://www.infomoney.com.br/mercados/mexico-ganha-espaco-entre-emergentes-enquanto-brasil-perde-preferencia-dos-bancoes/",
+   "s": "Rebaixamentos em série de instituições como UBS, Morgan Stanley, Goldman Sachs, Itaú BBA e BTG refletem preocupações com crescimento, juros e cenário fiscal; México surge como alternativa favorita na região The post Enquanto…"
+  },
+  {
+   "c": "br",
+   "t": "Estamos usando as métricas corretas de atendimento ao cliente?",
+   "f": "InfoMoney",
+   "d": "2026-11-22",
+   "h": "05:00",
+   "u": "https://www.infomoney.com.br/business/global/estamos-usando-as-metricas-corretas-de-atendimento-ao-cliente/",
+   "s": "Ao analisar um caso de implantação de projeto piloto de inteligência artificial, artigo da Harvard Business Review lembra que algumas ligações de suporte ao cliente podem exigir mais escuta, discernimento e construção de…"
+  },
+  {
+   "c": "br",
+   "t": "Novo teto do MEI pode gerar economia de R$ 9,5 mil por ano; entenda mudanças",
+   "f": "InfoMoney",
+   "d": "2026-11-22",
+   "h": "05:00",
+   "u": "https://www.infomoney.com.br/minhas-financas/novo-teto-do-mei-pode-gerar-economia-de-r-95-mil-por-ano-entenda-mudancas/",
+   "s": "Levantamento mostra como a lei que ampliou limite de faturamento para R$ 110 mil em 2027 e R$ 140 mil em 2028 pode permitir ganhos tributários The post Novo teto do MEI pode gerar economia de R$ 9,5 mil por ano; entenda mudanças…"
+  },
   {
    "c": "mu",
    "t": "Ovelhas entre painéis solares? Entenda a tendência que une geração de energia e criação de animais",
@@ -74,33 +101,6 @@
    "s": "Segundos de aplausos quando um avião aterrissa podem provocar reações fortes entre os passageiros. Psicólogos analisam o que pode estar por trás deste comportamento."
   },
   {
-   "c": "br",
-   "t": "Cúpula climática COP31 corre risco de fracassar, conforme negociações se estendem",
-   "f": "InfoMoney",
-   "d": "2026-11-21",
-   "h": "17:42",
-   "u": "https://www.infomoney.com.br/mundo/cupula-climatica-cop31-corre-risco-de-fracassar-conforme-negociacoes-se-estendem/",
-   "s": "Negociadores de quase 200 países estão tendo dificuldades para superar as divergências sobre combustíveis fósseis e financiamento climático The post Cúpula climática COP31 corre risco de fracassar, conforme negociações se…"
-  },
-  {
-   "c": "mu",
-   "t": "Vício em internet afeta mais de 10% da população mundial, aponta estudo",
-   "f": "InfoMoney",
-   "d": "2026-11-21",
-   "h": "17:10",
-   "u": "https://www.infomoney.com.br/consumo/vicio-em-internet-afeta-mais-de-10-da-populacao-mundial-aponta-estudo/",
-   "s": "Comissão internacional alerta para os efeitos de recursos como rolagem infinita e reprodução automática de vídeos e defende maior fiscalização das plataformas digitais The post Vício em internet afeta mais de 10% da população…"
-  },
-  {
-   "c": "br",
-   "t": "IA, Ozempic e crises financeiras: os melhores livros de negócios de 2026, segundo FT",
-   "f": "InfoMoney",
-   "d": "2026-11-21",
-   "h": "16:42",
-   "u": "https://www.infomoney.com.br/negocios/ia-ozempic-e-crises-financeiras-os-melhores-livros-de-negocios-de-2026-segundo-ft/",
-   "s": "Jornal selecionou seis obras para disputar o prêmio de melhor livro de negócios do ano; vencedor será anunciado em dezembro The post IA, Ozempic e crises financeiras: os melhores livros de negócios de 2026, segundo FT appeared…"
-  },
-  {
    "c": "mu",
    "t": "O que uma antiga cidade subterrânea da Turquia pode nos ensinar sobre como escapar do calor e do frio extremos",
    "f": "G1 Mundo",
@@ -119,6 +119,15 @@
    "s": "Andrés Ruiz é um jornalista e documentarista colombiano Andrés Ruiz/Arquivo Pessoal via BBC A Colômbia é o país mais desigual da América Latina e um dos mais desiguais do mundo, segundo o índice de Gini do Banco Mundial. Também…"
   },
   {
+   "c": "mu",
+   "t": "Por que o México arrecada tão poucos impostos (e como financia seus crescentes benefícios sociais)",
+   "f": "G1 Economia",
+   "d": "2026-11-21",
+   "h": "04:04",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/21/por-que-o-mexico-arrecada-tao-poucos-impostos-e-como-financia-seus-crescentes-beneficios-sociais.ghtml",
+   "s": "Por que o México arrecada tão poucos impostos (e como financia seus crescentes benefícios sociais) Getty Images via BBC Uma das ferramentas mais antigas da gestão pública. Seu propósito é garantir serviços de luz, água ou ordem…"
+  },
+  {
    "c": "br",
    "t": "Mega-Sena acumula e prêmio vai para R$ 45 milhões",
    "f": "Agência Brasil",
@@ -135,15 +144,6 @@
    "h": "20:33",
    "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmn-amplia-controle-sobre-recolhimentos-de-tributos-dos-bancos",
    "s": "O Conselho Monetário Nacional (CMN) aprovou uma nova regra para ampliar o acompanhamento das informações tributárias das instituições financeiras que operam no Brasil. A partir de 1º de janeiro de 2028, bancos e demais entidades…"
-  },
-  {
-   "c": "br",
-   "t": "Banco Central amplia acesso de cooperativas ao mercado aberto",
-   "f": "Agência Brasil",
-   "d": "2026-11-19",
-   "h": "20:22",
-   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/banco-central-amplia-acesso-de-cooperativas-ao-mercado-aberto",
-   "s": "Instituições financeiras de menor porte, como cooperativas de crédito, terão mais acesso ao mercado aberto, que regula a quantidade de dinheiro em circulação na economia. O Banco Central (BC) aprovou, nesta quinta-feira (19)…"
   }
  ]
 }
