@@ -623,7 +623,11 @@ e.addEventListener("pointerdown",function(){fin(1)});addEventListener("keydown",
 const MCIDS=['wolfin'];
 /* migração: qualquer mascote ou roupa antiga (10 personagens, avatares e roupas do lobo) vira o Wolfin atual */
 function mcMigrate(){return 'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.28 · Mascote na Home, Loja e WolfCoins · 22/11/2026';
+const KEY='wallstreet.v1',BUILD='7.28b · Correção da tela em branco ao abrir · 23/11/2026';
+/* v7.28b: ficam aqui no topo porque wcEnsure() roda já na abertura (antes do bloco do mascote) */
+const WF_ALL_FREE=true; /* por enquanto todos os visuais ficam liberados; a economia da loja (preços em WolfCoins) será definida depois */
+const WLOOKS=[{id:'brasil',p:0,n:'Wolfin Brasil',free:1,d:'O visual de sempre: verde e amarelo, na régua.'},{id:'shelby',p:150,n:'Wolfin Shelby',d:'Sobretudo preto, boina e olhar de quem negocia.'},{id:'cafetao',p:200,n:'Wolfin Cafetão',d:'Veludo roxo, ouro e muita pose.'},{id:'tommy',p:150,n:'Wolfin Tommy',d:'Camisa havaiana e jeito de quem tá de boa.'},{id:'meme',p:120,n:'Wolfin Meme',d:'Todo de preto, sério e misterioso.'},{id:'kratos',p:250,n:'Wolfin Kratos',d:'Armadura, cicatriz e zero paciência.'},{id:'morgan',p:200,n:'Wolfin Morgan',d:'Casaco de couro e chapéu de fora da lei.'},{id:'cj',p:150,n:'Wolfin CJ',d:'Regata, correntão e estilo de rua.'},{id:'tyler',p:250,n:'Wolfin Tyler',d:'Jaqueta vermelha e cigarro no canto da boca.'},{id:'heisenberg',p:250,n:'Wolfin Heisenberg',d:'Macacão amarelo e muita química.'},{id:'arabe',p:200,n:'Wolfin Árabe',d:'Túnica, manto bordado e lenço xadrez.'}];
+const WF_STY=WLOOKS.filter(l=>!l.soon).map(l=>l.id);
 const CATS={exp:['Alimentação','Transporte','Compras','Roupas','Lazer','Trabalho','Casa','Saúde','Educação','Financeiro','Tecnologia','Cuidados pessoais','Presentes','Outros'],inc:['Salário','Comissão','Freelancer','Outro']};
 const PALS=[['blue','Azul','#2563EB'],['perola','Pérola','#E8EDF5'],['violet','Violeta','#7C3AED'],['teal','Turquesa','#0D9488'],['pink','Rosa','#DB2777'],['orange','Laranja','#EA580C'],['ouro','Ouro','#B88614'],['esmeralda','Esmeralda','#15803D'],['grafite','Grafite','#4B5563']];
 const PAYS=['Pix','Cartão de débito','Cartão de crédito','Dinheiro/Espécie','Outro'];
@@ -1271,9 +1275,6 @@ const WF={ld:0,ok:0,u:{},ex:{
  neutro:['base','base','base'],feliz:['base','feliz','largo'],fala:['base','base','aberta'],acolhe:['acolhedor','acolhe','acolhe'],
  preocupado:['acolhedor','preocup','preocup'],festa:['comemorando','festa','grin'],aponta:['apontando','serio','grin'],
  surpreso:['base','surpreso','surpreso'],serio:['base','serio','serio'],malandro:['base','baixa','grin'],tchau:['mao_dir','mdir','mdir']}};
-const WF_ALL_FREE=true; /* por enquanto todos os visuais ficam liberados; a economia da loja (preços em WolfCoins) será definida depois */
-const WLOOKS=[{id:'brasil',p:0,n:'Wolfin Brasil',free:1,d:'O visual de sempre: verde e amarelo, na régua.'},{id:'shelby',p:150,n:'Wolfin Shelby',d:'Sobretudo preto, boina e olhar de quem negocia.'},{id:'cafetao',p:200,n:'Wolfin Cafetão',d:'Veludo roxo, ouro e muita pose.'},{id:'tommy',p:150,n:'Wolfin Tommy',d:'Camisa havaiana e jeito de quem tá de boa.'},{id:'meme',p:120,n:'Wolfin Meme',d:'Todo de preto, sério e misterioso.'},{id:'kratos',p:250,n:'Wolfin Kratos',d:'Armadura, cicatriz e zero paciência.'},{id:'morgan',p:200,n:'Wolfin Morgan',d:'Casaco de couro e chapéu de fora da lei.'},{id:'cj',p:150,n:'Wolfin CJ',d:'Regata, correntão e estilo de rua.'},{id:'tyler',p:250,n:'Wolfin Tyler',d:'Jaqueta vermelha e cigarro no canto da boca.'},{id:'heisenberg',p:250,n:'Wolfin Heisenberg',d:'Macacão amarelo e muita química.'},{id:'arabe',p:200,n:'Wolfin Árabe',d:'Túnica, manto bordado e lenço xadrez.'}];
-const WF_STY=WLOOKS.filter(l=>!l.soon).map(l=>l.id);
 function wfLook(){let id;try{id=(SECMODE&&!DEK)?(JSON.parse(localStorage.getItem('wallstreet.look'))||{}).w:(S.wc&&S.wc.look)}catch(e){}return WF_STY.includes(id)?id:'brasil'}
 function wfMirror(){try{const o=JSON.parse(localStorage.getItem('wallstreet.look')||'{}')||{};o.w=wfLook();localStorage.setItem('wallstreet.look',JSON.stringify(o))}catch(e){}}
 function wfCan(id){const l=WLOOKS.find(x=>x.id===id);if(!l||l.soon)return false;const w=wcEnsure();return WF_ALL_FREE||w.own.includes(id)}
@@ -1314,7 +1315,7 @@ const WV={m:{welcome:['Chegou o Wolfin. Dinheiro sumindo sem explicação? Isso 
  conq:['Parabéns! Cada passo conta.','Conquista desbloqueada. Bom trabalho!'],coin:['Você ganhou {n} WolfCoins. Continue assim!'],loja:['Aqui você troca suas WolfCoins por novos visuais do Wolfin.'],daily:['Que bom que voltou. Pequenos hábitos fazem diferença.']}};
 function wfVoice(k,v){let t=(S.pref&&S.pref.wf&&S.pref.wf.tone==='s')||balance()<0?'s':'m';const a=(WV[t][k]||WV.s[k]||[''])[Math.floor(Math.random()*(WV[t][k]||[1]).length)]||'';return String(a).replace('{n}',v==null?'':v)}
 /* WolfCoins: moedas virtuais por metas e bons hábitos (cada motivo só rende uma vez) */
-function wcEnsure(o){o=o||S;if(!o.wc||typeof o.wc!=='object')o.wc={};const w=o.wc;if(!Number.isFinite(w.n)||w.n<0)w.n=0;if(!Number.isFinite(w.tot)||w.tot<0)w.tot=w.n;if(!w.done||typeof w.done!=='object')w.done={};if(!Array.isArray(w.own)||!w.own.includes('brasil'))w.own=['brasil'].concat((w.own||[]).filter(x=>x!=='brasil'));if(!w.look||!(w.own.includes(w.look)||(WF_ALL_FREE&&WF_STY.includes(w.look))))w.look='brasil';if(!Array.isArray(w.log))w.log=[];return w}
+function wcEnsure(o){o=o||S;if(!o.wc||typeof o.wc!=='object')o.wc={};const w=o.wc;if(!Number.isFinite(w.n)||w.n<0)w.n=0;if(!Number.isFinite(w.tot)||w.tot<0)w.tot=w.n;if(!w.done||typeof w.done!=='object')w.done={};if(!Array.isArray(w.own)||!w.own.includes('brasil'))w.own=['brasil'].concat((Array.isArray(w.own)?w.own:[]).filter(x=>x!=='brasil'));if(!w.look||!(w.own.includes(w.look)||(WF_ALL_FREE&&WF_STY.includes(w.look))))w.look='brasil';if(!Array.isArray(w.log))w.log=[];return w}
 function wcGrant(key,n,why){const w=wcEnsure();if(w.done[key])return 0;w.done[key]=1;w.n+=n;w.tot+=n;w.log.unshift({d:new Date().toISOString().slice(0,10),n,t:why||''});if(w.log.length>40)w.log.length=40;coinFx(n);wcSync();return n}
 function wcAch(list){let g=0;(list||[]).forEach(a=>{g+=wcGrant('ach:'+a.id,10,'Conquista: '+a.t)});return g}
 function wcDaily(){const d=new Date(),k='d:'+d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');const g=wcGrant(k,1,'Visita do dia');if(g){const w=wcEnsure();Object.keys(w.done).filter(x=>x.startsWith('d:')).sort().slice(0,-40).forEach(x=>delete w.done[x])}return g}
@@ -2248,7 +2249,7 @@ else if(hasCrypto&&!localStorage.getItem('wallstreet.secskip'))viewSetup(false);
 /* Ajustes → Aparência → Efeito de vidro */
 document.addEventListener('change',e=>{if(e.target.id==='glSel'){S.pref.gl=+e.target.value;commit('Efeito de vidro atualizado')}else if(e.target.id==='anSel'){S.pref.av.an=+e.target.value;commit('Animações atualizadas')}});
 
-if(!SECMODE){achCheck(true);save()}
+if(!SECMODE){try{achCheck(true)}catch(e){console.error(e)}save()}
 render();loadNews();
 if('serviceWorker' in navigator&&newsHosted())navigator.serviceWorker.register('sw.js').catch(()=>{}); /* instalável e funciona offline quando hospedado */
 if(RM.addEventListener)RM.addEventListener('change',render);
