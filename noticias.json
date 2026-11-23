@@ -1,68 +1,77 @@
 {
- "at": "2026-11-23T13:19-03:00",
+ "at": "2026-11-23T16:14-03:00",
  "items": [
   {
    "c": "br",
-   "t": "Real cai 14,6% em um mês, quase o dobro da segunda pior moeda",
-   "f": "InfoMoney",
+   "t": "Ações do BRB perderam quase 75% do valor em um ano; entenda",
+   "f": "G1 Economia",
    "d": "2026-11-23",
-   "h": "13:09",
-   "u": "https://www.infomoney.com.br/mercados/real-cai-146-por-cento-mes-ranking-moedas/",
-   "s": "Levantamento da Research XP com 32 moedas mostra desvalorização excepcional do real no período que atravessou o segundo turno das eleições; risco fiscal e dólar global ajudam a explicar a queda The post Real cai 14,6% em um mês…"
+   "h": "16:06",
+   "u": "https://g1.globo.com/df/distrito-federal/noticia/2026/11/23/acoes-do-brb-perderam-quase-75percent-do-valor-em-um-ano-entenda.ghtml",
+   "s": "As ações ordinárias acumulam desvalorização de 73,93% nos últimos 12 meses. Na sexta-feira (19), a BSLI3 estava cotada a R$ 1,89, menor valor registrado nas últimas 52 semanas. No outro extremo, em 27 de novembro de 2025, o papel…"
   },
   {
    "c": "br",
-   "t": "Free flow registra 120 milhões de pagamentos de pedágio atrasado em 200 dias; o que acontece com quem ainda deve?",
+   "t": "Dólar hoje vira para leve queda após bater R$ 6 durante a manhã",
+   "f": "InfoMoney",
+   "d": "2026-11-23",
+   "h": "16:05",
+   "u": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-23112026/",
+   "s": "Moeda americana refletiu mais cedo preocupação dos investidores com as contas públicas e à expectativa pela votação do ajuste fiscal na Câmara The post Dólar hoje vira para leve queda após bater R$ 6 durante a manhã appeared…"
+  },
+  {
+   "c": "br",
+   "t": "Itaú BBA aposta em ações defensivas e exportadoras em meio a juros altos; veja ativos",
+   "f": "InfoMoney",
+   "d": "2026-11-23",
+   "h": "16:00",
+   "u": "https://www.infomoney.com.br/mercados/itau-bba-aposta-em-acoes-defensivas-e-exportadoras-em-meio-a-juros-altos-veja-ativos/",
+   "s": "Segundo o banco, investidores não precisam abrir mão de retorno para buscar proteção The post Itaú BBA aposta em ações defensivas e exportadoras em meio a juros altos; veja ativos appeared first on InfoMoney ."
+  },
+  {
+   "c": "br",
+   "t": "BDR da Anthropic (ANTH34) recua mais de 6% após estreia positiva na Bolsa brasileira",
+   "f": "InfoMoney",
+   "d": "2026-11-23",
+   "h": "15:50",
+   "u": "https://www.infomoney.com.br/mercados/bdr-da-anthropic-anth34-recua-apos-estreia-positiva-na-bolsa-brasileira/",
+   "s": "Papeis refletem efeito do segundo dia das ações, quando a Bolsa brasileira estava em recesso The post BDR da Anthropic (ANTH34) recua mais de 6% após estreia positiva na Bolsa brasileira appeared first on InfoMoney ."
+  },
+  {
+   "c": "br",
+   "t": "Ministério do Trabalho publica portaria que regulamenta descansos da escala 5x2",
    "f": "G1 Economia",
    "d": "2026-11-23",
-   "h": "13:03",
-   "u": "https://g1.globo.com/carros/noticia/2026/11/23/free-flow-registra-120-milhoes-de-pagamentos-de-pedagio-atrasado-em-200-dias-o-que-acontece-com-quem-ainda-deve.ghtml",
-   "s": "Pórtico do Free Flow no Rio Grande do Sul Gustavo Mansur/Palácio Piratini O prazo para quitar os pedágios eletrônicos atrasados, sem multa, terminou na semana passada. A medida valia para motoristas que utilizaram o sistema…"
+   "h": "15:42",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/23/ministerio-do-trabalho-portaria-escala-5x2.ghtml",
+   "s": "Governo publica regras da escala 5x2 O Ministério do Trabalho publicou nesta segunda-feira (23) portaria que regulamenta a duração de trabalho e o período de descanso na escala 5x2. Na quinta-feira (19), o governo publicou…"
+  },
+  {
+   "c": "br",
+   "t": "A tempestade perfeita (dentro e fora do Brasil) que fez dólar chegar a R$ 6",
+   "f": "BBC News Brasil",
+   "d": "2026-11-23",
+   "h": "15:27",
+   "u": "https://www.bbc.com/portuguese/articles/cwm253lr95zjo?at_medium=RSS&at_campaign=rss",
+   "s": "Pressão fiscal no Brasil e dólar forte no exterior ajudam a explicar a maior desvalorização do real entre as principais moedas emergentes."
+  },
+  {
+   "c": "br",
+   "t": "Fazenda reduz previsão de crescimento da economia para 1,9% neste ano",
+   "f": "G1 Economia",
+   "d": "2026-11-23",
+   "h": "15:08",
+   "u": "https://g1.globo.com/economia/noticia/2026/11/23/fazenda-reduz-previsao-de-crescimento-da-economia-para-19percent-neste-ano.ghtml",
+   "s": "O Ministério da Fazenda revisou mais uma vez para baixo a projeção de crescimento da economia brasileira neste ano, de 2% para 1,9%. A informação consta no Boletim Macrofiscal, divulgado nesta segunda-feira (23). ➡️A redução foi…"
   },
   {
    "c": "mu",
-   "t": "Inflação a 3% e boom de IA levarão Fed a subir juros em dezembro, diz Bullard",
-   "f": "InfoMoney",
+   "t": "'Queremos destruir o capitalismo': por dentro das manifestações dos 'black blocks' da esquerda radical na França",
+   "f": "BBC News Brasil",
    "d": "2026-11-23",
-   "h": "12:45",
-   "u": "https://www.infomoney.com.br/economia/juros-fed-dezembro-bullard-inflacao-boom-ia/",
-   "s": "Em evento do Itaú em São Paulo, ex-dirigente do banco central dos EUA afirma que expansão econômica elevou o juro neutro, enquanto hesitação do novo presidente da instituição em sinalizar próximos passos amplia volatilidade The…"
-  },
-  {
-   "c": "br",
-   "t": "Instituto alerta para risco de fuga de capital com regra para empresas estrangeiras",
-   "f": "InfoMoney",
-   "d": "2026-11-23",
-   "h": "12:40",
-   "u": "https://www.infomoney.com.br/politica/instituto-alerta-para-risco-de-fuga-de-capital-com-regra-para-empresas-estrangeiras/",
-   "s": "Proposta em discussão na Câmara cria comitê para avaliar aquisições em setores estratégicos; Instituto Livre Mercado alerta para riscos à entrada de capital estrangeiro The post Instituto alerta para risco de fuga de capital com…"
-  },
-  {
-   "c": "br",
-   "t": "Galípolo: dentro do governo não há qualquer debate sobre meta de inflação, é zero",
-   "f": "InfoMoney",
-   "d": "2026-11-23",
-   "h": "12:31",
-   "u": "https://www.infomoney.com.br/economia/galipolo-dentro-do-governo-nao-ha-qualquer-debate-sobre-meta-de-inflacao-e-zero/",
-   "s": "Em evento do Itaú BBA, presidente do Banco Central evitou calcular o impacto da reforma tributária para a economia, assim como os efeitos da inteligência artificial The post Galípolo: dentro do governo não há qualquer debate…"
-  },
-  {
-   "c": "br",
-   "t": "Que dia é a Black Friday 2026? Veja a data oficial e dicas para aproveitar promoções",
-   "f": "G1 Economia",
-   "d": "2026-11-23",
-   "h": "12:08",
-   "u": "https://g1.globo.com/guia/guia-de-compras/presentes/que-dia-e-a-black-friday-2026-veja-a-data-oficial-e-dicas-para-aproveitar-promocoes.ghtml",
-   "s": "Black Friday: o que fazer para não cair em falsas promoções A edição de 2026 da Black Friday já tem data marcada no calendário do comércio brasileiro: o evento acontecerá nesta sexta-feira, dia 27 de novembro, mantendo a tradição…"
-  },
-  {
-   "c": "br",
-   "t": "Fim da escala 6X1 deve impactar mais de 100 mil trabalhadores domésticos, estima instituto",
-   "f": "G1 Economia",
-   "d": "2026-11-23",
-   "h": "11:44",
-   "u": "https://g1.globo.com/economia/noticia/2026/11/23/fim-da-escala-6x1-deve-beneficiar-mais-de-100-mil-trabalhadores-domesticos-estima-instituto.ghtml",
-   "s": "O fim da escala 6x1, regulamentado pelo presidente Luiz Inácio Lula da Silva (PT), vai gerar mudanças para cerca de 102 mil trabalhadores domésticos no país, estimou nesta segunda-feira (23) o Instituto Doméstica Legal. O…"
+   "h": "15:07",
+   "u": "https://www.bbc.com/portuguese/articles/cqe8700d7e8do?at_medium=RSS&at_campaign=rss",
+   "s": "A BBC ouviu os manifestantes de extrema-esquerda acusados pelo presidente francês Emmanuel Macron de tentar derrubar a República."
   },
   {
    "c": "mu",
@@ -71,16 +80,16 @@
    "d": "2026-11-23",
    "h": "11:20",
    "u": "https://g1.globo.com/economia/noticia/2026/11/23/nvidia-huang-volta-nasdaq.ghtml",
-   "s": "Ex-chefe da Nvidia diz que gostaria de voltar ao comando da empresa As ações da Nvidia dispararam mais de 30% na abertura do pregão em Nova York nesta segunda-feira (23), após a empresa anunciar o retorno de Jensen Huang ao cargo…"
+   "s": "Ex-chefe da Nvidia diz que gostaria de voltar ao comando da empresa As ações da Nvidia subiram mais de 30% na abertura do mercado em Nova York nesta segunda-feira (23), após a empresa anunciar o retorno de Jensen Huang ao cargo…"
   },
   {
    "c": "mu",
-   "t": "Trump celebra retorno de Jensen Huang ao comando da Nvidia e diz que não há risco de segurança nacional",
+   "t": "Trump celebra retorno de Jensen Huang ao comando da Nvidia e posta montagem do CEO segurando sutiã",
    "f": "G1 Economia",
    "d": "2026-11-23",
    "h": "11:14",
    "u": "https://g1.globo.com/mundo/noticia/2026/11/23/trump-celebra-retorno-de-jensen-huang-ao-comando-da-nvidia-e-diz-que-nao-ha-risco-de-seguranca-nacional.ghtml",
-   "s": "Jensen Huang, CEO da Nvidia, ao lado de Donald Trump, presidente dos Estados Unidos, em foto de 8 de outubro de 2026 Reuters/Evan Vucci O presidente dos Estados Unidos, Donald Trump, celebrou nesta segunda-feira (23) a decisão do…"
+   "s": "Trump posta montagem de Jensen Huang segurando sutiã Reprodução/Truth Social O presidente dos Estados Unidos, Donald Trump, celebrou nesta segunda-feira (23) a decisão do conselho administrativo da Nvidia de recontratar seu…"
   },
   {
    "c": "br",
@@ -100,22 +109,13 @@
    "s": "Negociações, que deveriam ter terminado na sexta-feira, se estenderam até o fim de semana, tornando essa a conferência climática da ONU mais longa da história."
   },
   {
-   "c": "br",
-   "t": "Mercado eleva projeção do dólar para R$ 5,55 em 2026",
-   "f": "Agência Brasil",
-   "d": "2026-11-23",
-   "h": "10:11",
-   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/mercado-eleva-projecao-do-dolar-para-r-555-em-2026",
-   "s": "Analistas do mercado financeiro elevaram de R$ 5,40 para R$ 5,55 a estimativa para a cotação do dólar no fim de 2026. O dado consta do boletim Focus, divulgado nesta segunda-feira (23) pelo Banco Central, com expectativas de…"
-  },
-  {
    "c": "mu",
-   "t": "Trump pede que Nvidia recontrate Jensen Huang em meio a novas revelações sobre suposta espionagem chinesa",
+   "t": "Trump pede volta de Jensen Huang à Nvidia após novas revelações sobre suspeita de espionagem",
    "f": "G1 Economia",
    "d": "2026-11-23",
    "h": "09:14",
    "u": "https://g1.globo.com/tecnologia/noticia/2026/11/23/trump-nvidia-jensen-huang-espionagem-china.ghtml",
-   "s": "Jensen Huang, CEO da Nvidia, ao lado de Donald Trump, presidente dos Estados Unidos, em foto de 8 de outubro de 2026 Reuters/Evan Vucci O presidente dos Estados Unidos, Donald Trump, pediu que o conselho de administração da…"
+   "s": "Jensen Huang, CEO da Nvidia, ao lado de Donald Trump, presidente dos Estados Unidos, em foto de 8 de outubro de 2026 Reuters/Evan Vucci O presidente dos Estados Unidos, Donald Trump, pediu ao conselho de administração da Nvidia…"
   },
   {
    "c": "mu",
