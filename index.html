@@ -563,6 +563,40 @@ html:not([data-theme=dark]) #s-home{--gl-bgc:rgba(255,255,255,.42);--gl-bd:color
 #pm .pmf .pmi[data-id=secon] .pmic{background:var(--light);color:var(--blue)}
 #s-cfg .card{scroll-margin-top:12px}
 @media(prefers-reduced-motion:reduce){#pm .pmsc,#pm .pmp,#pm .pmi{transition:none}}
+/* ===== v7.30: Minha situação financeira — mascotes dos níveis + Liquid Glass (só apresentação) ===== */
+.sitw{margin-bottom:12px}.sitw .card{margin-bottom:12px}
+.sith{position:relative;overflow:visible;padding-bottom:12px}.sith h3{margin-bottom:4px}
+.sith h3{max-width:54%;font-size:16px}
+.sitr{position:relative;min-height:128px;padding-top:6px}
+.sitt{position:relative;z-index:1;max-width:52%}
+.sitw .fsh{gap:10px;margin:4px 0 6px}.sitw .fsd{width:42px;height:42px;font-size:21px;box-shadow:0 0 0 3px color-mix(in srgb,var(--lvc) 28%,transparent),0 6px 16px color-mix(in srgb,var(--lvc) 45%,transparent),inset 0 1px 0 rgba(255,255,255,.45)}
+.sitw .fsn{font-size:25px;letter-spacing:-.3px;color:var(--lvt,var(--lvc))!important;text-shadow:0 0 18px color-mix(in srgb,var(--lvc) 40%,transparent)}
+.sitw .fst{font-size:13.5px;line-height:1.35;color:var(--navy);opacity:.92}
+.nvw{position:absolute;right:0;bottom:0;top:-26px;width:47%;pointer-events:none;z-index:0;clip-path:inset(-60px 0 0 0 round 0 0 28px 0);animation:nvin .55s cubic-bezier(.22,.8,.3,1) both}
+.nvw img{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;object-fit:contain;object-position:right bottom;transform-origin:50% 100%;animation:nvbr 5.2s ease-in-out infinite;filter:drop-shadow(0 6px 14px rgba(5,2,18,.5));user-select:none;-webkit-user-drag:none}
+.nvw[data-off] img{animation-play-state:paused}
+@keyframes nvin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes nvbr{0%,100%{transform:scale(1) rotate(0)}30%{transform:scale(1.014,1.02) rotate(-.5deg)}60%{transform:scale(1.008,1.012) rotate(.45deg)}}
+.sitw.chg .nvw{animation:nvchg .6s cubic-bezier(.22,.8,.3,1) both}.sitw.chg .fsd{animation:nvpop .5s cubic-bezier(.3,1.4,.4,1) both}.sitw.chg .fsn{animation:nvfade .5s ease both}.sitw.chg .meter i.on{animation:nvpop .5s ease both}
+@keyframes nvchg{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}@keyframes nvpop{from{transform:scale(.7)}to{transform:scale(1)}}@keyframes nvfade{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+.sitw .meter{gap:5px;margin:12px 0 4px;position:relative;z-index:1;width:100%}
+.sitw .meter i{height:9px;border-radius:6px;background:var(--mc);opacity:.28;transition:opacity .4s,box-shadow .4s}
+.sitw .meter i.on{opacity:1;box-shadow:0 0 12px var(--mc),0 0 0 1px color-mix(in srgb,var(--mc) 60%,#fff)}
+.sitw .meterl{font-size:11px;position:relative;z-index:1;margin-bottom:0}.sitw .meterl span{min-width:0;overflow:visible;white-space:nowrap}.sitw .meterl span.on{font-weight:800;color:var(--lvt,var(--lvc))}.sitw.lv-crt{--lvt:#B91C1C}.sitw.lv-atn{--lvt:#92400E}.sitw.lv-est{--lvt:#1D4ED8}.sitw.lv-ok{--lvt:#166534}[data-theme=dark] .sitw.lv-crt{--lvt:#FCA5A5}[data-theme=dark] .sitw.lv-atn{--lvt:#F59E0B}[data-theme=dark] .sitw.lv-est{--lvt:#60A5FA}[data-theme=dark] .sitw.lv-ok{--lvt:#22C55E}.sitw.lv-atn .fsd,.sitw.lv-ok .fsd{color:#0B1020}.sitw.lv-crt .fsd,.sitw.lv-est .fsd{color:#fff}
+.sitb{padding:10px 14px 8px}
+.sits{border-top:1px solid var(--line)}.sits:first-child{border-top:0}
+.sits summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12.5px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--ink)}
+.sits summary::-webkit-details-marker{display:none}
+.sits summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .25s;margin-right:4px;opacity:.7}
+.sits[open] summary::after{transform:rotate(-135deg)}
+.sits .fsu{margin:0 0 8px}.sits .fsu li{padding:5px 0 5px 20px;font-size:14.5px}
+.sits .fsu li:before{left:3px;top:11px;width:8px;height:8px;background:var(--c);box-shadow:0 0 8px color-mix(in srgb,var(--c) 70%,transparent)}
+.sitw .fgrid{gap:10px;margin:0 0 12px}
+.sitw .fk{padding:11px 12px;border-radius:20px}.sitw .fk span{font-size:12px;color:var(--gray)}.sitw .fk b{display:block;margin-top:2px;font-size:15.5px;line-height:1.25}
+.sitx{padding:4px 14px 10px}
+@media(max-width:380px){.sitw .meterl span:not(.on){visibility:hidden}.sitt{max-width:50%}.sith h3{max-width:52%}}
+@media(max-width:340px){.sitw .fsn{font-size:22px}.sitw .fk b{font-size:14px}.nvw{width:44%}}
+@media(prefers-reduced-motion:reduce){.nvw,.nvw img,.sitw.chg .nvw,.sitw.chg .fsd,.sitw.chg .fsn,.sitw.chg .meter i.on{animation:none!important}.sitw .meter i,.sits summary::after{transition:none}}
 </style>
 </head>
 <body>
@@ -591,7 +625,7 @@ html:not([data-theme=dark]) #s-home{--gl-bgc:rgba(255,255,255,.42);--gl-bd:color
 const MCIDS=['wolfin'];
 /* migração: qualquer mascote ou roupa antiga (10 personagens, avatares e roupas do lobo) vira o Wolfin atual */
 function mcMigrate(){return 'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.29 · Identidade Midnight Violet · 23/11/2026';
+const KEY='wallstreet.v1',BUILD='7.30 · Situação financeira com mascotes · 23/11/2026';
 /* v7.28b: ficam aqui no topo porque wcEnsure() roda já na abertura (antes do bloco do mascote) */
 const WF_ALL_FREE=true; /* por enquanto todos os visuais ficam liberados; a economia da loja (preços em WolfCoins) será definida depois */
 const WF_DEF='padrao'; /* estilo inicial gratuito (v7.29) */
@@ -942,16 +976,23 @@ function finSit(){const td=todayStr(),cm=td.slice(0,7),inc=rowsOf('inc',cm),exp=
  if(bal>0)good.push(`Saldo disponível positivo (${brl(bal)}).`);if(Lc===0)good.push('Nenhum item atrasado.');if(R>0&&ratio<=.6)good.push(`Compromissos do mês em ${pc}% da receita prevista.`);if(O===0)good.push(hc?'Sem dívidas, parcelas nem faturas pendentes.':'Sem dívidas nem parcelas pendentes.');else if(M>0&&mc<=3)good.push(`${Bc} pendentes (${brl(O)}) cabem em até 3 meses da sua sobra mensal.`);
  const recs=fl.map(f=>f.rec);if(!recs.length)recs.push('Continue registrando tudo e use a sobra do mês para reforçar suas caixinhas.');
  return{level,m,flags:fl,why:fl.length?fl.map(f=>f.txt):['Nenhum ponto de risco encontrado nos seus dados deste mês.'],good:good.slice(0,3),recs:[...new Set(recs)].slice(0,2)}}
-function sitCard(){const r=finSit(),L=FSL[r.level],m=r.m,ord=['crt','atn','est','ok'],col=['#DC2626','#D97706','#2563EB','#16A34A'],nm=['Crítica','Atenção','Estável','Saudável'];
- const k=(t,v,c)=>`<div class="fk"><span>${t}</span><b${c?` style="color:var(--${c})"`:''}>${v}</b></div>`;
- return `<div class="card fs lv-${r.level}"><h3>Minha situação financeira</h3><div class="fsh"><div class="fsd" style="background:${L[1]}">${L[2]}</div><div><div class="fsn">${L[0]}</div><div class="fst">${L[3]}</div></div></div>
- ${r.level==='none'?'':`<div class="meter">${ord.map((o,i)=>`<i class="${o===r.level?'on':''}" style="background:${col[i]}"></i>`).join('')}</div><div class="meterl">${nm.map(x=>`<span>${x}</span>`).join('')}</div>`}
- <div class="fsl">Por que</div><ul class="fsu" style="--c:${L[1]}">${r.why.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
- ${r.good.length?`<div class="fsl">O que está bem</div><ul class="fsu" style="--c:#16A34A">${r.good.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}
- <div class="fsl">O que fazer agora</div><ul class="fsu" style="--c:var(--blue)">${r.recs.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
- ${r.level==='none'&&!m.R?'':`<div class="fgrid">${k('Saldo disponível',brl(m.bal),m.bal<0?'red':'')}${k('Folga prevista no mês',brl(m.M),m.M<0?'red':'')}${k('Receitas do mês',brl(m.Rrec)+' de '+brl(m.R))}${k('Despesas do mês',brl(m.Epaid)+' de '+brl(m.E))}${k('Dívidas pendentes',brl(m.D))}${k(m.hc?'Parcelas e faturas a pagar':'Parcelas a pagar',brl(m.Pun)+(m.Pf?' ('+brl(m.Pf)+' nos próximos meses)':''))}${k('Atrasos',brl(m.L),m.L>0?'red':'')}${k('Reserva',m.Cm>0?(m.cover>=99?'sem compromissos':(m.cover<0?'negativa':(c=>c+(c==='1,0'?' mês':' meses'))(m.cover.toFixed(1).replace('.',',')))):'—')}</div>`}
- <details class="fsx"><summary>Como a avaliação é feita</summary><ul><li>Usa só os seus lançamentos do mês atual, as dívidas, as parcelas e o saldo disponível (apenas o que foi marcado como recebido ou pago).${m.hc?' As faturas dos cartões entram pelo valor ainda pendente (os pagamentos já feitos reduzem o pendente e não são contados duas vezes) e as compras parceladas no cartão pesam nos meses seguintes.':''}</li><li><b>Crítica:</b> saldo negativo, compromissos acima da receita, dívidas sem folga no orçamento e sem reserva, atrasos de metade da receita ou mais, ou vários riscos altos juntos.</li><li><b>Atenção:</b> algum risco alto (compromissos acima de 80% da receita, itens atrasados, prazo de quitação acima de 12 meses ou reserva abaixo de meio mês) ou vários pontos moderados.</li><li><b>Estável:</b> controlada, com um ou dois pontos moderados (por exemplo, compromissos acima de 60% da receita ou reserva abaixo de um mês).</li><li><b>Saudável:</b> saldo positivo, nenhum atraso, compromissos até 60% da receita, reserva de pelo menos um mês e dívidas que cabem em até 3 meses da sobra mensal.</li><li>O total das dívidas, sozinho, não define o resultado: pesam a sua sobra mensal e o dinheiro disponível.</li></ul></details>
- <p class="lbl" style="margin-top:8px">Avaliação orientativa, baseada nos dados que você informou. Não substitui aconselhamento profissional.</p></div>`}
+/* ===== v7.30: visual do cartão (mascotes dos 4 níveis, Liquid Glass). Só apresentação: finSit() e os textos/valores seguem iguais ===== */
+const NIVC={crt:'#EF4444',atn:'#F59E0B',est:'#3B82F6',ok:'#22C55E'};   /* cores semânticas fixas dos níveis, valem em qualquer paleta */
+let NIVU={},NIVL=0,LASTSIT=null;
+function nivLoad(){if(NIVL)return;NIVL=1;const s=document.createElement('script');s.src='wolfin-niveis.js';s.async=true;s.onload=()=>{if(typeof view!=='undefined'&&view==='rel')render()};s.onerror=()=>{NIVL=0};document.head.appendChild(s)}
+function nivUrl(k){const D=window.WOLFIMG&&window.WOLFIMG.niv&&window.WOLFIMG.niv[k];if(!D)return'';if(NIVU[k])return NIVU[k];try{const b=atob(D.s.split(',')[1]),a=new Uint8Array(b.length);for(let i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return NIVU[k]=URL.createObjectURL(new Blob([a],{type:'image/webp'}))}catch(e){return''}}
+function nivVis(){try{if(!('IntersectionObserver' in window))return;WIO=WIO||new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.removeAttribute('data-off');else e.target.setAttribute('data-off','1')}));document.querySelectorAll('.nvw:not([data-io])').forEach(el=>{el.dataset.io='1';WIO.observe(el)})}catch(e){}}
+function sitCard(){const r=finSit(),L=FSL[r.level],m=r.m,ord=['crt','atn','est','ok'],nm=['Crítica','Atenção','Estável','Saudável'];
+ const k=(t,v,c)=>`<div class="fk"><span>${t}</span><b${c?` style="color:var(--${c})"`:''}>${v}</b></div>`,lv=r.level,has=lv!=='none',chg=LASTSIT&&LASTSIT!==lv;LASTSIT=lv;
+ if(has){nivLoad();setTimeout(nivVis,0)}const u=has?nivUrl(lv):'',D=has&&window.WOLFIMG&&window.WOLFIMG.niv&&window.WOLFIMG.niv[lv],cc=has?NIVC[lv]:'#94A3B8';
+ const sec=(t,c,items,open)=>`<details class="sits" style="--c:${c}"${open?' open':''}><summary>${t}</summary><ul class="fsu">${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details>`;
+ return `<div class="sitw lv-${lv}${chg?' chg':''}" style="--lvc:${cc}"><div class="card fs sith lv-${lv}"><h3>Minha situação financeira</h3><div class="sitr"><div class="sitt"><div class="fsh"><div class="fsd" style="background:${cc}" aria-hidden="true">${L[2]}</div><div class="fsn">${L[0]}</div></div><div class="fst">${L[3]}</div>
+ ${has?`<div class="meter" role="img" aria-label="Nível atual: ${L[0]}. Escala: Crítica, Atenção, Estável, Saudável">${ord.map(o=>`<i class="${o===lv?'on':''}" style="--mc:${NIVC[o]}"></i>`).join('')}</div><div class="meterl" aria-hidden="true">${nm.map((x,i)=>`<span${ord[i]===lv?' class="on"':''}>${x}</span>`).join('')}</div>`:''}</div></div>
+ ${has?`<span class="nvw" role="img" aria-label="Wolfin: situação ${L[0]}" style="--nr:${D?D.w/D.h:1}">${u?`<img src="${u}" alt="" decoding="async">`:''}</span>`:''}</div>
+ <div class="card sitb">${sec('Por que',cc,r.why,1)}${r.good.length?sec('O que está bem','#22C55E',r.good,1):''}${sec('O que fazer agora','#F59E0B',r.recs,1)}</div>
+ ${lv==='none'&&!m.R?'':`<div class="fgrid">${k('Saldo disponível',brl(m.bal),m.bal<0?'red':'')}${k('Folga prevista no mês',brl(m.M),m.M<0?'red':'')}${k('Receitas do mês',brl(m.Rrec)+' de '+brl(m.R))}${k('Despesas do mês',brl(m.Epaid)+' de '+brl(m.E))}${k('Dívidas pendentes',brl(m.D))}${k(m.hc?'Parcelas e faturas a pagar':'Parcelas a pagar',brl(m.Pun)+(m.Pf?' ('+brl(m.Pf)+' nos próximos meses)':''))}${k('Atrasos',brl(m.L),m.L>0?'red':'')}${k('Reserva',m.Cm>0?(m.cover>=99?'sem compromissos':(m.cover<0?'negativa':(c=>c+(c==='1,0'?' mês':' meses'))(m.cover.toFixed(1).replace('.',',')))):'—')}</div>`}
+ <div class="card sitx"><details class="fsx"><summary>Como a avaliação é feita</summary><ul><li>Usa só os seus lançamentos do mês atual, as dívidas, as parcelas e o saldo disponível (apenas o que foi marcado como recebido ou pago).${m.hc?' As faturas dos cartões entram pelo valor ainda pendente (os pagamentos já feitos reduzem o pendente e não são contados duas vezes) e as compras parceladas no cartão pesam nos meses seguintes.':''}</li><li><b>Crítica:</b> saldo negativo, compromissos acima da receita, dívidas sem folga no orçamento e sem reserva, atrasos de metade da receita ou mais, ou vários riscos altos juntos.</li><li><b>Atenção:</b> algum risco alto (compromissos acima de 80% da receita, itens atrasados, prazo de quitação acima de 12 meses ou reserva abaixo de meio mês) ou vários pontos moderados.</li><li><b>Estável:</b> controlada, com um ou dois pontos moderados (por exemplo, compromissos acima de 60% da receita ou reserva abaixo de um mês).</li><li><b>Saudável:</b> saldo positivo, nenhum atraso, compromissos até 60% da receita, reserva de pelo menos um mês e dívidas que cabem em até 3 meses da sobra mensal.</li><li>O total das dívidas, sozinho, não define o resultado: pesam a sua sobra mensal e o dinheiro disponível.</li></ul></details>
+ <p class="lbl" style="margin-top:8px">Avaliação orientativa, baseada nos dados que você informou. Não substitui aconselhamento profissional.</p></div></div>`}
 function vRel(){const f=flows(),ms=Array.from({length:12},(_,i)=>ry+'-'+pad(i+1)),L='JFMAMJJASOND'.split(''),z={inc:0,exp:0,dp:0,bx:0};
  const inc=ms.map(m=>(f[m]||z).inc),exp=ms.map(m=>(f[m]||z).exp),has=inc.some(Boolean)||exp.some(Boolean);
  let cum=S.opening?S.opening.c:0;const keys=Object.keys(f).sort();keys.filter(k=>k<ms[0]).forEach(k=>{cum+=net(f[k])});
@@ -1292,7 +1333,7 @@ const wcFmt=n=>String(Math.floor(n||0)).replace(/\B(?=(\d{3})+$)/g,'.');
 function wcChip(v){return `<span class="wcn"><img class="wci" alt="" decoding="async" data-coin="1">${wcFmt(v==null?wcEnsure().n:v)}</span>`}
 function wolfCoinPaint(){const u=wfUrl('coin','');if(u)document.querySelectorAll('img[data-coin]:not([src])').forEach(i=>{i.src=u})}
 let WIO=null;function wfVis(){try{if(!('IntersectionObserver' in window))return;WIO=WIO||new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.removeAttribute('data-off');else e.target.setAttribute('data-off','1')}));document.querySelectorAll('.wolf.sty.live:not([data-io])').forEach(el=>{el.dataset.io='1';WIO.observe(el)})}catch(e){}}
-const _wp=wolfPaint;wolfPaint=function(){_wp();wolfCoinPaint();wfVis()};
+const _wp=wolfPaint;wolfPaint=function(){_wp();wolfCoinPaint();wfVis();nivVis()};
 try{new MutationObserver(()=>{clearTimeout(wolfPaint.h);wolfPaint.h=setTimeout(wolfPaint,30)}).observe(document.body,{childList:true,subtree:true})}catch(e){}
 wolfBlink.h=setTimeout(wolfBlink,2500);wolfIdle.h=setTimeout(wolfIdle,7000);wfLoad();
 
