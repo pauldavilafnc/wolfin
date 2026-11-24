@@ -5,14 +5,14 @@
    Este arquivo só cria, lê e apaga caches com essa identificação (e o nome antigo wallstreet-vN usado
    por versões anteriores deste app). Caches de outros projetos do mesmo domínio nunca são tocados.
    Não guarda dados financeiros (eles ficam no localStorage). */
-const VERSAO = '6';
+const VERSAO = '7';
 const ESCOPO = new URL(self.registration.scope).pathname;            // ex.: /wallstreet/
 const PREFIXO = 'wallstreet::' + ESCOPO + '::';
 const CACHE = PREFIXO + 'v' + VERSAO;
 const LEGADO = /^wallstreet-v\d+$/;                                    // nome das versões antigas deste app
 const meuCache = k => k.startsWith(PREFIXO) || LEGADO.test(k);
 const ESSENCIAIS = ['index.html'];                                     // sem isso a instalação falha (e a versão atual continua valendo)
-const OPCIONAIS = ['./', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png', 'favicon-32.png', 'favicon-48.png', 'intro-lobo.mp4', 'wolfin-brasil.js', 'wolfin-estilos.js'];   // o MP4 (≈0,4 MB) já fica guardado: a intro em vídeo toca offline desde a 1ª abertura
+const OPCIONAIS = ['./', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png', 'favicon-32.png', 'favicon-48.png', 'wolfin-brasil.js', 'wolfin-estilos.js'];   // o MP4 (≈0,4 MB) já fica guardado: a intro em vídeo toca offline desde a 1ª abertura
 const ESPERA_REDE = 6000;                                              // rede lenta: depois disso usa a cópia guardada (e atualiza em segundo plano)
 const meu = u => u.origin === location.origin && u.pathname.startsWith(ESCOPO);   // só arquivos deste app
 
@@ -73,7 +73,7 @@ async function responder(e, r) {
 
 /* Vídeo da intro (mp4/webm): o navegador pede trechos (Range). Baixa o arquivo inteiro uma vez, guarda no cache deste app e
    responde os trechos (206) a partir da cópia — assim a intro em vídeo também toca offline. Se não houver cópia nem rede, falha
-   (a página então segue sem a intro). Nomes de arquivo mudam a cada nova versão do vídeo (v7.16: intro-lobo). */
+   (a página então segue sem a intro). (A intro foi removida na v7.29; o tratamento fica pronto para a nova introdução.) */
 const ehVideo = u => /\.(mp4|webm)$/i.test(u.pathname);
 async function video(e, r) {
   const url = new URL(r.url).href;
