@@ -628,7 +628,7 @@ html:not([data-theme=dark]) #s-home{--gl-bgc:rgba(255,255,255,.42);--gl-bd:color
 const MCIDS=['wolfin'];
 /* migração: qualquer mascote ou roupa antiga (10 personagens, avatares e roupas do lobo) vira o Wolfin atual */
 function mcMigrate(){return 'wolfin'}
-const KEY='wallstreet.v1',BUILD='7.34 · Conferir meu saldo e Home simplificada · 24/11/2026';
+const KEY='wallstreet.v1',BUILD='7.35 · Carregamento sob demanda do mascote · 25/11/2026';
 /* v7.28b: ficam aqui no topo porque wcEnsure() roda já na abertura (antes do bloco do mascote) */
 const WF_ALL_FREE=true; /* por enquanto todos os visuais ficam liberados; a economia da loja (preços em WolfCoins) será definida depois */
 const WF_DEF='padrao'; /* estilo inicial gratuito (v7.29) */
@@ -1347,7 +1347,7 @@ const STYB={padrao:[240,252],brasil:[240,311],shelby:[240,283],cafetao:[240,289]
 /* efeitos sutis por acessório (posição em % da imagem do busto): fumaça do cigarro e brilho de corrente */
 const STYFX={padrao:['g',.52,.88],tyler:['s',.69,.58],brasil:['g',.52,.78],cafetao:['g',.53,.76],tommy:['g',.54,.77],cj:['g',.52,.9]};
 const wfFx=L=>{const f=STYFX[L];return f?`<i class="fx fx${f[0]}" aria-hidden="true" style="left:${f[1]*100}%;top:${f[2]*100}%"></i>`:''};
-function wolfHtml(o){o=o||{};const L=o.look||wfLook();if(o.lock||o.bust||o.bx||L!=='brasil'){const hd=(o.hd||o.bust)&&!o.lock,bx=!!o.bx&&!o.lock,bd=STYB[L],ar=(bx||o.bust)&&bd?` style="aspect-ratio:${bd[0]}/${bd[1]}"`:'';if(L!=='brasil'&&L!==WF_DEF)wfLoadSty();return `<span class="wolf sty ${bx?'bx':hd?'hd':'fl'}${o.lock?' lkw':''}${o.bust?' lkb':''}${o.live===0?'':' live'}${o.cls?' '+o.cls:''}" data-look="${L}" data-k="${hd||bx?'b':'n'}"${ar} data-wx="${WF.ex[o.ex]?o.ex:'neutro'}"${o.greet?' data-greet="1"':''}${o.idle?' data-idle="1"':''} role="img" aria-label="${esc(o.al||'Wolfin, o mascote do app')}"><img class="sn" alt="" decoding="async">${o.fx&&bx?wfFx(L):''}</span>`}
+function wolfHtml(o){o=o||{};wfLoad();const L=o.look||wfLook();if(o.lock||o.bust||o.bx||L!=='brasil'){const hd=(o.hd||o.bust)&&!o.lock,bx=!!o.bx&&!o.lock,bd=STYB[L],ar=(bx||o.bust)&&bd?` style="aspect-ratio:${bd[0]}/${bd[1]}"`:'';if(L!=='brasil'&&L!==WF_DEF)wfLoadSty();return `<span class="wolf sty ${bx?'bx':hd?'hd':'fl'}${o.lock?' lkw':''}${o.bust?' lkb':''}${o.live===0?'':' live'}${o.cls?' '+o.cls:''}" data-look="${L}" data-k="${hd||bx?'b':'n'}"${ar} data-wx="${WF.ex[o.ex]?o.ex:'neutro'}"${o.greet?' data-greet="1"':''}${o.idle?' data-idle="1"':''} role="img" aria-label="${esc(o.al||'Wolfin, o mascote do app')}"><img class="sn" alt="" decoding="async">${o.fx&&bx?wfFx(L):''}</span>`}
  const ex=WF.ex[o.ex]?o.ex:'neutro',cl='wolf '+(o.hd?'hd':'fl')+(o.live===0?'':' live')+(o.cls?' '+o.cls:'');
  return `<span class="${cl}" data-wx="${ex}"${o.talk?' data-talk="1"':''}${o.greet?' data-greet="1"':''}${o.idle?' data-idle="1"':''} role="img" aria-label="${esc(o.al||'Wolfin, o mascote do app')}"><span class="ws">${o.hd?'':'<img class="wt" alt="" decoding="async">'}<img class="wb" alt="" decoding="async"><img class="we" alt="" decoding="async"><img class="wm" alt="" decoding="async"></span></span>`}
 function wolfSet(el,ex){if(el&&el.classList.contains('sty')){el.dataset.wx=ex;stySet(el);return}if(!WF.ok||!el)return;const e=WF.ex[ex]||WF.ex.neutro;el.dataset.wx=ex;const q=c=>el.querySelector(c);
@@ -1378,12 +1378,12 @@ function wcGrant(key,n,why){const w=wcEnsure();if(w.done[key])return 0;w.done[ke
 function wcAch(list){let g=0;(list||[]).forEach(a=>{g+=wcGrant('ach:'+a.id,10,'Conquista: '+a.t)});return g}
 function wcDaily(){const d=new Date(),k='d:'+d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');const g=wcGrant(k,1,'Visita do dia');if(g){const w=wcEnsure();Object.keys(w.done).filter(x=>x.startsWith('d:')).sort().slice(0,-40).forEach(x=>delete w.done[x])}return g}
 const wcFmt=n=>String(Math.floor(n||0)).replace(/\B(?=(\d{3})+$)/g,'.');
-function wcChip(v){return `<span class="wcn"><img class="wci" alt="" decoding="async" data-coin="1">${wcFmt(v==null?wcEnsure().n:v)}</span>`}
+function wcChip(v){wfLoad();return `<span class="wcn"><img class="wci" alt="" decoding="async" data-coin="1">${wcFmt(v==null?wcEnsure().n:v)}</span>`}
 function wolfCoinPaint(){const u=wfUrl('coin','');if(u)document.querySelectorAll('img[data-coin]:not([src])').forEach(i=>{i.src=u})}
 let WIO=null;function wfVis(){try{if(!('IntersectionObserver' in window))return;WIO=WIO||new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.removeAttribute('data-off');else e.target.setAttribute('data-off','1')}));document.querySelectorAll('.wolf.sty.live:not([data-io])').forEach(el=>{el.dataset.io='1';WIO.observe(el)})}catch(e){}}
 const _wp=wolfPaint;wolfPaint=function(){_wp();wolfCoinPaint();wfVis();nivVis()};
 try{new MutationObserver(()=>{clearTimeout(wolfPaint.h);wolfPaint.h=setTimeout(wolfPaint,30)}).observe(document.body,{childList:true,subtree:true})}catch(e){}
-wolfBlink.h=setTimeout(wolfBlink,2500);wolfIdle.h=setTimeout(wolfIdle,7000);wfLoad();
+wolfBlink.h=setTimeout(wolfBlink,2500);wolfIdle.h=setTimeout(wolfIdle,7000);try{if(wfOn())wfLoad()}catch(e){}
 
 /* ===== toque nos botões: brilho rápido, como nas teclas do celular ===== */
 document.addEventListener('pointerdown',e=>{if(RM.matches||(e.pointerType==='mouse'&&e.button!==0))return;const b=e.target.closest&&e.target.closest('button,.pal,.mcrow');if(!b||b.disabled)return;const r=b.getBoundingClientRect();if(r.width<8||r.height<8)return;

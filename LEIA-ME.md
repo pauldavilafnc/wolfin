@@ -1,3 +1,7 @@
+## 7.35 — Otimização: mascote carregado só quando necessário (25/11/2026)
+- Com o Wolfin desligado, a Home deixa de baixar o pacote de imagens do mascote (≈690 KB → 0). Ao ligar o Wolfin, abrir a Loja ou ver WolfCoins, o pacote é baixado na hora, como antes. Nada muda na aparência, nas animações ou nos dados.
+- Auditoria (sem alteração de código): cálculos, conciliação, backup/importação, armazenamento e PWA foram revisados e testados; navegação medida com 2.000 lançamentos fictícios (3 a 96 ms por aba) e sem vazamento de listeners.
+
 ## 7.34 — Conferir meu saldo, Home simplificada e mascote sem botão flutuante (24/11/2026)
 - **Conferir meu saldo** (Home → ⓘ, ou Configurações → Contas e saldos): você informa o dinheiro que tem, a data e uma observação. O Wolfin guarda só um *ajuste de conferência* (não é receita, não é despesa, não muda os totais do mês nem apaga lançamento). Repetir o mesmo valor não duplica. Dá para corrigir ou desfazer a última conferência; o histórico fica guardado. Novas movimentações depois da data continuam alterando o saldo.
 - O Wolfin não acessa o banco: o saldo depende do que você registra e informa.
