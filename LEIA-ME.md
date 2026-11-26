@@ -1,3 +1,7 @@
+## 7.37 — Voltar ao início (26/11/2026)
+- Novo cartão em Ajustes: **Voltar ao início**. Apaga tudo deste aparelho (lançamentos, nome, tema, avatar, senha, mascotes, WolfCoins, conquistas) e reabre o app na tela de boas-vindas. Pede para digitar APAGAR TUDO. O cartão "Zerar todos os dados" continua igual (mantém nome, tema e senha).
+- Restaurar o backup depois do recomeço funciona normalmente (testado).
+
 ## 7.36 — Nova logo e ícones (25/11/2026)
 - Logo nova (símbolo predominantemente branco, leve gradiente lilás, relevo e Liquid Glass) em: ícone do app (192/512), ícone recortável do Android (maskable), ícone do iPhone (apple-touch), favicons 32/48, notificações e a logo da tela Sobre. Nomes dos arquivos e manifesto iguais.
 - Contraste medido (símbolo × fundo): 10,8→14,9:1 no ícone 512; 6,9→10,8:1 no maskable; 8,2→12,8:1 no apple-touch; 9,8→14,2:1 no favicon 48.
