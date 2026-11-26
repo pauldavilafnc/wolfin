@@ -1,3 +1,12 @@
+## 7.38 — Menu de perfil e Configurações reorganizados (26/11/2026)
+- **Só organização e navegação** — visual, cores, vidro, ícones e animações iguais; nenhuma regra de saldo, backup, senha ou exclusão foi alterada.
+- **Menu da foto**: cabeçalho (foto, nome, "Dados só neste aparelho") + 4 opções: **Meu perfil**, **Configurações**, **Backups**, **Segurança**. Saíram os atalhos "Aparência e temas" e "Ativar proteção por senha" (as funções continuam nas suas seções). Com senha ativa, "Sair da conta" continua no rodapé.
+- **Configurações** virou um índice de 7 categorias: Perfil (nome e foto) · Aparência · Contas e saldos · Segurança e backups (duas seções) · Wolfin, o mascote · Conquistas · Sobre o Wolfin (avisos legais numa seção que abre e fecha).
+- **Gerenciamento de dados** (no fim do índice): **Zerar todos os dados** (limpeza parcial, igual à v7.37) e **Voltar ao início** (restauração completa, v7.37 intacta; pede digitar APAGAR TUDO). Textos explicam a diferença e lembram de exportar um backup antes; backups salvos fora do app não são apagados.
+- **Voltar**: botão do app e Voltar do Android levam da categoria ao índice e do índice à tela anterior. Sem barra inferior nas Configurações.
+- Menu "Backups" e "Segurança" abrem direto na seção certa; "Meu perfil" abre Perfil.
+- Nada mudou nos dados, no formato de backup nem no service worker.
+
 ## 7.37 — Voltar ao início (26/11/2026)
 - Novo cartão em Ajustes: **Voltar ao início**. Apaga tudo deste aparelho (lançamentos, nome, tema, avatar, senha, mascotes, WolfCoins, conquistas) e reabre o app na tela de boas-vindas. Pede para digitar APAGAR TUDO. O cartão "Zerar todos os dados" continua igual (mantém nome, tema e senha).
 - Restaurar o backup depois do recomeço funciona normalmente (testado).
