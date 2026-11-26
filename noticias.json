@@ -1,6 +1,33 @@
 {
- "at": "2026-11-26T01:17-03:00",
+ "at": "2026-11-26T04:37-03:00",
  "items": [
+  {
+   "c": "mu",
+   "t": "Trump e chefe da Otan pedem que Rússia evite ações que ampliem guerra na Ucrânia",
+   "f": "G1 Mundo",
+   "d": "2026-11-26",
+   "h": "03:23",
+   "u": "https://g1.globo.com/mundo/noticia/2026/11/26/trump-e-chefe-da-otan-pedem-que-russia-evite-acoes-que-ampliem-guerra-na-ucrania.ghtml",
+   "s": "via REUTERS A Rússia deve evitar ações que ampliem sua guerra na Ucrânia, afirmaram o presidente dos Estados Unidos, Donald Trump, e o secretário-geral da Otan, Mark Rutte, em um comunicado conjunto nesta quarta-feira, após uma…"
+  },
+  {
+   "c": "mu",
+   "t": "Por que Trump pressionou pela volta de Jensen Huang à chefia da Nvidia",
+   "f": "G1 Economia",
+   "d": "2026-11-26",
+   "h": "03:00",
+   "u": "https://g1.globo.com/tecnologia/noticia/2026/11/26/por-que-trump-pressionou-pela-volta-de-jensen-huang-a-chefia-da-nvidia.ghtml",
+   "s": "CEO da Nvidia, Jensen Huang, tem no presidente dos EUA, Donald Trump, um aliado decisivo Evan Vucci/REUTERS Pelos padrões de qualquer empresa americana comum, o antigo e agora novo diretor-presidente da Nvidia, Jensen Huang, já…"
+  },
+  {
+   "c": "br",
+   "t": "Tarifaço de Trump: nova taxa sobre açúcar brasileiro deve ter impacto 'praticamente nulo', diz analista",
+   "f": "G1 Economia",
+   "d": "2026-11-26",
+   "h": "03:00",
+   "u": "https://g1.globo.com/economia/agronegocios/noticia/2026/11/26/tarifaco-de-trump-nova-taxa-sobre-acucar-brasileiro-deve-ter-impacto-praticamente-nulo-diz-analista.ghtml",
+   "s": "EUA propõem novas tarifas contra Brasil e 14 economias O governo dos Estados Unidos propôs nesta quarta-feira (25) aumentar a tributação sobre o açúcar importado do Brasil e cobrar uma tarifa adicional de 10% sobre aeronaves…"
+  },
   {
    "c": "br",
    "t": "Mega-Sena pode pagar R$ 75 milhões nesta quinta-feira; g1 transmite ao vivo",
@@ -75,15 +102,6 @@
   },
   {
    "c": "br",
-   "t": "CMN anuncia medidas para conter o endividamento das famílias",
-   "f": "G1 Economia",
-   "d": "2026-11-25",
-   "h": "19:10",
-   "u": "https://g1.globo.com/economia/noticia/2026/11/25/cmn-anuncia-medidas-para-conter-o-endividamento-das-familias.ghtml",
-   "s": "Endividamento de risco segundo o BC Agência Brasil O Conselho Monetário Nacional (CMN), do qual fazem parte os Ministérios da Fazenda e do Planejamento e o Banco Central, anunciou nesta quarta-feira (25) um conjunto de medidas…"
-  },
-  {
-   "c": "br",
    "t": "Especulações para Fazenda e fiscal: o que fez Ibovespa subir 1,6% após 4 quedas",
    "f": "InfoMoney",
    "d": "2026-11-25",
@@ -111,15 +129,6 @@
   },
   {
    "c": "mu",
-   "t": "Por que o PIX está na mira dos EUA em investigação que embasa novas tarifas contra o Brasil",
-   "f": "G1 Economia",
-   "d": "2026-11-25",
-   "h": "18:11",
-   "u": "https://g1.globo.com/economia/noticia/2026/11/25/brasil-protesta-contra-recomendacao-dos-eua-de-novas-tarifas-sobre-avioes-e-acucar.ghtml",
-   "s": "Trump introduziu tarifas de 15% sobre produtos que entram nos Estados Unidos provenientes da maioria dos países do mundo. REUTERS/Elizabeth Frantz O PIX está entre os temas investigados pelo governo dos Estados Unidos na disputa…"
-  },
-  {
-   "c": "mu",
    "t": "'Não acho que possamos mais coexistir com bilionários', diz escritora Naomi Klein",
    "f": "BBC News Brasil",
    "d": "2026-11-25",
@@ -135,15 +144,6 @@
    "h": "15:34",
    "u": "https://g1.globo.com/mundo/noticia/2026/11/25/caminhao-tanque-pega-fogo-e-deixa-ao-emnos-21-mortos-no-egito.ghtml",
    "s": "Photo Mais cedo, o portal estatal \"Ahram\" informou que equipes da Defesa Civil conseguiram controlar o incêndio no caminhão, que transportava produtos inflamáveis. Forças de segurança foram enviadas ao local após receberem o…"
-  },
-  {
-   "c": "mu",
-   "t": "Crise na Colômbia: dois policiais morrem em emboscada de homens armados no norte do país",
-   "f": "G1 Mundo",
-   "d": "2026-11-25",
-   "h": "14:20",
-   "u": "https://g1.globo.com/mundo/noticia/2026/11/25/crise-na-colombia-dois-policiais-morrem-em-emboscada-de-homens-armados-no-norte-do-pais.ghtml",
-   "s": "Dois policiais morreram e outros quatro ficaram feridos após uma emboscada de homens armados contra uma patrulha da Polícia Nacional da Colômbia no norte do estado de Cauca. O ataque ocorreu na região de Tres Esquinas, na estrada…"
   }
  ]
 }
