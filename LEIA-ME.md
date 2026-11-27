@@ -1,3 +1,15 @@
+## 7.40 — Relatórios reorganizados (27/11/2026)
+- **Relatórios** agora é uma visão geral: cartão "Minha situação financeira" (mascote do nível, nome/cor, descrição, 4 níveis, **Ver análise completa**), 4 indicadores (Saldo atual, Saldo previsto com data, Receitas recebidas, Despesas pagas) e "Análises financeiras" em 4 grupos: **Visão mensal** (Resumo do mês; Contas do mês e comprometimento da renda) · **Gastos** (Gastos por categoria; Despesas que se repetem; **Mapa de calor**) · **Evolução financeira** (Evolução das dívidas; Comparar dois meses; Gráficos do ano) · **Compartilhamento** (Resumo para compartilhar).
+- Cada análise abre em tela própria (sem barra inferior), com Voltar no app e no Android; a rolagem da visão geral e o mês escolhido são mantidos. Telas montadas só quando abertas.
+- **Mapa de calor** intacto (dias, intensidade, legenda, toque, navegação de mês), com atalho visível no grupo Gastos.
+- Análise completa: Por quê, O que está bem, O que fazer agora, indicadores e "Entenda os indicadores" (Saldo atual/previsto, Folga, Renda comprometida, Reserva em meses, Ajuste de conferência, Resultado do mês). Nenhum cálculo alterado.
+
+## 7.39 — Correções pontuais e Qualidade visual (27/11/2026)
+- Tutorial: etapa 8/8 ganhou ícone de calculadora (a caixa vazia também some em outras etapas sem ícone).
+- Home: tocar no texto do aviso do Wolfin abre Relatórios (Minha situação financeira); tocar no mascote abre a Loja; com o mascote desligado o cartão inteiro abre Relatórios. Feedback discreto ao toque.
+- Aparência: cartão **Tema** (Claro/Escuro) e cartão **Personalização visual** (paleta, Qualidade visual, animações dos ícones).
+- **Qualidade visual** (antes "Efeito de vidro"): Alta — Visual completo · Equilibrada — Recomendada (desfoque ~metade, sombras menores) · Econômica — Maior desempenho (sem desfoque, fundos sólidos, sombras simples). Não muda paleta nem animações dos ícones. O padrão continua Alta.
+
 ## 7.38 — Menu de perfil e Configurações reorganizados (26/11/2026)
 - **Só organização e navegação** — visual, cores, vidro, ícones e animações iguais; nenhuma regra de saldo, backup, senha ou exclusão foi alterada.
 - **Menu da foto**: cabeçalho (foto, nome, "Dados só neste aparelho") + 4 opções: **Meu perfil**, **Configurações**, **Backups**, **Segurança**. Saíram os atalhos "Aparência e temas" e "Ativar proteção por senha" (as funções continuam nas suas seções). Com senha ativa, "Sair da conta" continua no rodapé.
